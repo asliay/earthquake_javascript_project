@@ -10,7 +10,7 @@ function App() {
   useEffect(() => {
     getWeekData()
     .then((earthquakes) => {
-      setRealtimeQuakes(earthquakes);
+      setRealtimeQuakes(earthquakes.features);
     })
   }, []);
 
@@ -18,7 +18,7 @@ function App() {
     <>
     <h1>QUICK, IT'S A QUAKE</h1>
     <EarthquakeInfoBox/>
-    <EarthquakeMap/>
+    <EarthquakeMap realtimeQuakes={realtimeQuakes} />
     </>
   );
 }
