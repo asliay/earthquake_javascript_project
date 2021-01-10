@@ -1,4 +1,4 @@
-use; earthquakes;
+use earthquakes;
 db.dropDatabase();
 
 db.historicalEarthquakes.insertMany([
