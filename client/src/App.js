@@ -1,6 +1,7 @@
 import './App.css';
 import {useState, useEffect} from "react";
 import {getWeekData} from "./services/MapService";
+import EarthquakeInfoBox from "./components/EarthquakeInfoBox";
 
 function App() {
   const [realtimeQuakes, setRealtimeQuakes] = useState([]);
@@ -15,6 +16,7 @@ function App() {
   return (
     <>
     <h1>QUICK, IT'S A QUAKE</h1>
+    <EarthquakeInfoBox
     </>
   );
 }
