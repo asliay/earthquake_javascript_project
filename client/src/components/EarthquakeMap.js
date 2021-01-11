@@ -1,18 +1,20 @@
-import Earthquake from "./Earthquake";
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
-
 import L from 'leaflet';
 import icon from 'leaflet/dist/images/marker-icon.png';
 import iconShadow from 'leaflet/dist/images/marker-shadow.png';
 
-let DefaultIcon = L.icon({
-    iconUrl: icon,
-    shadowUrl: iconShadow
-});
-L.Marker.prototype.options.icon = DefaultIcon;
+
+
 // coordinates on usgs longlatdepth, removing depth and switching to Lat Long for Leaflet
 const EarthquakeMap = ({realtimeQuakes}) => {
+    let DefaultIcon = L.icon({
+        iconUrl: icon,
+        shadowUrl: iconShadow
+    });
+
+    L.Marker.prototype.options.icon = DefaultIcon;
+
     // const earthquakeNodes = realtimeQuakes.map((quake => {
     //     const posLonLat = quake.geometry.coordinates.slice(0,2)
     //     const LatLong = posLonLat.reverse()
@@ -29,6 +31,7 @@ const EarthquakeMap = ({realtimeQuakes}) => {
     return(
     <>
         <h2>This is the map showing all earthquakes, BOOYAH!</h2>
+       
     <div id="map-container">
         <MapContainer 
               className="map"

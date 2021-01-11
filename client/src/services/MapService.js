@@ -3,6 +3,7 @@ const weekURL = 'https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_w
 // Magnitude 4.5+ last 24 hours
 const recenthighURL = 'https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.geojson';
 
+
 export const getWeekData = () => {
     return fetch(weekURL)
     .then(res => res.json());

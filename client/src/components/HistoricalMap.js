@@ -18,6 +18,7 @@ const HistoricalMap = ({historicalQuakes}) => {
     return(
     <>
         <h2>This is the historical map:</h2>
+        
     <div id="map-container">
         <MapContainer 
               className="map"

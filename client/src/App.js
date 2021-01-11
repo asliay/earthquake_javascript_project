@@ -3,6 +3,7 @@ import {useState, useEffect, useRef} from "react";
 import {getWeekData} from "./services/MapService";
 import {getQuakeInfo} from "./services/InfoService";
 import {getHistoricalQuakes} from "./services/HistoricalService";
+import ChartTest from "./components/ChartTest"
 import EarthquakeInfoBox from "./components/EarthquakeInfoBox";
 import EarthquakeMap from "./components/EarthquakeMap";
 import HistoricalMap from "./components/HistoricalMap"
@@ -46,15 +47,13 @@ function App() {
     })
   }, [])
 
-  console.log(quakeInfo);
-  console.log(realtimeQuakes);
-
 
 
   return (
     <>
     <h1>QUICK, IT'S A QUAKE</h1>
     <EarthquakeInfoBox quakeInfo={quakeInfo}/>
+    <ChartTest realtimeQuakes={realtimeQuakes}/>
     <EarthquakeMap realtimeQuakes={realtimeQuakes} />
     <HistoricalMap historicalQuakes={historicalQuakes} />
     
