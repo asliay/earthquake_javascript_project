@@ -28,11 +28,12 @@ const EarthquakeMap = ({realtimeQuakes}) => {
     
     return(
     <>
-        <p>This is the map, BOOYAH!</p>
+        <h2>This is the map showing all earthquakes, BOOYAH!</h2>
     <div id="map-container">
         <MapContainer 
               className="map"
-              center={[39.50, -121.05]}
+              center={[20.5844,
+                       26.2456]}
               zoom={2}
               style={{ height: 450, width: 1200 }}
                >
