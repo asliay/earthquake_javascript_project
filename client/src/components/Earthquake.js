@@ -19,7 +19,14 @@ let DefaultIcon = L.icon({
 L.Marker.prototype.options.icon = DefaultIcon;
 
 
+
 const Earthquake = ({quake, LatLong})=>{
+    const timeStamp = quake.properties.time
+    const dateObject = new Date(timeStamp);
+    const dayTime = dateObject.toLocaleString();
+
+    const dateString = dateObject.toDateString();
+
     return (
         <>
         <h3>{quake.properties.title}</h3>
@@ -36,7 +43,7 @@ const Earthquake = ({quake, LatLong})=>{
           attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors" />
   <Marker position={LatLong} Icon={DefaultIcon} >
     <Popup>
-      This recent earthquake date/time: {quake.properties.time}, {quake.properties.title} had a magnitude of {quake.properties.mag}.
+      This recent earthquake on {dateString} (UTC), {quake.properties.title} had a magnitude of {quake.properties.mag}.
     </Popup>
   </Marker>
   </MapContainer>
