@@ -254,3 +254,13 @@ db.historicalEarthquakes.insertMany([
   }
   
 ])
+
+db.earthquakeInfo.insertMany([
+  { 
+    generalInfo: "info goes here",
+    safetyInfo: "how to be safe during an earthquake!",
+    funFacts: "here's some super fun facts about earthquakes."
+  },
+])
+
+
