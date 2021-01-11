@@ -25,11 +25,11 @@ const EarthquakeMap = ({realtimeQuakes}) => {
     //         </>  
     //     )
     // }))
-
+    
     return(
     <>
         <p>This is the map, BOOYAH!</p>
-        {/* {earthquakeNodes} */}
+    <div id="map-container">
         <MapContainer 
               className="map"
               center={[39.50, -121.05]}
@@ -52,7 +52,9 @@ const EarthquakeMap = ({realtimeQuakes}) => {
             </Marker>
            ))} 
         </MapContainer> 
-    </> 
+    </div>
+    <p>In the last 7 days, there have been {realtimeQuakes.length} earthquakes over Magnitude 2.5.</p>
+    </>
     )
 }
 

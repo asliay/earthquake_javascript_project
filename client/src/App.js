@@ -42,8 +42,9 @@ function App() {
     <>
     <h1>QUICK, IT'S A QUAKE</h1>
     <EarthquakeInfoBox/>
-    <EarthquakeMap realtimeQuakes={realtimeQuakes} />
     <h2>This is where the map with all the markers will show</h2>
+    <EarthquakeMap realtimeQuakes={realtimeQuakes} />
+    
     
     </>
   );
