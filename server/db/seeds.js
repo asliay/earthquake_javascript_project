@@ -251,8 +251,347 @@ db.historicalEarthquakes.insertMany([
       131.614,
       35
     ]
+  },
+  {
+    title: "2003 Bam Earthquake",
+    time: 1072403812000,
+    mag: 6.6,
+    coordinates: [
+      28.995,
+      58.311,
+      15
+    ]
+  },
+  {
+    title: "2006 Yogyakarta Earthquake",
+    time: 1148684038000,
+    mag: 6.3,
+    coordinates: [
+      -7.961,
+      110.446,
+      12.5
+    ]
+  },
+  {
+    title: "2010 Yushu Earthquake",
+    time: 1271202578000,
+    mag: 6.9,
+    coordinates: [
+      33.165,
+      96.548,
+      17
+    ]
+  },
+  {
+    title: "2003 Boumerdès Earthquake",
+    time: 1053542660000,
+    mag: 6.8,
+    coordinates: [
+      36.964,
+      3.634,
+      12
+    ]
+  },
+  {
+    title: "2009 Sumatra Earthquakes",
+    time: 1254305770000,
+    mag: 7.6,
+    coordinates: [
+      -0.720,
+      99.867,
+      81
+    ]
+  },
+  {
+    title: "2011 Christchurch Earthquake",
+    time: 1298332302000,
+    mag: 6.1,
+    coordinates: [
+      -43.583,
+      172.680,
+      5.9
+    ]
+  },
+  {
+    title: "2004 Chūetsu Earthquake",
+    time: 1098521760000,
+    mag: 6.6,
+    coordinates: [
+      37.226,
+      138.779,
+      16
+    ]
+  },
+  {
+    title: "2009 L'Aquila Earthquake",
+    time: 1238981562000,
+    mag: 6.3,
+    coordinates: [
+      42.334,
+      13.334,
+      8.8
+    ]
+  },
+  {
+    title: "2020 Zagreb Earthquake",
+    time: 1584854643000,
+    mag: 5.3,
+    coordinates: [
+      45.907,
+      15.970,
+      10
+    ]
+  },
+  {
+    title: "2007 Peru Earthquake",
+    time: 1187221257000,
+    mag: 8.0,
+    coordinates: [
+      -13.386,
+      -76.603,
+      39
+    ]
+  },
+  {
+    title: "2019 Albania Earthquake",
+    time: 1574736852000,
+    mag: 6.4,
+    coordinates: [
+      41.514,
+      19.526,
+      22
+    ]
+  },
+  {
+    title: "2016 Ecuador Earthquake",
+    time: 1460851116000,
+    mag: 7.8,
+    coordinates: [
+      0.382,
+      -79.922,
+      20.6
+    ]
+  },
+  {
+    title: "2013 Balochistan Earthquakes",
+    time: 1380022187000,
+    mag: 7.7,
+    coordinates: [
+      26.951,
+      65.501,
+      15
+    ]
+  },
+  {
+    title: "2020 Aegean Sea Earthquake",
+    time: 1604058686000,
+    mag: 7.0,
+    coordinates: [
+      37.913,
+      26.779,
+      21
+    ]
+  },
+  {
+    title: "2014 Ludian Earthquake",
+    time: 1407054613000,
+    mag: 6.2,
+    coordinates: [
+      27.189,
+      103.409,
+      12
+    ]
+  },
+  {
+    title: "2001 southern Peru Earthquake",
+    time: 993328394000,
+    mag: 8.4,
+    coordinates: [
+      -16.265,
+      -73.641,
+      33
+    ]
+  },
+  {
+    title: "2006 Kuril Islands Earthquake",
+    time: 1163589253000,
+    mag: 8.3,
+    coordinates: [
+      46.592,
+      153.266,
+      10
+    ]
+  },
+  {
+    title: "2003 Hokkaidō Earthquake",
+    time: 1064519406000,
+    mag: 8.3,
+    coordinates: [
+      41.815,
+      143.910,
+      27
+    ]
+  },
+  {
+    title: "2017 Chiapas Earthquake",
+    time: 1504846159000,
+    mag: 8.2,
+    coordinates: [
+      15.022,
+      -93.899,
+      47.4
+    ]
+  },
+  {
+    title: "2014 Iquique Earthquake",
+    time: 1396396007000,
+    mag: 8.2,
+    coordinates: [
+      -19.610,
+      -70.769,
+      25
+    ]
+  },
+  {
+    title: "2009 Samoa Earthquake and Tsunami",
+    time: 1254246490000,
+    mag: 8.1,
+    coordinates: [
+      -15.489,
+      -172.095,
+      18
+    ]
+  },
+  {
+    title: "2002 Denali Earthquake",
+    time: 1036361561000,
+    mag: 7.9,
+    coordinates: [
+      63.514,
+      -147.453,
+      4.2
+    ]
+  },
+  {
+    title: "1939 Chillán Earthquake",
+    time: -976220866000,
+    mag: 7.8,
+    coordinates: [
+      -36.305,
+      -72.315,
+      35
+    ]
+  },
+  {
+    title: "1985 Mexico City Earthquake",
+    time: 495983870000,
+    mag: 8.0,
+    coordinates: [
+      18.190,
+      -102.533,
+      27.9
+    ]
+  },
+  {
+    title: "1931 Fuyun Earthquake",
+    time: -1211596875000,
+    mag: 7.9,
+    coordinates: [
+      46.817,
+      89.915,
+      10
+    ]
+  },
+  {
+    title: "1970 Ancash Earthquake",
+    time: -3142640191000,
+    mag: 7.9,
+    coordinates: [
+      -9.183,
+      -78.737,
+      45
+    ]
+  },
+  {
+    title: "1944 San Juan Earthquake",
+    time: -819245428000,
+    mag: 7.0,
+    coordinates: [
+      -31.372,
+      -68.436,
+      15
+    ]
+  },
+  {
+    title: "1939 Erzincan Earthquake",
+    time: -947203357000,
+    mag: 7.8,
+    coordinates: [
+      39.771,
+      39.577,
+      20
+    ]
+  },
+  {
+    title: "1976 Guatemala Earthquake",
+    time: 192272506000,
+    mag: 7.5,
+    coordinates: [
+      15.324,
+      -89.101,
+      5
+    ]
+  },
+  {
+    title: "1990 Manjil–Rudbar Earthquake",
+    time: 645915614000,
+    mag: 7.4,
+    coordinates: [
+      36.957,
+      49.409,
+      18.5
+    ]
+  },
+  {
+    title: "1978 Tabas Earthquake",
+    time: 274808155000,
+    mag: 7.4,
+    coordinates: [
+      33.386,
+      57.434,
+      33
+    ]
+  },
+  {
+    title: "1970 Tonghai Earthquake",
+    time: 322554000,
+    mag: 7.1,
+    coordinates: [
+      24.185,
+      102.543,
+      11.3
+    ]
+  },
+  {
+    title: "1960 Agadir Earthquake",
+    time: -310436382000,
+    mag: 5.8,
+    coordinates: [
+      30.351,
+      -9.690,
+      15
+    ]
+  },
+  {
+    title: "1972 Nicaragua Earthquake",
+    time: 93940184000,
+    mag: 6.3,
+    coordinates: [
+      12.184,
+      -86.223,
+      10
+    ]
   }
-  
 ])
 
 db.earthquakeInfo.insertMany([
