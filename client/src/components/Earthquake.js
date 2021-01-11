@@ -1,5 +1,23 @@
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
+// import { Icon } from "leaflet";
+
+import L from 'leaflet';
+import icon from 'leaflet/dist/images/marker-icon.png';
+import iconShadow from 'leaflet/dist/images/marker-shadow.png';
+
+let DefaultIcon = L.icon({
+    iconUrl: icon,
+    shadowUrl: iconShadow
+});
+
+// const quakeMarker = new Icon({
+//   iconUrl: "/quakeMarker_outline.svg",
+//   iconSize: [25, 25]
+// });
+
+L.Marker.prototype.options.icon = DefaultIcon;
+
 
 const Earthquake = ({quake, LatLong})=>{
     return (
@@ -16,7 +34,7 @@ const Earthquake = ({quake, LatLong})=>{
                  
     <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors" />
-  <Marker position={LatLong} >
+  <Marker position={LatLong} Icon={DefaultIcon} >
     <Popup>
       This recent earthquake date/time: {quake.properties.time}, {quake.properties.title} had a magnitude of {quake.properties.mag}.
     </Popup>
