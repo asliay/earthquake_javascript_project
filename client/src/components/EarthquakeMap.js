@@ -43,6 +43,7 @@ const EarthquakeMap = ({realtimeQuakes}) => {
         {realtimeQuakes.map(quake => ( 
             <Marker 
                 key={quake.id}
+                icon={DefaultIcon}
                 position={[
                     quake.geometry.coordinates[1], 
                     quake.geometry.coordinates[0]

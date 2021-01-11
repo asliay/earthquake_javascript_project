@@ -2,14 +2,11 @@ import './App.css';
 import {useState, useEffect, useRef} from "react";
 import {getWeekData} from "./services/MapService";
 import {getQuakeInfo} from "./services/InfoService";
+import {getHistoricalQuakes} from "./services/HistoricalService";
 import EarthquakeInfoBox from "./components/EarthquakeInfoBox";
 import EarthquakeMap from "./components/EarthquakeMap";
+import HistoricalMap from "./components/HistoricalMap"
 
-
-// import L from 'leaflet';
-// import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-// import 'leaflet/dist/leaflet.css';
-// import markerShadow from 'leaflet/dist/images/marker-shadow.png';
 // import useSwr from "swr";
 
 // const fetcher = (...args) => fetch(...args).then(response => response.json());
@@ -25,6 +22,7 @@ import EarthquakeMap from "./components/EarthquakeMap";
 function App() {
   const [realtimeQuakes, setRealtimeQuakes] = useState([]);
   const [quakeInfo, setQuakeInfo] = useState([]);
+  const [historicalQuakes, setHistoricalQuakes] = useState([]);
 
 
   useEffect(() => {
@@ -41,20 +39,24 @@ function App() {
     })
   }, []);
 
+  useEffect(() => {
+    getHistoricalQuakes()
+    .then((data) => {
+      setHistoricalQuakes(data);
+    })
+  }, [])
+
   console.log(quakeInfo);
   console.log(realtimeQuakes);
 
-
-  
-  // console.log(quakeInfo);
 
 
   return (
     <>
     <h1>QUICK, IT'S A QUAKE</h1>
     <EarthquakeInfoBox quakeInfo={quakeInfo}/>
-    <h2>This is where the map with all the markers will show</h2>
     <EarthquakeMap realtimeQuakes={realtimeQuakes} />
+    <HistoricalMap historicalQuakes={historicalQuakes} />
     
     
     </>
