@@ -16,7 +16,7 @@ const Earthquake = ({quake, LatLong})=>{
                  
     <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors" />
-  <Marker position={quake.geometry.coordinates} >
+  <Marker position={LatLong} >
     <Popup>
       This recent earthquake date/time: {quake.properties.time}, {quake.properties.title} had a magnitude of {quake.properties.mag}.
     </Popup>
