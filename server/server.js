@@ -1,8 +1,13 @@
 const express = require('express');
 const app = express();
+
+const cors = require('cors');
+app.use(cors());
+
 app.get('/', (req, res) => {
   res.send('This is our Earthquakes server! Yay learning!')
 })
+
 
 const MongoClient = require('mongodb').MongoClient;
 const createRouter = require('./helpers/create_router');

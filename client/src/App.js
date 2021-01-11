@@ -1,6 +1,7 @@
 import './App.css';
 import {useState, useEffect, useRef} from "react";
 import {getWeekData} from "./services/MapService";
+import {getQuakeInfo} from "./services/InfoService";
 import EarthquakeInfoBox from "./components/EarthquakeInfoBox";
 import EarthquakeMap from "./components/EarthquakeMap";
 
@@ -23,25 +24,35 @@ import EarthquakeMap from "./components/EarthquakeMap";
 
 function App() {
   const [realtimeQuakes, setRealtimeQuakes] = useState([]);
+  const [quakeInfo, setQuakeInfo] = useState([]);
+
+
+  useEffect(() => {
+    getQuakeInfo()
+    .then((data) => {
+      setQuakeInfo(data)
+    })
+  }, []);
 
   useEffect(() => {
     getWeekData()
     .then((earthquakes) => {
       setRealtimeQuakes(earthquakes.features);
-      console.log(earthquakes.features)
-
     })
   }, []);
-//   const earthquakesGeoJson =
-//     'https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson';
-//   const { data, error } = useSwr(earthquakesGeoJson, { fetcher });
 
-// const position = [39.50, -121.05]
+  console.log(quakeInfo);
+  console.log(realtimeQuakes);
+
+
+  
+  // console.log(quakeInfo);
+
 
   return (
     <>
     <h1>QUICK, IT'S A QUAKE</h1>
-    <EarthquakeInfoBox/>
+    <EarthquakeInfoBox quakeInfo={quakeInfo}/>
     <h2>This is where the map with all the markers will show</h2>
     <EarthquakeMap realtimeQuakes={realtimeQuakes} />
     
