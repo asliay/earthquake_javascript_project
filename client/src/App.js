@@ -32,8 +32,6 @@ function App() {
 
     })
   }, []);
-
-
 //   const earthquakesGeoJson =
 //     'https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson';
 //   const { data, error } = useSwr(earthquakesGeoJson, { fetcher });
