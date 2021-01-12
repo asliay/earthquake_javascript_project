@@ -3,6 +3,14 @@ import HistoricalMap from "./HistoricalMap";
 const History = ({quakeInfo, historicalQuakes}) => {
     
     return (
+        <>
+        <h1>Appease the giant catfish!*</h1>
+        {quakeInfo.map((quakeInfo, index) => (
+            <p>{quakeInfo.historical.funFacts.numOfQuakesFact}<br/><br/>
+             {quakeInfo.historical.funFacts.richterScaleFact}<br/><br/>
+              {quakeInfo.historical.funFacts.momentMagScaleFact}</p>
+            )
+            )}
         <div>
             <p>numOfQuakesFact: `It is estimated that there are 500,000 detectable earthquakes each year, 100,00 of which can be felt.`,
           richterScaleFact: `The Richter Scale, also known as the Magnitude Scale is a measure of the strength of earthquakes, developed by Charles F. Richter in 1935.`,
@@ -13,10 +21,12 @@ const History = ({quakeInfo, historicalQuakes}) => {
           ringOfFireFact: `The 'Ring of Fire' is a region around the rim of the Pacific Ocean where many volcanic eruptions and earthquakes occur. It is a horseshoe-shaped area around 40,000km long and up to 500km wide.`,
           moonFact: `Moonquakes (earthquakes on the moon) were first discovered by Apollo astronauts. They happen less frequently, and have a lower magnitude than normal earthquakes.
           Between 1972 and 1977, 28 shallow moonquakes were observed.`</p>
+          <p>* In Japanese mythology, the Namazu (鯰) or Ōnamazu (大鯰) is a giant catfish who causes earthquakes. He lives in the mud under the islands of Japan and is guarded by the god Kashima, who restrains the catfish with a stone. When Kashima lets his guard fall, Namazu thrashes about, causing violent earthquakes.</p>
 
         
         <HistoricalMap historicalQuakes={historicalQuakes} />
         </div>
+        </>
     )
 }
 
