@@ -1,6 +1,6 @@
 import './App.css';
 import {useState, useEffect, useRef} from "react";
-import {getWeekData, getTectonics} from "./services/MapService";
+import {getWeekData} from "./services/MapService";
 import {getQuakeInfo} from "./services/InfoService";
 import {getHistoricalQuakes} from "./services/HistoricalService";
 import ChartTest from "./components/ChartTest"

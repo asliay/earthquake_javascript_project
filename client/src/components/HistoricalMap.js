@@ -66,10 +66,11 @@ const HistoricalMap = ({historicalQuakes}) => {
                     ]}>
             <Popup>
             {/* The {quake.title} occurred on {new Date(quake.time).toLocaleString()} (UTC), and had a magnitude of {quake.mag}. */}
-                Earthquake Magnitude: {quake.mag}
+                {quake.title}<br/>
+                {new Date(quake.time).toLocaleString()} (UTC)
                 <hr/>
-                {new Date(quake.time).toLocaleString()} (UTC)<br/>
-                Location: {capitalizeFirstLetter(quake.title)}
+                Earthquake Magnitude: {quake.mag}<br/>
+                Location: {capitalizeFirstLetter(quake.location)}
             </Popup>
             </Marker>
            ))} 

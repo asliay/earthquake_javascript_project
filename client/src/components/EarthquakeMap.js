@@ -1,8 +1,6 @@
-import Earthquake from "./Earthquake";
 import { MapContainer, TileLayer, Marker, Popup, LayersControl, GeoJSON } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
-import icon from 'leaflet/dist/images/marker-icon.png';
 import iconShadow from 'leaflet/dist/images/marker-shadow.png';
 import {platesLayer} from '../assets/PB2002_boundaries';
 import marker from '../assets/marker.png'
@@ -62,10 +60,12 @@ const EarthquakeMap = ({realtimeQuakes}) => {
                     quake.geometry.coordinates[0]
                     ]} >
             <Popup>
-                Earthquake Magnitude: {quake.properties.mag}
+                {capitalizeFirstLetter(quake.properties.place)}<br/>
+                {new Date(quake.properties.time).toLocaleString()} (UTC)
                 <hr/>
-                {new Date(quake.properties.time).toLocaleString()} (UTC)<br/>
-                Location: {capitalizeFirstLetter(quake.properties.place)}
+                Earthquake Magnitude: {quake.properties.mag}
+                
+                
             </Popup>
             </Marker>
            ))} 
