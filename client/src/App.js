@@ -5,7 +5,6 @@ import {getQuakeInfo} from "./services/InfoService";
 import {getHistoricalQuakes} from "./services/HistoricalService";
 import EarthquakeInfoBox from "./components/EarthquakeInfoBox";
 import EarthquakeMap from "./components/EarthquakeMap";
-import HistoricalMap from "./components/HistoricalMap";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import NavBar from './components/NavBar';
 import SafetyInfo from './components/SafetyInfo';
@@ -78,11 +77,10 @@ function App() {
       () => <SafetyInfo quakeInfo={quakeInfo}/> }
       />
     <Route path = "/history" render = {
-      () => <History quakeInfo={quakeInfo}/> }
+      () => <History quakeInfo={quakeInfo} historicalQuakes = {historicalQuakes} /> }
       />
     </Router>
     <EarthquakeMap realtimeQuakes={realtimeQuakes} />
-    <HistoricalMap historicalQuakes={historicalQuakes} />
     
     </>
   );
