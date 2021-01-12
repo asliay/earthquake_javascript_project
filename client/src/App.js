@@ -5,7 +5,9 @@ import {getQuakeInfo} from "./services/InfoService";
 import {getHistoricalQuakes} from "./services/HistoricalService";
 import EarthquakeInfoBox from "./components/EarthquakeInfoBox";
 import EarthquakeMap from "./components/EarthquakeMap";
-import HistoricalMap from "./components/HistoricalMap"
+import HistoricalMap from "./components/HistoricalMap";
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import NavBar from './components/NavBar';
 
 // import useSwr from "swr";
 
@@ -65,10 +67,16 @@ function App() {
   return (
     <>
     <h1>QUICK, IT'S A QUAKE</h1>
-    <EarthquakeInfoBox quakeInfo={quakeInfo}/>
+    <Router>
+    <NavBar/>
+    <Route exact path = "/" render = {
+      () => <EarthquakeInfoBox quakeInfo={quakeInfo}/> } 
+      />
+    {/* <Route path = "/safety" component = {}/>
+    <Route path = "/history" component = {}/> */}
+    </Router>
     <EarthquakeMap realtimeQuakes={realtimeQuakes} />
     <HistoricalMap historicalQuakes={historicalQuakes} />
-    
     
     </>
   );
