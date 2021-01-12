@@ -14,6 +14,10 @@ import marker from '../assets/marker.png'
 
 
 const HistoricalMap = ({historicalQuakes}) => {
+// function to capitalise first letter, used for earthquake location popup
+    function capitalizeFirstLetter(string) {
+        return string.charAt(0).toUpperCase() + string.slice(1);
+    };
 
     let DefaultIcon = new L.Icon({
         iconUrl: marker,
@@ -60,8 +64,12 @@ const HistoricalMap = ({historicalQuakes}) => {
                     quake.coordinates[0], 
                     quake.coordinates[1]
                     ]}>
-             <Popup>
-             The {quake.title} occurred on {new Date(quake.time).toLocaleString()} (UTC), and had a magnitude of {quake.mag}.
+            <Popup>
+            {/* The {quake.title} occurred on {new Date(quake.time).toLocaleString()} (UTC), and had a magnitude of {quake.mag}. */}
+            Earthquake Magnitude: {quake.mag}
+            <hr/>
+            {new Date(quake.time).toLocaleString()} (UTC)<br/>
+            Location: {capitalizeFirstLetter(quake.title)}
             </Popup>
             </Marker>
            ))} 

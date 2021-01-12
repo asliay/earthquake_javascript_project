@@ -10,7 +10,11 @@ import marker from '../assets/marker.png'
 
 
 const EarthquakeMap = ({realtimeQuakes}) => {
-  
+// function to capitalise first letter, used for earthquake location popup  
+    function capitalizeFirstLetter(string) {
+        return string.charAt(0).toUpperCase() + string.slice(1);
+      }
+
     const myStyle = [{
         "color": "#ff7800",
         "weight": 5,
@@ -57,8 +61,11 @@ const EarthquakeMap = ({realtimeQuakes}) => {
                     quake.geometry.coordinates[1], 
                     quake.geometry.coordinates[0]
                     ]} >
-             <Popup>
-             This recent earthquake on {new Date(quake.properties.time).toLocaleString()} (UTC), {quake.properties.title} had a magnitude of {quake.properties.mag}.
+            <Popup>
+            Earthquake Magnitude: {quake.properties.mag}
+            <hr/>
+            {new Date(quake.properties.time).toLocaleString()} (UTC)<br/>
+            Location: {capitalizeFirstLetter(quake.properties.place)}
             </Popup>
             </Marker>
            ))} 
