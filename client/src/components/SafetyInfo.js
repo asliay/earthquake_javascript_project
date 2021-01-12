@@ -1,6 +1,6 @@
 
 
-const EarthquakeInfo = ({info}) => {
+const SafetyInfo = ({info}) => {
  console.log(info._id)
   return (
     <>
@@ -9,4 +9,4 @@ const EarthquakeInfo = ({info}) => {
   )
 }
 
-export default EarthquakeInfo;
+export default SafetyInfo;

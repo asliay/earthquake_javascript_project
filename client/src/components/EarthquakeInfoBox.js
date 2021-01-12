@@ -1,11 +1,6 @@
-import EarthquakeInfo from "./EarthquakeInfo"
 
 const EarthquakeInfoBox = ({quakeInfo}) => {
-    const quakeInfoArray = quakeInfo.map(info => {
-        return (
-            <EarthquakeInfo key={info._id} info={info} />
-        )
-    })
+    const quakeInfoArray = quakeInfo.map(info => info.generalInfo)
 
     return(
         <>
