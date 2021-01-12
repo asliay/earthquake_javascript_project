@@ -1,5 +1,4 @@
 
-
 const SafetyInfo = ({quakeInfo}) => {
   const quakeInfoArray = quakeInfo.map(info => info.safetyInfo)
   return (
