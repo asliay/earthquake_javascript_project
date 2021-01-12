@@ -8,6 +8,8 @@ import EarthquakeMap from "./components/EarthquakeMap";
 import HistoricalMap from "./components/HistoricalMap";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import NavBar from './components/NavBar';
+import SafetyInfo from './components/SafetyInfo';
+import History from './components/History';
 
 // import useSwr from "swr";
 
@@ -72,8 +74,12 @@ function App() {
     <Route exact path = "/" render = {
       () => <EarthquakeInfoBox quakeInfo={quakeInfo}/> } 
       />
-    {/* <Route path = "/safety" component = {}/>
-    <Route path = "/history" component = {}/> */}
+    <Route path = "/safety" render = {
+      () => <SafetyInfo quakeInfo={quakeInfo}/> }
+      />
+    <Route path = "/history" render = {
+      () => <History quakeInfo={quakeInfo}/> }
+      />
     </Router>
     <EarthquakeMap realtimeQuakes={realtimeQuakes} />
     <HistoricalMap historicalQuakes={historicalQuakes} />

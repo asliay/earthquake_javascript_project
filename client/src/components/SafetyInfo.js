@@ -1,10 +1,11 @@
 
 
-const SafetyInfo = ({info}) => {
- console.log(info._id)
+const SafetyInfo = ({quakeInfo}) => {
+  const quakeInfoArray = quakeInfo.map(info => info.safetyInfo)
   return (
     <>
-    <p>{info.generalInfo}</p>
+    <p>HEY QUAKERS</p>
+    {quakeInfoArray}
     </>
   )
 }
