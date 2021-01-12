@@ -22,12 +22,7 @@ import HistoricalMap from "./components/HistoricalMap"
 function App() {
   const [realtimeQuakes, setRealtimeQuakes] = useState([]);
   const [quakeInfo, setQuakeInfo] = useState([]);
-<<<<<<< HEAD
   const [historicalQuakes, setHistoricalQuakes] = useState([]);
-=======
-  const [tectonicInfo, setTectonicInfo] = useState([]);
-
->>>>>>> develop
 
 
   useEffect(() => {
@@ -61,26 +56,18 @@ function App() {
   //   })
   // }, []);
 
-<<<<<<< HEAD
-=======
   // console.log(tectonicInfo);
   // tectonicInfo={tectonicInfo}
   
   // console.log(quakeInfo);
 
->>>>>>> develop
 
   return (
     <>
     <h1>QUICK, IT'S A QUAKE</h1>
     <EarthquakeInfoBox quakeInfo={quakeInfo}/>
-<<<<<<< HEAD
     <EarthquakeMap realtimeQuakes={realtimeQuakes} />
     <HistoricalMap historicalQuakes={historicalQuakes} />
-=======
-    <h2>This is where the map with all the markers will show</h2>
-    <EarthquakeMap realtimeQuakes={realtimeQuakes}  />
->>>>>>> develop
     
     
     </>
