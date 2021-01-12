@@ -1,15 +1,35 @@
 
 const SafetyInfo = ({quakeInfo}) => {
+<<<<<<< HEAD
 
   return (
     <>
     <h1>For your safety</h1>
+=======
+  
+  return (
+    <>
+    <p>HEY QUAKERS</p>
+>>>>>>> main
     {quakeInfo.map((quakeInfo, index) => (
     <p>{quakeInfo.historical.funFacts.numOfQuakesFact}<br/><br/>
      {quakeInfo.historical.funFacts.richterScaleFact}<br/><br/>
       {quakeInfo.historical.funFacts.momentMagScaleFact}</p>
     )
     )}
+<<<<<<< HEAD
+=======
+    {/* {console.log(quakeInfo.funFacts)} */}
+    {/* <p>{quakeInfoArray}</p> */}
+    {/* <p>{quakeInfoArray}</p> */}
+
+    {/* <p>{safetyInfo}</p> */}
+    {/* <p>{info}</p>
+    <p>{info.safetyInfo.historical}</p>
+    <p>{info.safetyInfo.historical.funFacts}</p>
+    <p>{numOfQuakesFact}</p>
+    <p>{info._id}</p> */}
+>>>>>>> main
     <p>DURING</p>
     <h2>Indoors: “DROP, COVER and HOLD ON!“,</h2>
 <p>“Move as little as possible - most injuries during earthquakes occur because of people moving around, falling and suffering sprains, fractures and head injuries.“, “Try to protect your head and torso.“, “If you are in bed, stay there, curl up and hold on, and cover your head.“, “Stay indoors until the shaking stops and you are sure it is safe to exit.“, “If you must leave a building after the shaking stops, use stairs rather than an elevator in case of aftershocks, power outages or other damage.“, “Be aware that smoke alarms and sprinkler systems frequently go off in buildings during an earthquake, even if there is no fire.“, “If you smell gas, get out of the house and move as far away as possible.“, “Before you leave any building check to make sure that there is no debris from the building that could fall on you.“,</p>
