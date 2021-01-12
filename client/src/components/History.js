@@ -13,6 +13,7 @@ const History = ({quakeInfo, historicalQuakes}) => {
           ringOfFireFact: `The 'Ring of Fire' is a region around the rim of the Pacific Ocean where many volcanic eruptions and earthquakes occur. It is a horseshoe-shaped area around 40,000km long and up to 500km wide.`,
           moonFact: `Moonquakes (earthquakes on the moon) were first discovered by Apollo astronauts. They happen less frequently, and have a lower magnitude than normal earthquakes.
           Between 1972 and 1977, 28 shallow moonquakes were observed.`</p>
+
         
         <HistoricalMap historicalQuakes={historicalQuakes} />
         </div>

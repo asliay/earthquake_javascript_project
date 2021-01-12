@@ -619,7 +619,7 @@ db.earthquakeInfo.insertMany([
           length of the fault-line where it occurs. The longer the fault, the larger the earthquake. A fault would need to extend around most of the globe in order to produce a magnitude 10 earthquake, and no such fault is known to exist.`,
           ringOfFireFact: `The 'Ring of Fire' is a region around the rim of the Pacific Ocean where many volcanic eruptions and earthquakes occur. It is a horseshoe-shaped area around 40,000km long and up to 500km wide.`,
           moonFact: `Moonquakes (earthquakes on the moon) were first discovered by Apollo astronauts. They happen less frequently, and have a lower magnitude than normal earthquakes.
-          Between 1972 and 1977, 28 shallow moonquakes were observed.`
+          Between 1972 and 1977, 28 shallow moonquakes were observed.`,
       },
       top10Quakes: [
         {
