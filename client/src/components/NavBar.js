@@ -2,15 +2,21 @@ import {Link} from "react-router-dom";
 
 const NavBar = () => {
     return (
-        <ul>
+        <ul id="nav-bar">
             <li>
-                <Link to = "/">Home</Link>
+                <Link 
+                    to="/" 
+                    style={{ textDecoration: 'none', color: 'white' }}>Home</Link>
             </li>
             <li>
-                <Link to = "/safety">Safety</Link>
+                <Link 
+                    to="/safety" 
+                    style={{ textDecoration: 'none', color: 'white'}}>Safety</Link>
             </li>
             <li>
-                <Link to = "/history">History</Link>
+                <Link 
+                    to="/history" 
+                    style={{ textDecoration: 'none', color: 'white' }}>History</Link>
             </li>
         </ul>
     )

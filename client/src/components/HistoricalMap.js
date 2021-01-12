@@ -61,7 +61,7 @@ const HistoricalMap = ({historicalQuakes}) => {
                     quake.coordinates[1]
                     ]}>
              <Popup>
-             The {quake.title} occurred on {new Date(quake.time).toDateString()} (UTC), and had a magnitude of {quake.mag}.
+             The {quake.title} occurred on {new Date(quake.time).toLocaleString()} (UTC), and had a magnitude of {quake.mag}.
             </Popup>
             </Marker>
            ))} 
@@ -71,6 +71,7 @@ const HistoricalMap = ({historicalQuakes}) => {
         ))}
         </MapContainer> 
     </div>
+    <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
     <p>Showing {historicalQuakes.length} of the biggest Earthquakes of the last century. </p>
     </>
     )

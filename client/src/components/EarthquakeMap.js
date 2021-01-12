@@ -58,7 +58,7 @@ const EarthquakeMap = ({realtimeQuakes}) => {
                     quake.geometry.coordinates[0]
                     ]} >
              <Popup>
-             This recent earthquake on {new Date(quake.properties.time).toDateString()} (UTC), {quake.properties.title} had a magnitude of {quake.properties.mag}.
+             This recent earthquake on {new Date(quake.properties.time).toLocaleString()} (UTC), {quake.properties.title} had a magnitude of {quake.properties.mag}.
             </Popup>
             </Marker>
            ))} 
@@ -69,6 +69,7 @@ const EarthquakeMap = ({realtimeQuakes}) => {
 
         </MapContainer> 
     </div>
+    <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
     <p>In the last 7 days, there have been {realtimeQuakes.length} earthquakes over Magnitude 2.5.</p>
     </>
     )
