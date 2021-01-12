@@ -29,6 +29,7 @@ const EarthquakeMap = ({realtimeQuakes}) => {
         <h2>This is the map showing all earthquakes, BOOYAH!</h2>
     <div id="map-container">
         <MapContainer 
+            scrollWheelZoom={false}
               className="map"
               center={[20.5844,
                        26.2456]}
