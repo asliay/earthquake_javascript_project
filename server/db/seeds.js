@@ -620,6 +620,7 @@ db.earthquakeInfo.insertMany([
           ringOfFireFact: `The 'Ring of Fire' is a region around the rim of the Pacific Ocean where many volcanic eruptions and earthquakes occur. It is a horseshoe-shaped area around 40,000km long and up to 500km wide.`,
           moonFact: `Moonquakes (earthquakes on the moon) were first discovered by Apollo astronauts. They happen less frequently, and have a lower magnitude than normal earthquakes.
           Between 1972 and 1977, 28 shallow moonquakes were observed.`,
+          mythologyFact: `* In Japanese mythology, the Namazu (鯰) or Ōnamazu (大鯰) is a giant catfish who causes earthquakes. He lives in the mud under the islands of Japan and is guarded by the god Kashima, who restrains the catfish with a stone. When Kashima lets his guard fall, Namazu thrashes about, causing violent earthquakes.`
       },
       top10Quakes: [
         {
