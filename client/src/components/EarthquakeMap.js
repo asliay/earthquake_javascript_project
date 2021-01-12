@@ -4,8 +4,8 @@ import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 import icon from 'leaflet/dist/images/marker-icon.png';
 import iconShadow from 'leaflet/dist/images/marker-shadow.png';
-import { getTectonics } from "../services/MapService";
 import {platesLayer} from '../assets/PB2002_boundaries';
+import marker from '../assets/marker.png'
 
 
 
@@ -17,9 +17,13 @@ const EarthquakeMap = ({realtimeQuakes}) => {
         "opacity": 0.65
     }]
     
-    let DefaultIcon = L.icon({
-        iconUrl: icon,
-        shadowUrl: iconShadow
+    let DefaultIcon = new L.Icon({
+        iconUrl: marker,
+        iconSize: [40,40],
+        iconAnchor: [20, 40],
+        shadowUrl: iconShadow,
+        shadowAnchor: [20,40],
+        popupAnchor: [0, -40]
     });
     L.Marker.prototype.options.icon = DefaultIcon;
     

@@ -6,17 +6,24 @@ import {Icon} from 'leaflet';
 import icon from 'leaflet/dist/images/marker-icon.png';
 import iconShadow from 'leaflet/dist/images/marker-shadow.png';
 import {platesLayer} from '../assets/PB2002_boundaries';
+import marker from '../assets/marker.png'
 
   
-let DefaultIcon = new L.Icon({
-    iconUrl: icon,
-    shadowUrl: iconShadow
-});
+
 // L.Marker.prototype.options.icon = DefaultIcon;
 
 
 const HistoricalMap = ({historicalQuakes}) => {
 
+    let DefaultIcon = new L.Icon({
+        iconUrl: marker,
+        iconSize: [40,40],
+        iconAnchor: [20, 40],
+        shadowUrl: iconShadow,
+        shadowAnchor: [20,40],
+        popupAnchor: [0, -40]
+    });
+    
     const myStyle = [{
         "color": "#ff7800",
         "weight": 5,
