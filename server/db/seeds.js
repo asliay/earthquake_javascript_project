@@ -23,6 +23,16 @@ db.historicalEarthquakes.insertMany([
     ]
   },
   {
+    title: "1922 Vallenar Earthquake",
+    time: -1487618829000,
+    mag: 8.5,
+    coordinates: [
+      -28.293
+      -69.852,
+      70
+    ]
+  },
+  {
     title: "2004 Indian Ocean Earthquake and Tsunami",
     time: 1104022733000,
     mag: 9.2,
@@ -592,14 +602,153 @@ db.historicalEarthquakes.insertMany([
       10
     ]
   }
+
 ])
 
 db.earthquakeInfo.insertMany([
   { 
     generalInfo: "info goes here",
     safetyInfo: "how to be safe during an earthquake!",
-    funFacts: "here's some super fun facts about earthquakes."
-  },
+    historical: {
+      funFacts: {
+          numOfQuakesFact: `It is estimated that there are 500,000 detectable earthquakes each year, 100,00 of which can be felt.`,
+          richterScaleFact: `The Richter Scale, also known as the Magnitude Scale is a measure of the strength of earthquakes, developed by Charles F. Richter in 1935.`,
+          momentMagScaleFact: `Due to limitations of the Richter Scale, the Moment Magnitude Scale was defined in 1979 to measure an earquakes magnitude, based on its seismic movement. It has become the standard scale used by scientific bodies for reporting larger quakes.`,
+          largestMagFact: `The largest earthquake ever recorded occurred on May 22, 1960 in Chile on a fault almost 1000 miles long. It reached a magnitude of 9.5.`,
+          mag10Fact: `While technicaly possible, a magnitude 10 earthquake is very unlikely. The magnitude of an earthquake is related to the
+          length of the fault-line where it occurs. The longer the fault, the larger the earthquake. A fault would need to extend around most of the globe in order to produce a magnitude 10 earthquake, and no such fault is known to exist.`,
+          ringOfFireFact: `The 'Ring of Fire' is a region around the rim of the Pacific Ocean where many volcanic eruptions and earthquakes occur. It is a horseshoe-shaped area around 40,000km long and up to 500km wide.`,
+          moonFact: `Moonquakes (earthquakes on the moon) were first discovered by Apollo astronauts. They happen less frequently, and have a lower magnitude than normal earthquakes.
+          Between 1972 and 1977, 28 shallow moonquakes were observed.`,
+      },
+      top10Quakes: [
+        {
+          title: "1960 Valdivia Earthquake",
+          year: 1960,
+          locationName: "Bio-Bio, Chile",
+          time: -303281326000,
+          mag: 9.5,
+          coordinates: [
+            -38.143,
+            -73.407,
+            33
+          ],
+          description: ``
+        },
+        {
+          title: "1964 Alaska Earthquake",
+          year: 1963,
+          locationName: "Southern Alaska",
+          time: -181859024000,
+          mag: 9.2,
+          coordinates: [
+            60.908,
+            -147.339,
+            25
+          ]
+        },
+        {
+          title: "2004 Indian Ocean Earthquake and Tsunami",
+          year: 2004,
+          location: "Off the West Coast of Northern Sumatra",
+          time: 1104022733000,
+          mag: 9.2,
+          coordinates: [
+            3.295,
+            95.982,
+            30
+          ],
+          description: `Also known as the Boxing Day Tsunami and the Sumatra-Andaman Earthquake, this was an undersea megathrust earthquake. It was caused by a rupture along the fault between the Burma Plate and the Indian Plate. 
+          The tsunami waves grew up with 30m (100ft) high, and communities along the coast of the Indian Ocean were severly affected. 
+          The tsunamis killed an estimated 227,898 people in 14 countries, making it the deadliest natural disaster of the 21st century.`
+        },
+        {
+          title: "2011 Tōhoku Earthquake and Tsunami",
+          year: 2011,
+          location: "Near the East Coast of Honshu, Japan",
+          time: 1299822384000,
+          mag: 9.1,
+          coordinates: [
+            38.297,
+            142.373,
+            29
+          ]
+        },
+        {
+          title: "1952 Severo-Kurilsk Earthquake",
+          year: 1952,
+          location: "Off the East Coast of the  Kamchatka Peninsula, Russia",
+          time: -541407690000,
+          mag: 9.0,
+          coordinates: [
+            52.623,
+            159.779,
+            21.6
+          ]
+        },
+        {
+          title: "2010 Chile Earthquake",
+          year: 2010,
+          location: "Offshore Bio-Bio, Chile",
+          time: 1267252463000,
+          mag: 8.8,
+          coordinates: [
+            -36.122,
+            -72.898,
+            30.1
+          ]
+        },
+        {
+          title: "1965 Rat Islands Earthquake",
+          year: 1965,
+          location: "Rat Islands, Aleutian Islands, Alaska",
+          time: -154810718000,
+          mag: 8.7,
+          coordinates: [
+            51.251,
+            178.715,
+            30.3
+          ]
+        },
+        {
+          title: "1950 Assam–Tibet Earthquake",
+          year: 1950,
+          location: "Eastern Xizang-India border region",
+          time: -611574626000,
+          mag: 8.6,
+          coordinates: [
+            28.363,
+            96.445,
+            15
+          ]
+        },
+        {
+          title:"2005 Nias–Simeulue Earthquake",
+          year: 2005,
+          location: "Northern Sumatra, Indonesia",
+          time: 1112026176000,
+          mag: 8.6,
+          coordinates: [
+            2.085,
+            97.108,
+            30
+          ]
+        },
+        {
+          title:"1957 Andreanof Islands Earthquake",
+          year: 1957,
+          location: "Andreanof Islands, Aleutian Islands, Alaska",
+          time: -404386647000,
+          mag: 8.6,
+          coordinates: [
+            51.449,
+            -175.626,
+            25
+          ]
+        }
+      ]
+    }
+  }
 ])
 
 

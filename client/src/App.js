@@ -1,12 +1,15 @@
 import './App.css';
 import {useState, useEffect, useRef} from "react";
-import {getWeekData} from "./services/MapService";
+import {getWeekData, getTectonics} from "./services/MapService";
 import {getQuakeInfo} from "./services/InfoService";
 import {getHistoricalQuakes} from "./services/HistoricalService";
 import ChartTest from "./components/ChartTest"
 import EarthquakeInfoBox from "./components/EarthquakeInfoBox";
 import EarthquakeMap from "./components/EarthquakeMap";
-import HistoricalMap from "./components/HistoricalMap"
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import NavBar from './components/NavBar';
+import SafetyInfo from './components/SafetyInfo';
+import History from './components/History';
 
 // import useSwr from "swr";
 
@@ -47,16 +50,38 @@ function App() {
     })
   }, [])
 
+  console.log(quakeInfo);
+  console.log(realtimeQuakes);
+
+  // useEffect(() => {
+  //   getTectonics()
+  //   .then((tectonicPlates) => {
+  //     setTectonicInfo(tectonicPlates.features);
+  //   })
+  // }, []);
+
+  // console.log(tectonicInfo);
+  // tectonicInfo={tectonicInfo}
+  
+  // console.log(quakeInfo);
 
 
   return (
     <>
     <h1>QUICK, IT'S A QUAKE</h1>
-    <EarthquakeInfoBox quakeInfo={quakeInfo}/>
-    <ChartTest realtimeQuakes={realtimeQuakes}/>
+    <Router>
+    <NavBar/>
+    <Route exact path = "/" render = {
+      () => <EarthquakeInfoBox quakeInfo={quakeInfo}/> } 
+      />
+    <Route path = "/safety" render = {
+      () => <SafetyInfo quakeInfo={quakeInfo}/> }
+      />
+    <Route path = "/history" render = {
+      () => <History quakeInfo={quakeInfo} historicalQuakes = {historicalQuakes} /> }
+      />
+    </Router>
     <EarthquakeMap realtimeQuakes={realtimeQuakes} />
-    <HistoricalMap historicalQuakes={historicalQuakes} />
-    
     
     </>
   );
