@@ -1,11 +1,18 @@
 
 const EarthquakeInfoBox = ({quakeInfo}) => {
-    const quakeInfoArray = quakeInfo.map(info => info.generalInfo)
+
 
     return(
         <>
+        <h1>What is an earthquake?</h1>
+            {quakeInfo.map((quakeInfo, index) => (
+            <p>{quakeInfo.historical.funFacts.numOfQuakesFact}<br/><br/>
+            {quakeInfo.historical.funFacts.richterScaleFact}<br/><br/>
+            {quakeInfo.historical.funFacts.momentMagScaleFact}</p>
+            )
+            )}
             <p>This is the info box, hooray!</p>
-            {quakeInfoArray}
+
             <p>The hypocenter of an earthquake is the location beneath the earth’s surface where the rupture of the fault begins.</p>
             <p>The epicenter of an earthquake is the location directly above the hypocenter on the surface of the earth. An earthquake is felt the strongest at this point on the surface.</p>
             <p>Soil liquefaction occurs when, because of the shaking, water-saturated granular material (such as sand) temporarily loses its strength and transforms from a solid to a liquid. Soil liquefaction may cause rigid structures, like buildings and bridges, to tilt or sink into the liquefied deposits. For example, in the 1964 Alaska earthquake, soil liquefaction caused many buildings to sink into the ground, eventually collapsing upon themselves.</p>
