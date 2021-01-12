@@ -82,6 +82,7 @@ function App() {
       />
     </Router>
     <EarthquakeMap realtimeQuakes={realtimeQuakes} />
+    <ChartTest realtimeQuakes={realtimeQuakes} />
     
     </>
   );
