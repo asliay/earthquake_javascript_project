@@ -46,14 +46,15 @@ function App() {
   console.log(quakeInfo);
   console.log(realtimeQuakes);
 
-  useEffect(() => {
-    getTectonics()
-    .then((tectonicPlates) => {
-      setTectonicInfo(tectonicPlates.features);
-    })
-  }, []);
+  // useEffect(() => {
+  //   getTectonics()
+  //   .then((tectonicPlates) => {
+  //     setTectonicInfo(tectonicPlates.features);
+  //   })
+  // }, []);
 
-  console.log(tectonicInfo);
+  // console.log(tectonicInfo);
+  // tectonicInfo={tectonicInfo}
   
   // console.log(quakeInfo);
 
@@ -63,7 +64,7 @@ function App() {
     <h1>QUICK, IT'S A QUAKE</h1>
     <EarthquakeInfoBox quakeInfo={quakeInfo}/>
     <h2>This is where the map with all the markers will show</h2>
-    <EarthquakeMap realtimeQuakes={realtimeQuakes} tectonicInfo={tectonicInfo} />
+    <EarthquakeMap realtimeQuakes={realtimeQuakes}  />
     
     
     </>
