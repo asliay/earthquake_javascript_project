@@ -7,3 +7,10 @@ export const getWeekData = () => {
     return fetch(weekURL)
     .then(res => res.json());
 }
+
+const dataJson =  "https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json"
+
+export const getTectonics = () => {
+    return fetch(dataJson)
+    .then(res => res.json());
+};

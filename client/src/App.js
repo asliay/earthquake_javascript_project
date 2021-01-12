@@ -1,6 +1,6 @@
 import './App.css';
 import {useState, useEffect, useRef} from "react";
-import {getWeekData} from "./services/MapService";
+import {getWeekData, getTectonics} from "./services/MapService";
 import {getQuakeInfo} from "./services/InfoService";
 import EarthquakeInfoBox from "./components/EarthquakeInfoBox";
 import EarthquakeMap from "./components/EarthquakeMap";
@@ -25,6 +25,8 @@ import EarthquakeMap from "./components/EarthquakeMap";
 function App() {
   const [realtimeQuakes, setRealtimeQuakes] = useState([]);
   const [quakeInfo, setQuakeInfo] = useState([]);
+  const [tectonicInfo, setTectonicInfo] = useState([]);
+
 
 
   useEffect(() => {
@@ -44,7 +46,14 @@ function App() {
   console.log(quakeInfo);
   console.log(realtimeQuakes);
 
+  useEffect(() => {
+    getTectonics()
+    .then((tectonicPlates) => {
+      setTectonicInfo(tectonicPlates.features);
+    })
+  }, []);
 
+  console.log(tectonicInfo);
   
   // console.log(quakeInfo);
 
@@ -54,7 +63,7 @@ function App() {
     <h1>QUICK, IT'S A QUAKE</h1>
     <EarthquakeInfoBox quakeInfo={quakeInfo}/>
     <h2>This is where the map with all the markers will show</h2>
-    <EarthquakeMap realtimeQuakes={realtimeQuakes} />
+    <EarthquakeMap realtimeQuakes={realtimeQuakes} tectonicInfo={tectonicInfo} />
     
     
     </>
