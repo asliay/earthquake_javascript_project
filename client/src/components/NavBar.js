@@ -2,23 +2,24 @@ import {Link} from "react-router-dom";
 
 const NavBar = () => {
     return (
+        <>
+        <div className="Navbar">
         <ul id="nav-bar">
             <li>
                 <Link 
-                    to="/" 
-                    style={{ textDecoration: 'none', color: 'white' }}>Home</Link>
+                    to="/">Home</Link>
             </li>
             <li>
                 <Link 
-                    to="/safety" 
-                    style={{ textDecoration: 'none', color: 'white'}}>Safety</Link>
+                    to="/safety">Safety</Link>
             </li>
             <li>
                 <Link 
-                    to="/history" 
-                    style={{ textDecoration: 'none', color: 'white' }}>History</Link>
+                    to="/history">History</Link>
             </li>
         </ul>
+        </div>
+        </>
     )
 };
 

@@ -5,6 +5,32 @@ body {
   margin: 50px;
 }
 
+#nav-bar {
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(70, 142, 175);  
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#nav-bar a {
+  text-decoration: none;
+  color: white;
+}
+
+#nav-bar a:visited {
+  /* display: flex;
+  justify-content: space-evenly; */
+  color: white;
+  background-color: red;
+  text-decoration: none;
+
+}
+
 /* QUAKE INFO */
 
 .quake-info {
