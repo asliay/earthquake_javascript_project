@@ -3,13 +3,10 @@ import {useState, useEffect, useRef} from "react";
 import {getWeekData} from "./services/MapService";
 import {getQuakeInfo} from "./services/InfoService";
 import {getHistoricalQuakes} from "./services/HistoricalService";
-import ChartTest from "./components/ChartTest"
-import EarthquakeInfoBox from "./components/EarthquakeInfoBox";
-import EarthquakeMap from "./components/EarthquakeMap";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
-import NavBar from './components/NavBar';
-import SafetyInfo from './components/SafetyInfo';
-import History from './components/History';
+// bulk import from new file index.js that exports components
+import {NavBar, EarthquakeInfoBox, SafetyInfo, History, EarthquakeMap, ChartTest} from './components/index'
+
 
 // import useSwr from "swr";
 
