@@ -18,10 +18,16 @@ const History = ({historicalQuakes}) => {
         <div className="history-info">
         {/* <h1>Appease the giant catfish!*</h1> */}
         <ol>
-        <p className="header2">Largest Earthquakes of the Last Century:</p>
+        <p className="header2">10 Largest Earthquakes of the Last Century:</p>
         {top10ByMag.map(quake => {
             return(
-            <li>{quake.title} - {quake.location} Type: {quake.type} Mag: {quake.mag}</li>
+            <li>
+                {quake.title}
+                <ul>
+                    <li>Date: {new Date(quake.time).toDateString()}</li>
+                    <li>Magnitude: {quake.mag}</li>
+                </ul>
+            </li>
             )
         })}
         </ol>
