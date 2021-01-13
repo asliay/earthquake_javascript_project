@@ -1,7 +1,6 @@
 import './App.css';
 import {useState, useEffect, useRef} from "react";
 import {getWeekData} from "./services/MapService";
-import {getQuakeInfo} from "./services/InfoService";
 import {getHistoricalQuakes} from "./services/HistoricalService";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 // bulk import from new file index.js that exports components
@@ -22,16 +21,7 @@ import {NavBar, EarthquakeInfoBox, SafetyInfo, History, EarthquakeMap, ChartTest
 
 function App() {
   const [realtimeQuakes, setRealtimeQuakes] = useState([]);
-  const [quakeInfo, setQuakeInfo] = useState([]);
   const [historicalQuakes, setHistoricalQuakes] = useState([]);
-
-
-  useEffect(() => {
-    getQuakeInfo()
-    .then((data) => {
-      setQuakeInfo(data)
-    })
-  }, []);
 
   useEffect(() => {
     getWeekData()
@@ -47,8 +37,6 @@ function App() {
     })
   }, [])
 
-  console.log(quakeInfo);
-  console.log(realtimeQuakes);
 
   // useEffect(() => {
   //   getTectonics()
@@ -68,14 +56,10 @@ function App() {
     <h1>QUICK, IT'S A QUAKE</h1>
     <Router>
     <NavBar/>
-    <Route exact path = "/" render = {
-      () => <EarthquakeInfoBox quakeInfo={quakeInfo}/> } 
-      />
-    <Route path = "/safety" render = {
-      () => <SafetyInfo quakeInfo={quakeInfo}/> }
-      />
+    <Route exact path = "/" component={EarthquakeInfoBox}/>
+    <Route path = "/safety" component={SafetyInfo}/>
     <Route path = "/history" render = {
-      () => <History quakeInfo={quakeInfo} historicalQuakes = {historicalQuakes} /> }
+      () => <History historicalQuakes = {historicalQuakes} /> }
       />
     </Router>
     <EarthquakeMap realtimeQuakes={realtimeQuakes} />
