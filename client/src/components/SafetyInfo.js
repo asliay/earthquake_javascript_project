@@ -51,7 +51,7 @@ const SafetyInfo = () => {
       <ul>
         <li>If you are at home, look quickly for damage in and around your home and get everyone out if your home is unsafe.</li>
         <li>Listen to a portable, battery&shy;operated or hand&shy;crank radio for updated emergency information and instructions.</li>
-        <li>Pay attention to how you and your loved ones are experiencing and handling stress. Promote <a target="_blank" rel="noreferrer" data-aa-link-button=""></a><a href="https://www.redcross.org/get-help/disaster-relief-and-recovery-services/recovering-emotionally.html" data-aa-link-button="emotional-recovery">emotional recovery</a> by following these tips.</li>
+        <li>Pay attention to how you and your loved ones are experiencing and handling stress. Promote <a href="https://www.redcross.org/get-help/disaster-relief-and-recovery-services/recovering-emotionally.html" target="_blank" rel="noreferrer" data-aa-link-button="emotional-recovery">emotional recovery</a> by following these tips.</li>
         <li>Watch animals closely and keep them under your direct control.</li>
         <li>Help <a href="https://www.redcross.org/get-help/how-to-prepare-for-emergencies/those-who-need-extra-help.html" target="_blank" rel="noreferrer" data-aa-link-button="people-who-require-additional-assistance">people who require additional assistance</a> — infants, elderly people, those without transportation, large families who may need additional help in an emergency situation, people with disabilities, and the people who care for them.</li>
         <li>Be careful when driving after an earthquake and anticipate traffic light outages.</li>
