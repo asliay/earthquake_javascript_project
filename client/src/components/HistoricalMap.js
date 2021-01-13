@@ -38,7 +38,7 @@ const HistoricalMap = ({historicalQuakes}) => {
     <>
         
     <div id="map-container" className="historical-map-container">
-        <h2>This is the historical map:</h2>
+        <h2>{historicalQuakes.length} of the biggest Earthquakes of the last century:</h2>
         <MapContainer 
             scrollWheelZoom={false}
               className="map"
@@ -80,7 +80,7 @@ const HistoricalMap = ({historicalQuakes}) => {
         ))}
         </MapContainer> 
     <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-    <p>Showing {historicalQuakes.length} of the biggest Earthquakes of the last century. </p>
+    
     </div>
     </>
     )
