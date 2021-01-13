@@ -2,8 +2,8 @@ import { MapContainer, TileLayer, Marker, Popup, LayersControl, GeoJSON } from '
 import 'leaflet/dist/leaflet.css';
 
 import L from 'leaflet';
-import {Icon} from 'leaflet';
-import icon from 'leaflet/dist/images/marker-icon.png';
+// import {Icon} from 'leaflet';
+// import icon from 'leaflet/dist/images/marker-icon.png';
 import iconShadow from 'leaflet/dist/images/marker-shadow.png';
 import {platesLayer} from '../assets/PB2002_boundaries';
 import marker from '../assets/marker.png'

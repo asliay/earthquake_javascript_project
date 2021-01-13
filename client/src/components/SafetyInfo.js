@@ -8,11 +8,11 @@ const SafetyInfo = () => {
       <p className="header3">Prepare in Advance</p>
       <p>Be sure you’re Red Cross Ready. That means...</p>
       <ul>
-        <li>Assembling an <a href="https://www.redcross.org/get-help/how-to-prepare-for-emergencies/survival-kit-supplies.html" target="_blank" data-aa-link-button="emergency-preparedness-kit">emergency preparedness kit</a>.</li>
-        <li>Creating a <a href="https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html" target="_blank" data-aa-link-button="household-evacuation-plan">household evacuation plan</a> that includes your pets.</li>
+        <li>Assembling an <a href="https://www.redcross.org/get-help/how-to-prepare-for-emergencies/survival-kit-supplies.html" target="_blank" rel="noreferrer" data-aa-link-button="emergency-preparedness-kit">emergency preparedness kit</a>.</li>
+        <li>Creating a <a href="https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html" target="_blank" rel="noreferrer" data-aa-link-button="household-evacuation-plan">household evacuation plan</a> that includes your pets.</li>
         <li>Staying informed about your community’s risk and response plans.</li>
-        <li>Ensuring each family member knows <a href="https://www.redcross.org/get-help/disaster-relief-and-recovery-services/contact-and-locate-loved-ones.html" target="_blank" data-aa-link-button="how-to-get-back-in-touch-if-you-are-separated">how to get back in touch if you are separated</a> during an emergency.</li>
-        <li>Download the Emergency App for <a href="https://itunes.apple.com/us/app/emergency-by-american-red/id954783878?mt=8" target="_blank" data-aa-link-button="iPhone->>">iPhone</a> or for <a href="https://play.google.com/store/apps/details?id=com.cube.arc.hzd" target="_blank" data-aa-link-button="Android->>">Android</a>.</li>
+        <li>Ensuring each family member knows <a href="https://www.redcross.org/get-help/disaster-relief-and-recovery-services/contact-and-locate-loved-ones.html" target="_blank" rel="noreferrer" data-aa-link-button="how-to-get-back-in-touch-if-you-are-separated">how to get back in touch if you are separated</a> during an emergency.</li>
+        <li>Download the Emergency App for <a href="https://itunes.apple.com/us/app/emergency-by-american-red/id954783878?mt=8" target="_blank" rel="noreferrer" data-aa-link-button="iPhone->>">iPhone</a> or for <a href="https://play.google.com/store/apps/details?id=com.cube.arc.hzd" target="_blank" rel="noreferrer" data-aa-link-button="Android->>">Android</a>.</li>
       </ul>
 
 
@@ -38,7 +38,7 @@ const SafetyInfo = () => {
         <li>Stay inside with your seatbelt fastened until the shaking stops.</li>
         <li>After the shaking has stopped, drive on carefully, avoiding bridges and ramps that may have been damaged.</li>
         <li>If a power line falls on your vehicle, do not get out. Wait for assistance.</li>
-        <li>If you are in a mountainous area or near unstable slopes or cliffs, be alert for falling rocks and other debris as well as <a href="https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/landslide.html" target="_blank" data-aa-link-button="landslides">landslides</a>.</li>
+        <li>If you are in a mountainous area or near unstable slopes or cliffs, be alert for falling rocks and other debris as well as <a href="https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/landslide.html" target="_blank" rel="noreferrer" data-aa-link-button="landslides">landslides</a>.</li>
       </ul>
 
 
