@@ -14,6 +14,14 @@ margin-right: auto;
 
 /* HEADINGS */
 
+.header1 {
+  /* color: rgb(177, 227, 250); */
+  color: black;
+  font-weight: bold;
+  font-size: 50px;  
+  text-align: center;
+}
+
 .header2 {
   color: rgb(177, 227, 250);
   font-weight: bold;
