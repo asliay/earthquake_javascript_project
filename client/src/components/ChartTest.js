@@ -28,12 +28,12 @@ const ChartTest = ({realtimeQuakes}) => {
     }]
   }
   return(
-    <>
-    <h3>A chart showing the magnitudes of all earthquakes over M2.5 in the last 7 days:</h3>
+    <div className="chart-box">
+    <p className="header2">A chart showing the magnitudes of all earthquakes over M2.5 in the last 7 days:</p>
     <HighchartsReact 
       highcharts={Highcharts}
       options={options}/>
-    </>
+    </div>
   )
 }
 
