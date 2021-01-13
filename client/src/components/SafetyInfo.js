@@ -34,7 +34,15 @@ const SafetyInfo = () => {
 
   </ul>
 <p className="header3">Outdoors:</p>
-<p>“Find a clear spot and drop to the ground. Stay there until the shaking stops.“, “Try to get as far away from buildings, power lines, trees, and streetlights as possible.“, “If you’re in a vehicle, pull over to a clear location and stop. Avoid bridges, overpasses and power lines if possible.“, “Stay inside with your seatbelt fastened until the shaking stops.“, “After the shaking has stopped, drive on carefully, avoiding bridges and ramps that may have been damaged.“, “If a power line falls on your vehicle, do not get out. Wait for assistance.“, “If you are in a mountainous area or near unstable slopes or cliffs, be alert for falling rocks and other debris as well as landslides.“</p>
+  <ul>
+    <li>Find a clear spot and drop to the ground. Stay there until the shaking stops.</li>
+    <li>Try to get as far away from buildings, power lines, trees, and streetlights as possible.</li>
+    <li>If you're in a vehicle, pull over to a clear location and stop. Avoid bridges, overpasses and power lines if possible.</li>
+    <li>Stay inside with your seatbelt fastened until the shaking stops.</li>
+    <li>After the shaking has stopped, drive on carefully, avoiding bridges and ramps that may have been damaged.</li>
+    <li>If a power line falls on your vehicle, do not get out. Wait for assistance.</li>
+    <li>If you are in a mountainous area or near unstable slopes or cliffs, be alert for falling rocks and other debris as well as <a href="https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/landslide.html" target="_blank" data-aa-link-button="landslides">landslides</a>.</li>
+  </ul>
 
 
     <p className="header2">AFTER</p>
