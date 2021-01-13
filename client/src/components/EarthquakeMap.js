@@ -72,7 +72,7 @@ const EarthquakeMap = ({realtimeQuakes}) => {
            </LayersControl>
         {platesLayer.features.map(plate => (
            <GeoJSON style= {myStyle} data = {plate.geometry}  />
-        ))}
+           ))}
 
         </MapContainer> 
     <p>In the last 7 days, there have been {realtimeQuakes.length} earthquakes over Magnitude 2.5.</p>

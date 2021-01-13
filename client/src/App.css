@@ -64,6 +64,10 @@ margin-right: auto;
 
 /* QUAKE INFO */
 
+.quake-info-container {
+  background-color: black;
+}
+
 .quake-info {
   padding: 50px;
   margin: 40px;
@@ -78,6 +82,17 @@ margin-right: auto;
 .quake-info p {
   text-align: justify;
   padding-right: 40px;
+}
+
+/* MAIN MAP */
+.main-map-container {
+  display: flex;
+  flex-direction: column;
+  padding: 80px;
+  align: center;
+  margin: 40px;
+  color: black;
+  background-color: rgb(70, 142, 175);
 }
 
 /* SAFETY INFO */
@@ -113,20 +128,10 @@ margin-right: auto;
   background-color: rgb(70, 142, 175);
 }
 
-/* MAPS */
+/* HISTORY MAP */
 .historical-map-container {
   margin-left: 50px;
   color: white;
-}
-
-.main-map-container {
-  display: flex;
-  flex-direction: column;
-  padding: 80px;
-  align: center;
-  margin: 40px;
-  color: black;
-  background-color: rgb(70, 142, 175);
 }
 
 /* CHARTS */

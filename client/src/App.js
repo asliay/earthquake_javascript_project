@@ -60,14 +60,17 @@ function App() {
     <img src={Image1} alt="whyyyy" class="header-image" width="400px"/>
     <p className="header1">QUICK, IT'S A QUAKE!</p>
     <NavBar/>
-    <Route exact path = "/" component={EarthquakeInfoBox}/>
+    <Route exact path = "/" render = {
+      () => <EarthquakeInfoBox realtimeQuakes = {realtimeQuakes} /> }
+      />
+
+
     <Route path = "/safety" component={SafetyInfo}/>
     <Route path = "/history" render = {
       () => <History historicalQuakes = {historicalQuakes} /> }
       />
     </Router>
-    <EarthquakeMap realtimeQuakes={realtimeQuakes} />
-    <ChartTest realtimeQuakes={realtimeQuakes} />
+    {/* <ChartTest realtimeQuakes={realtimeQuakes} /> */}
     </>
   );
 }
