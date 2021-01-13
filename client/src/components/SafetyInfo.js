@@ -53,7 +53,7 @@ const SafetyInfo = () => {
         <li>Listen to a portable, battery&shy;operated or hand&shy;crank radio for updated emergency information and instructions.</li>
         <li>Pay attention to how you and your loved ones are experiencing and handling stress. Promote <a target="_blank" rel="noreferrer" data-aa-link-button=""></a><a href="https://www.redcross.org/get-help/disaster-relief-and-recovery-services/recovering-emotionally.html" data-aa-link-button="emotional-recovery">emotional recovery</a> by following these tips.</li>
         <li>Watch animals closely and keep them under your direct control.</li>
-        <li>Help <a href="https://www.redcross.org/get-help/how-to-prepare-for-emergencies/those-who-need-extra-help.html" target="_blank" rel="noreferrer" data-aa-link-button="people-who-require-additional-assistance">people who require additional assistance</a>—infants, elderly people, those without transportation, large families who may need additional help in an emergency situation, people with disabilities, and the people who care for them.</li>
+        <li>Help <a href="https://www.redcross.org/get-help/how-to-prepare-for-emergencies/those-who-need-extra-help.html" target="_blank" rel="noreferrer" data-aa-link-button="people-who-require-additional-assistance">people who require additional assistance</a> — infants, elderly people, those without transportation, large families who may need additional help in an emergency situation, people with disabilities, and the people who care for them.</li>
         <li>Be careful when driving after an earthquake and anticipate traffic light outages.</li>
       </ul>
 
@@ -66,7 +66,23 @@ const SafetyInfo = () => {
         <li>Open closet and cabinet doors carefully as contents may have shifted.</li>
         <li>Follow these tips for inspecting your <a href="https://www.redcross.org/get-help/disaster-relief-and-recovery-services/home-structural-elements.html" target="_blank" rel="noreferrer" data-aa-link-button="home’s-structure">home’s structure</a> and <a href="https://www.redcross.org/get-help/disaster-relief-and-recovery-services/utilities-major-systems.html" target="_blank" rel="noreferrer" data-aa-link-button="utilities-&amp;-systems">utilities &amp; systems</a> after an earthquake.</li>
       </ul>
-      <p>Take pictures of home damage, both of the buildings and its contents,<a href="https://www.redcross.org/get-help/disaster-relief-and-recovery-services/recovering-financially.html" target="_blank" rel="noreferrer" data-aa-link-button="-for-insurance-purposes"> for insurance purposes</a>.</p>
+      <p>Take pictures of home damage, both of the buildings and its contents, <a href="https://www.redcross.org/get-help/disaster-relief-and-recovery-services/recovering-financially.html" target="_blank" rel="noreferrer" data-aa-link-button="-for-insurance-purposes">for insurance purposes</a>.</p>
+
+    <ul>
+      <p className="header3">Cleaning and repairing your home</p>
+        <li>Wear protective clothing, including long pants, a long-sleeved shirt and sturdy shoes, and be cautious.</li>
+        <li>Clean up spilled medications, bleach, gasoline or other flammable liquids immediately.</li>
+        <li>Learn about your area’s seismic building standards and land use codes before you begin any construction.</li>
+        <li>Follow our tips on <a href="https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/earthquake.html" target="_blank" rel="noreferrer" data-aa-link-button="preparing-your-home-for-an-earthquake">preparing your home for an earthquake</a>.</li>
+        <li>Learn more about <a href="https://www.redcross.org/get-help/disaster-relief-and-recovery-services/disaster-cleanup.html" target="_blank" rel="noreferrer" data-aa-link-button="how-to-clean-up-after-an-earthquake">how to clean up after an earthquake</a>, including the supplies you’ll need and how to handle fire hazards such as gas, electricity and chemicals.</li>
+        <li>Ask a professional to:<br/>
+        <ul>
+            <li>Make sure your home is securely anchored to its foundation.</li>
+            <li>Strengthen exterior features, such as porches, decks, sliding glass doors, canopies, carports and garage doors</li>
+        </ul> </li>
+    </ul>
+
+   
 
     </div>
   )
