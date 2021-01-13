@@ -23,12 +23,10 @@ const EarthquakeInfoBox = ({realtimeQuakes}) => {
         <p className="header2">How often do they happen?</p>
         <p>The U.S. Geological Survey estimates that several million earthquakes occur in the world each year. Many are undetected because they occur in remote  areas or have such a low magnitude that they aren't felt. Estimations suggest around 150 earthquakes of magnitude 6 and higher occur each year, though  magnitude 7 and above are much rarer still.<br/>
         The largest earthquake (by magnitude) every recorded was a magnitude 9.5 on May 22nd 1960 in Chile, rated IX (Violent) on the Modified Mercalli intensity scale.</p>
-        <div>
-            <EarthquakeMap realtimeQuakes={realtimeQuakes} />
 
-        </div>
         
         </div>
+            <EarthquakeMap realtimeQuakes={realtimeQuakes} />
         </div>
         
     )

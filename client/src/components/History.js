@@ -28,8 +28,6 @@ const History = ({historicalQuakes}) => {
 
         
         <HistoricalMap historicalQuakes={historicalQuakes} />
-        <div>
-        </div>
         </div>
     )
 }

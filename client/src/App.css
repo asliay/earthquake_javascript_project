@@ -57,7 +57,6 @@ margin-right: auto;
   /* display: flex;
   justify-content: space-evenly; */
   color: white;
-  background-color: red;
   text-decoration: none;
 
 }
@@ -66,9 +65,12 @@ margin-right: auto;
 
 .quake-info-container {
   background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
-.quake-info {
+/* .quake-info {
   padding: 50px;
   margin: 40px;
   display: flex;
@@ -77,6 +79,18 @@ margin-right: auto;
   text-align: justify;
   align-items: flex-start; 
   background-color: rgb(70, 142, 175);
+} */
+
+.quake-info {
+  /* padding: 50px;
+  margin: 40px; */
+  display: grid;
+  grid-template-columns: 50% 50%;
+  /* flex-direction: row; */
+  /* justify-content: space-evenly; */
+  /* text-align: justify; */
+  /* align-items: flex-start;  */
+  /* background-color: rgb(70, 142, 175); */
 }
 
 .quake-info p {
@@ -86,6 +100,11 @@ margin-right: auto;
 
 /* MAIN MAP */
 .main-map-container {
+  margin-left: 50px;
+  color: white;
+}
+
+/* .main-map-container {
   display: flex;
   flex-direction: column;
   padding: 80px;
@@ -93,7 +112,7 @@ margin-right: auto;
   margin: 40px;
   color: black;
   background-color: rgb(70, 142, 175);
-}
+} */
 
 /* SAFETY INFO */
 .safety-info {
