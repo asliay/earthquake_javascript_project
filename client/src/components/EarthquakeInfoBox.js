@@ -5,21 +5,22 @@ const EarthquakeInfoBox = ({quakeInfo}) => {
     return(
         // ADDED className:
         <div className = "quake-info"> 
-        <h1>What is an earthquake?</h1>
-            {quakeInfo.map((quakeInfo, index) => (
-            <p>{quakeInfo.generalInfo}<br/><br/>
-            {quakeInfo.generalInfo}<br/><br/>
-            {quakeInfo.generalInfo}</p>
-            )
-            )}
-            <p>This is the info box, hooray!</p>
-
-            <p>The hypocenter of an earthquake is the location beneath the earth’s surface where the rupture of the fault begins.</p>
-            <p>The epicenter of an earthquake is the location directly above the hypocenter on the surface of the earth. An earthquake is felt the strongest at this point on the surface.</p>
-            <p>Soil liquefaction occurs when, because of the shaking, water-saturated granular material (such as sand) temporarily loses its strength and transforms from a solid to a liquid. Soil liquefaction may cause rigid structures, like buildings and bridges, to tilt or sink into the liquefied deposits. For example, in the 1964 Alaska earthquake, soil liquefaction caused many buildings to sink into the ground, eventually collapsing upon themselves.</p>
-            <p>There are about 500,000 earthquakes a year around the world, as detected by sensitive instruments. About 100,000 of those can be felt, and 100 or so cause damage each year. Each year the southern California area alone experiences about 10,000 earthquakes, most of them not felt by people.</p>
-            <p>The magnitude of an earthquake is a measured value of the earthquake size. The magnitude is the same no matter where you are, or how strong or weak the shaking was in various locations. The intensity of an earthquake is a measure of the shaking created by the earthquake, and this value does vary with location.</p>
-
+        <h2>What is an earthquake?</h2>
+        <p>An earthquake is the shaking of the Earth's surface, usually due to movement of the planet's huge tectonic plates. When these plates move and grind against each other along fault lines they sometimes get stuck. Pressure builds up and once released, seismic waves are sent through the Earth.The point at which the energy is released is called the focus (or hypocenter). The position on the Earth's surface directly above the focus is the epicentre. Seismic waves spread out from the focus, being felt most strongly at the epicentre. Most damage caused by a severe earthquake will happen close to this point.</p>
+        <h3>How are earthquakes detected?</h3>
+        <p>Seismogram/ Seismometer</p>
+  
+        <h3>How are earthquakes measured?</h3>
+        <p>Earthquakes are measured<br/>
+        The two most common scales used by seismologists are magnitude and intensity:<br/>
+        <br/>
+        Most common measure of magnitude is the Richter Scale.<br/>
+        Magnitude scales measure the overall strength of an earthquake, which may or may not cause perceptible shaking.<br/> 
+        The magnitude of an earthquake is related to the length of the fault on which it occurs. While a magnitude 10 earthquake is theoretically possible, no fault long enough to generate one is known to exist, and would need to extend around most of the planet.<br/>
+        Several intensity scales exist and are used in different parts of the world. They categorise the intensity of ground shaking at a given location based on the observed effects, such as the degree to which people are harmed, and the severity of damage to  structures or natural features.</p>
+        <h3>How often do they happen?</h3>
+        <p>The U.S. Geological Survey estimates that several million earthquakes occur in the world each year. Many are undetected because they occur in remote  areas or have such a low magnitude that they aren't felt. Estimations suggest around 150 earthquakes of magnitude 6 and higher occur each year, though  magnitude 7 and above are much rarer still.<br/>
+        The largest earthquake (by magnitude) every recorded was a magnitude 9.5 on May 22nd 1960 in Chile, rated IX (Violent) on the Modified Mercalli intensity scale.</p>
             </div>
     )
 }
