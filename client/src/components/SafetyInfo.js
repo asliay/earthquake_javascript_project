@@ -46,9 +46,15 @@ const SafetyInfo = () => {
 
 
     <p className="header2">AFTER</p>
-    <p className="header3">GRAB THE BROOM, DUDE</p> 
-    <p>Y'all got some cleaning to do.</p>
-    <p></p>
+    <p className="header3">Staying Safe After an Earthquake</p> 
+    <p><strong>If you do nothing else:</strong></p>
+      <ol>
+        <li>If away from home, return only when authorities say it is safe to do so.</li>
+        <li>Check yourself for injuries and get first aid, if necessary, before helping injured or trapped persons.</li>
+        <li>After an earthquake, the disaster may continue. Expect and prepare for potential aftershocks, landslides or even a tsunami if you live on a coast.</li>
+        <li>Each time you feel an aftershock, DROP, COVER and HOLD ON. Aftershocks frequently occur minutes, days, weeks and even months following an earthquake.</li>
+        <li>Look for and extinguish small fires. Fire is the most common hazard after an earthquake.</li>
+      </ol>
     </div>
   )
 }
