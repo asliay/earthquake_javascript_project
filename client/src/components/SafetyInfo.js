@@ -51,12 +51,22 @@ const SafetyInfo = () => {
         <p className="header3">Caring for yourself and loved ones</p>
         <li>If you are at home, look quickly for damage in and around your home and get everyone out if your home is unsafe.</li>
         <li>Listen to a portable, battery&shy;operated or hand&shy;crank radio for updated emergency information and instructions.</li>
-        <li>Pay attention to how you and your loved ones are experiencing and handling stress. Promote <a target="_blank" rel="noreferrer" data-aa-link-button=""></a><a href="/get-help/disaster-relief-and-recovery-services/recovering-emotionally.html" data-aa-link-button="emotional-recovery">emotional recovery</a> by following these tips.</li>
+        <li>Pay attention to how you and your loved ones are experiencing and handling stress. Promote <a target="_blank" rel="noreferrer" data-aa-link-button=""></a><a href="https://www.redcross.org/get-help/disaster-relief-and-recovery-services/recovering-emotionally.html" data-aa-link-button="emotional-recovery">emotional recovery</a> by following these tips.</li>
         <li>Watch animals closely and keep them under your direct control.</li>
-        <li>Help <a target="_blank" rel="noreferrer" data-aa-link-button=""></a><a href="/get-help/how-to-prepare-for-emergencies/those-who-need-extra-help.html" data-aa-link-button="people-who-require-additional-assistance">people who require additional assistance</a>—infants, elderly people, those without transportation, large families who may need additional help in an emergency situation, people with disabilities, and the people who care for them.</li>
+        <li>Help <a href="https://www.redcross.org/get-help/how-to-prepare-for-emergencies/those-who-need-extra-help.html" target="_blank" rel="noreferrer" data-aa-link-button="people-who-require-additional-assistance">people who require additional assistance</a>—infants, elderly people, those without transportation, large families who may need additional help in an emergency situation, people with disabilities, and the people who care for them.</li>
         <li>Be careful when driving after an earthquake and anticipate traffic light outages.</li>
       </ul>
 
+      <ul>
+        <p className="header3">Returning home safely</p>
+        <li>Stay out of damaged buildings.</li>
+        <li>Use extreme caution and examine walls, floors, doors, staircases and windows to check for damage.</li>
+        <li>Watch out for fallen power lines or broken gas lines and report them to the utility company immediately.</li>
+        <li>If you smell natural or propane gas or hear a hissing noise, leave immediately and call the fire department.</li>
+        <li>Open closet and cabinet doors carefully as contents may have shifted.</li>
+        <li>Follow these tips for inspecting your <a href="https://www.redcross.org/get-help/disaster-relief-and-recovery-services/home-structural-elements.html" target="_blank" rel="noreferrer" data-aa-link-button="home’s-structure">home’s structure</a> and <a href="https://www.redcross.org/get-help/disaster-relief-and-recovery-services/utilities-major-systems.html" target="_blank" rel="noreferrer" data-aa-link-button="utilities-&amp;-systems">utilities &amp; systems</a> after an earthquake.</li>
+      </ul>
+      <p>Take pictures of home damage, both of the buildings and its contents,<a href="https://www.redcross.org/get-help/disaster-relief-and-recovery-services/recovering-financially.html" target="_blank" rel="noreferrer" data-aa-link-button="-for-insurance-purposes"> for insurance purposes</a>.</p>
 
     </div>
   )
