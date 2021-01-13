@@ -8,18 +8,19 @@ import marker from '../assets/marker.png'
 
 
 const EarthquakeMap = ({realtimeQuakes}) => {
-// function to capitalise first letter, used for earthquake location popup  
+
+  // function to capitalise first letter, used for earthquake location popup  
     function capitalizeFirstLetter(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
       }
-
+  // styling for plates map layer
     const myStyle = [{
         "color": "#ff7800",
         "weight": 5,
         "opacity": 0.65
     }]
-    
-    let DefaultIcon = new L.Icon({
+    //custom marker icon settings
+    let customIcon = new L.Icon({
         iconUrl: marker,
         iconSize: [40,40],
         iconAnchor: [20, 40],
@@ -27,7 +28,7 @@ const EarthquakeMap = ({realtimeQuakes}) => {
         shadowAnchor: [20,40],
         popupAnchor: [0, -40]
     });
-    L.Marker.prototype.options.icon = DefaultIcon;
+    
     
     return(
     <>
@@ -54,12 +55,12 @@ const EarthquakeMap = ({realtimeQuakes}) => {
         {realtimeQuakes.map(quake => ( 
                 <Marker 
                 key={quake.id}
-                icon={DefaultIcon}
+                icon={customIcon}
                 position={[
                     quake.geometry.coordinates[1], 
                     quake.geometry.coordinates[0]
                     ]} >
-            <Popup>
+            <Popup key={quake.id}>
                 {capitalizeFirstLetter(quake.properties.place)}<br/>
                 {new Date(quake.properties.time).toLocaleString()} (UTC)
                 <hr/>

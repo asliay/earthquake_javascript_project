@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 export const platesLayer = {
   "type": "FeatureCollection",
   "features": [
