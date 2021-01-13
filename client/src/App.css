@@ -36,7 +36,7 @@ body {
   justify-content: space-evenly;
   text-align: justify;
   /* Center of page (VERT): */
-  align-items: center; 
+  align-items: flex-start; 
   /* color: black; */
   background-color: rgb(70, 142, 175);
 }
