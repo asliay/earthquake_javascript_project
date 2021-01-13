@@ -60,7 +60,7 @@ const EarthquakeMap = ({realtimeQuakes}) => {
                     quake.geometry.coordinates[1], 
                     quake.geometry.coordinates[0]
                     ]} >
-            <Popup key={quake.id}>
+            <Popup>
                 {capitalizeFirstLetter(quake.properties.place)}<br/>
                 {new Date(quake.properties.time).toLocaleString()} (UTC)
                 <hr/>
