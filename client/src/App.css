@@ -11,8 +11,9 @@ body {
   margin: 40px;
   display: grid;
   grid-template-columns: 30% 70%;
-  grid-column-gap: 30px;
+  grid-column-gap: 35px;
   align-items: flex-start; 
+  text-align: right;
   background-color: rgb(70, 142, 175);
 }
 
@@ -21,8 +22,8 @@ body {
   padding-right: 40px;
 }
 
-.quake-info h1 {
-  color: black;
+.quake-info h2 {
+  color: rgb(177, 227, 250);
 }
 
 /* SAFETY INFO */
