@@ -48,7 +48,7 @@ const HistoricalMap = ({historicalQuakes}) => {
               style={{ height: 450, width: 1200 }}
                >
         <LayersControl position="topright">
-      <LayersControl.BaseLayer checked name="OpenStreetMap.Mapnik">
+      <LayersControl.BaseLayer name="OpenStreetMap.Mapnik">
         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors" /> </LayersControl.BaseLayer>
            

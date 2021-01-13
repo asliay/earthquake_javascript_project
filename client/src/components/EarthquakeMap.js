@@ -4,7 +4,7 @@ import L from 'leaflet';
 import iconShadow from 'leaflet/dist/images/marker-shadow.png';
 import {platesLayer} from '../assets/PB2002_boundaries';
 import marker from '../assets/marker.png'
-
+import Markers from './RealTimeMarkers'
 
 
 const EarthquakeMap = ({realtimeQuakes}) => {
@@ -18,7 +18,7 @@ const EarthquakeMap = ({realtimeQuakes}) => {
         "weight": 5,
         "opacity": 0.65
     }]
-    
+
     let DefaultIcon = new L.Icon({
         iconUrl: marker,
         iconSize: [40,40],
@@ -28,7 +28,8 @@ const EarthquakeMap = ({realtimeQuakes}) => {
         popupAnchor: [0, -40]
     });
     L.Marker.prototype.options.icon = DefaultIcon;
-    
+    console.log(realtimeQuakes);  
+
     return(
     <>
         <h2>This is the map showing all earthquakes, BOOYAH!</h2>
@@ -51,24 +52,10 @@ const EarthquakeMap = ({realtimeQuakes}) => {
         <TileLayer url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png" 
       attribution="&copy; <a href=&quot;http://www.openstreetmap.org/copyright&quot;>OpenStreetMap</a> contributors, &copy; <a href=&quot;http://cartodb.com/attributions&quot;>CartoDB</a>" /></LayersControl.BaseLayer> 
 
-        {realtimeQuakes.map(quake => ( 
-                <Marker 
-                key={quake.id}
-                icon={DefaultIcon}
-                position={[
-                    quake.geometry.coordinates[1], 
-                    quake.geometry.coordinates[0]
-                    ]} >
-            <Popup>
-                {capitalizeFirstLetter(quake.properties.place)}<br/>
-                {new Date(quake.properties.time).toLocaleString()} (UTC)
-                <hr/>
-                Earthquake Magnitude: {quake.properties.mag}
-                
-                
-            </Popup>
-            </Marker>
-           ))} 
+            <LayersControl.Overlay name="Marker with popup">
+                <Markers    />
+            </LayersControl.Overlay>
+
            </LayersControl>
         {platesLayer.features.map(plate => (
            <GeoJSON style= {myStyle} data = {plate.geometry}  />

@@ -5,7 +5,7 @@ import {getQuakeInfo} from "./services/InfoService";
 import {getHistoricalQuakes} from "./services/HistoricalService";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 // bulk import from new file index.js that exports components
-import {NavBar, EarthquakeInfoBox, SafetyInfo, History, EarthquakeMap, ChartTest} from './components/index'
+import {NavBar, EarthquakeInfoBox, SafetyInfo, History, EarthquakeMap, ChartTest, RealTimeMarkers} from './components/index'
 
 
 // import useSwr from "swr";
@@ -80,6 +80,7 @@ function App() {
     </Router>
     <EarthquakeMap realtimeQuakes={realtimeQuakes} />
     <ChartTest realtimeQuakes={realtimeQuakes} />
+    <RealTimeMarkers realtimeQuakes={realtimeQuakes} />
     
     </>
   );
