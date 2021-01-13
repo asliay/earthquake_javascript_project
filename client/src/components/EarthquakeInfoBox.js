@@ -6,9 +6,9 @@ const EarthquakeInfoBox = ({quakeInfo}) => {
         <>
         <h1>What is an earthquake?</h1>
             {quakeInfo.map((quakeInfo, index) => (
-            <p>{quakeInfo.historical.funFacts.numOfQuakesFact}<br/><br/>
-            {quakeInfo.historical.funFacts.richterScaleFact}<br/><br/>
-            {quakeInfo.historical.funFacts.momentMagScaleFact}</p>
+            <p>{quakeInfo.generalInfo}<br/><br/>
+            {quakeInfo.generalInfo}<br/><br/>
+            {quakeInfo.generalInfo}</p>
             )
             )}
             <p>This is the info box, hooray!</p>

@@ -5,9 +5,9 @@ const SafetyInfo = ({quakeInfo}) => {
     <>
     <h1>For your safety</h1>
     {quakeInfo.map((quakeInfo, index) => (
-    <p>{quakeInfo.historical.funFacts.numOfQuakesFact}<br/><br/>
-     {quakeInfo.historical.funFacts.richterScaleFact}<br/><br/>
-      {quakeInfo.historical.funFacts.momentMagScaleFact}</p>
+    <p>{quakeInfo.safetyInfo}<br/><br/>
+     {quakeInfo.safetyInfo}<br/><br/>
+      {quakeInfo.safetyInfo}</p>
     )
     )}
     <p>DURING</p>
