@@ -47,8 +47,8 @@ const SafetyInfo = () => {
         <li>Look for and extinguish small fires. Fire is the most common hazard after an earthquake.</li>
       </ol>
 
+      <p className="header3">Caring for yourself and loved ones</p>
       <ul>
-        <p className="header3">Caring for yourself and loved ones</p>
         <li>If you are at home, look quickly for damage in and around your home and get everyone out if your home is unsafe.</li>
         <li>Listen to a portable, battery&shy;operated or hand&shy;crank radio for updated emergency information and instructions.</li>
         <li>Pay attention to how you and your loved ones are experiencing and handling stress. Promote <a target="_blank" rel="noreferrer" data-aa-link-button=""></a><a href="https://www.redcross.org/get-help/disaster-relief-and-recovery-services/recovering-emotionally.html" data-aa-link-button="emotional-recovery">emotional recovery</a> by following these tips.</li>
@@ -57,8 +57,8 @@ const SafetyInfo = () => {
         <li>Be careful when driving after an earthquake and anticipate traffic light outages.</li>
       </ul>
 
+      <p className="header3">Returning home safely</p>
       <ul>
-        <p className="header3">Returning home safely</p>
         <li>Stay out of damaged buildings.</li>
         <li>Use extreme caution and examine walls, floors, doors, staircases and windows to check for damage.</li>
         <li>Watch out for fallen power lines or broken gas lines and report them to the utility company immediately.</li>
@@ -68,19 +68,19 @@ const SafetyInfo = () => {
       </ul>
       <p>Take pictures of home damage, both of the buildings and its contents, <a href="https://www.redcross.org/get-help/disaster-relief-and-recovery-services/recovering-financially.html" target="_blank" rel="noreferrer" data-aa-link-button="-for-insurance-purposes">for insurance purposes</a>.</p>
 
-    <ul>
       <p className="header3">Cleaning and repairing your home</p>
+      <ul>
         <li>Wear protective clothing, including long pants, a long-sleeved shirt and sturdy shoes, and be cautious.</li>
         <li>Clean up spilled medications, bleach, gasoline or other flammable liquids immediately.</li>
         <li>Learn about your area’s seismic building standards and land use codes before you begin any construction.</li>
         <li>Follow our tips on <a href="https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/earthquake.html" target="_blank" rel="noreferrer" data-aa-link-button="preparing-your-home-for-an-earthquake">preparing your home for an earthquake</a>.</li>
         <li>Learn more about <a href="https://www.redcross.org/get-help/disaster-relief-and-recovery-services/disaster-cleanup.html" target="_blank" rel="noreferrer" data-aa-link-button="how-to-clean-up-after-an-earthquake">how to clean up after an earthquake</a>, including the supplies you’ll need and how to handle fire hazards such as gas, electricity and chemicals.</li>
-        <li>Ask a professional to:<br/>
-        <ul>
+        <li>Ask a professional to:<br />
+          <ul>
             <li>Make sure your home is securely anchored to its foundation.</li>
             <li>Strengthen exterior features, such as porches, decks, sliding glass doors, canopies, carports and garage doors</li>
-        </ul> </li>
-    </ul>
+          </ul> </li>
+      </ul>
 
    
 
