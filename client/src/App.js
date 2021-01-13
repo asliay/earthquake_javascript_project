@@ -4,7 +4,7 @@ import {getWeekData} from "./services/MapService";
 import {getHistoricalQuakes} from "./services/HistoricalService";
 import {BrowserRouter as Router, Route} from "react-router-dom";
 // bulk import from new file index.js that exports components
-import {NavBar, EarthquakeInfoBox, SafetyInfo, History, EarthquakeMap, ChartTest} from './components/index'
+import {NavBar, EarthquakeInfoBox, SafetyInfo, History, EarthquakeMap} from './components/exports'
 import Image1 from './assets/wobblybobbly.jpg';
 
 

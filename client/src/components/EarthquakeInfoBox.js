@@ -1,5 +1,5 @@
 import EarthquakeMap from "./EarthquakeMap";
-import Chart from "./Chart"
+import RealtimeChart from "./RealtimeChart";
 
 const EarthquakeInfoBox = ({realtimeQuakes}) => {
     
@@ -29,7 +29,7 @@ const EarthquakeInfoBox = ({realtimeQuakes}) => {
             <EarthquakeMap realtimeQuakes={realtimeQuakes} />
         </div>
         <div>
-             <Chart realtimeQuakes={realtimeQuakes} />
+            <RealtimeChart realtimeQuakes={realtimeQuakes} />
         </div>
     </>
     )

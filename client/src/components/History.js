@@ -32,7 +32,6 @@ const History = ({historicalQuakes}) => {
         })}
         </ol>
 
-        
         <HistoricalMap historicalQuakes={historicalQuakes} />
         </div>
     )

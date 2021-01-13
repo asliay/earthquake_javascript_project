@@ -1,7 +1,7 @@
 import Highcharts from 'highcharts'
 import HighchartsReact from 'highcharts-react-official'
 
-const Chart = ({realtimeQuakes}) => {
+const RealtimeChart = ({realtimeQuakes}) => {
   // function to map through data and return an array of all magnitudes.
   
   const magnitudes = realtimeQuakes.map(quake => quake.properties.mag)
@@ -70,4 +70,4 @@ const Chart = ({realtimeQuakes}) => {
   )
 }
 
-export default Chart;
+export default RealtimeChart;
