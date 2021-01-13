@@ -21,10 +21,13 @@ const History = ({historicalQuakes}) => {
         <p className="header2">10 Largest Earthquakes of the Last Century:</p>
         {top10ByMag.map(quake => {
             return(
-            <li>
-                {quake.title} - {quake.location} ({new Date(quake.time).toLocaleDateString()})
-                <p>Magnitude: {quake.mag} | Casualties: {quake.casualties}</p>
-            </li>
+            <>
+                <li>
+                    {quake.title} - {quake.location} ({new Date(quake.time).toLocaleDateString()})
+                    <p>Magnitude: {quake.mag} | Casualties: {quake.casualties}<br/>Damage Cost: {quake.damageCost}</p>
+                </li>
+            <hr/>
+            </>
             )
         })}
         </ol>
