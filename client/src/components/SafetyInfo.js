@@ -1,4 +1,3 @@
-
 const SafetyInfo = () => {
 
   return (
@@ -14,7 +13,6 @@ const SafetyInfo = () => {
         <li>Download the Emergency App for <a href="https://itunes.apple.com/us/app/emergency-by-american-red/id954783878?mt=8" target="_blank" rel="noreferrer" data-aa-link-button="iPhone->>">iPhone</a> or for <a href="https://play.google.com/store/apps/details?id=com.cube.arc.hzd" target="_blank" rel="noreferrer" data-aa-link-button="Android->>">Android</a>.</li>
       </ul>
 
-
       <p className="header2">DURING (DROP, COVER and HOLD ON!)</p>
       <p className="header3">Indoors:</p>
       <ul>
@@ -23,8 +21,8 @@ const SafetyInfo = () => {
         <li>Doorways are no stronger than any other part of a structure so don’t rely on them for protection! During an earthquake, get under a sturdy piece of furniture and hold on.</li>
         <li>If you are in bed, stay there, curl up and hold on, and cover your head.</li>
         <li>Stay indoors until the shaking stops and you are sure it is safe to exit.</li>
-        <li>If you must leave a building after the shaking stops, use stairs rather than an elevator in case of aftershocks, power outages or other damage. </li>
-        <li>Be aware that smoke alarms and sprinkler systems frequently go off in buildings during an earthquake, even if there is no fire. </li>
+        <li>If you must leave a building after the shaking stops, use stairs rather than an elevator in case of aftershocks, power outages or other damage.</li>
+        <li>Be aware that smoke alarms and sprinkler systems frequently go off in buildings during an earthquake, even if there is no fire.</li>
         <li>If you smell gas, get out of the house and move as far away as possible.</li>
         <li>Before you leave any building check to make sure that there is no debris from the building that could fall on you.</li>
       </ul>
@@ -38,7 +36,6 @@ const SafetyInfo = () => {
         <li>If a power line falls on your vehicle, do not get out. Wait for assistance.</li>
         <li>If you are in a mountainous area or near unstable slopes or cliffs, be alert for falling rocks and other debris as well as <a href="https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/landslide.html" target="_blank" rel="noreferrer" data-aa-link-button="landslides">landslides</a>.</li>
       </ul>
-
 
       <p className="header2">AFTER (Staying Safe After an Earthquake)</p>
       <p className="header3">If you do nothing else:</p>
