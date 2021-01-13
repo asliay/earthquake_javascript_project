@@ -2,8 +2,8 @@ import { MapContainer, TileLayer, Marker, Popup, LayersControl, GeoJSON } from '
 import 'leaflet/dist/leaflet.css';
 
 import L from 'leaflet';
-import {Icon} from 'leaflet';
-import icon from 'leaflet/dist/images/marker-icon.png';
+// import {Icon} from 'leaflet';
+// import icon from 'leaflet/dist/images/marker-icon.png';
 import iconShadow from 'leaflet/dist/images/marker-shadow.png';
 import {platesLayer} from '../assets/PB2002_boundaries';
 import marker from '../assets/marker.png'
@@ -38,7 +38,7 @@ const HistoricalMap = ({historicalQuakes}) => {
     <>
         
     <div id="map-container" className="historical-map-container">
-        <h2>This is the historical map:</h2>
+        <h2>{historicalQuakes.length} of the biggest Earthquakes of the last century:</h2>
         <MapContainer 
             scrollWheelZoom={false}
               className="map"
@@ -80,7 +80,7 @@ const HistoricalMap = ({historicalQuakes}) => {
         ))}
         </MapContainer> 
     <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-    <p>Showing {historicalQuakes.length} of the biggest Earthquakes of the last century. </p>
+    
     </div>
     </>
     )
