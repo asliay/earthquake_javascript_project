@@ -80,15 +80,14 @@ margin-right: auto;
 .quake-info {
   display: flex;
   flex-direction: column;
-  /* display: grid;
-  grid-template-columns: 50% 50%; */
   justify-content: space-evenly;
 }
 
-.quake-info p {
-  /* text-align: center; */
+/* .quake-info p {
+  text-align: justify;
   color: white;
-}
+  margin: 10px;
+} */
 
 /* MAIN MAP */
 .main-map-container {
