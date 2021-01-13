@@ -1,3 +1,4 @@
+import HistoricalChart from "./HistoricalChart";
 import HistoricalMap from "./HistoricalMap";
 
 const History = ({historicalQuakes}) => {
@@ -15,6 +16,7 @@ const History = ({historicalQuakes}) => {
     const top10ByMag = sortedByMag.slice(0, 10)
     
     return (
+     <>   
         <div className="history-info">
         {/* <h1>Appease the giant catfish!*</h1> */}
         <ol>
@@ -32,8 +34,12 @@ const History = ({historicalQuakes}) => {
         })}
         </ol>
 
-        <HistoricalMap historicalQuakes={historicalQuakes} />
+            <HistoricalMap historicalQuakes={historicalQuakes} />
         </div>
+        <div>
+            <HistoricalChart historicalQuakes={historicalQuakes} />
+        </div>
+     </>
     )
 }
 

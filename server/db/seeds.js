@@ -179,7 +179,7 @@ db.historicalEarthquakes.insertMany([
     casualties: "2,336",
     damageCost: "$17 million",
     time: -541407690000,
-    mag: 9.0,
+    mag: 9.1,
     coordinates: [
       52.623,
       159.779,
@@ -596,7 +596,7 @@ db.historicalEarthquakes.insertMany([
   {
     title: "1970 Ancash Earthquake",
     location: "Ancash region, Peru",
-    time: -3142640191000,
+    time: 13033419000,
     mag: 7.9,
     coordinates: [
       -9.183,
