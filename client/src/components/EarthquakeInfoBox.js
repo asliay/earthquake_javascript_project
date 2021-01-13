@@ -7,6 +7,7 @@ const EarthquakeInfoBox = ({quakeInfo}) => {
         <div className = "quake-info"> 
         <h2>What is an earthquake?</h2>
         <p>An earthquake is the shaking of the Earth's surface, usually due to movement of the planet's huge tectonic plates. When these plates move and grind against each other along fault lines they sometimes get stuck. Pressure builds up and once released, seismic waves are sent through the Earth.The point at which the energy is released is called the focus (or hypocenter). The position on the Earth's surface directly above the focus is the epicentre. Seismic waves spread out from the focus, being felt most strongly at the epicentre. Most damage caused by a severe earthquake will happen close to this point.</p>
+        
         <h3>How are earthquakes detected?</h3>
         <p>Seismogram/ Seismometer</p>
   

@@ -7,7 +7,18 @@ body {
 
 /* QUAKE INFO */
 .quake-info {
-  color: white;
+  padding: 40px;
+  margin: 40px;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-column-gap: 30px;
+  align-items: flex-start; 
+  background-color: rgb(70, 142, 175);
+}
+
+.quake-info p {
+  text-align: justify;
+  padding-right: 40px;
 }
 
 .quake-info h1 {
@@ -35,13 +46,10 @@ body {
   flex-direction: row;
   justify-content: space-evenly;
   text-align: justify;
-  /* Center of page (VERT): */
   align-items: flex-start; 
-  /* color: black; */
   background-color: rgb(70, 142, 175);
 }
 
 .map-container {
   margin-left: 50px;
-  /* padding-left: 50px; */
 }
