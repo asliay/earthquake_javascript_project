@@ -27,7 +27,8 @@ margin-right: auto;
 .header2 {
   color: rgb(177, 227, 250);
   font-weight: bold;
-  font-size: 35px;  
+  font-size: 35px;
+  text-align: left;
 }
 
 .header3 {
@@ -62,7 +63,10 @@ margin-right: auto;
   justify-content: space-evenly; */
   color: white;
   text-decoration: none;
+}
 
+#nav-bar a:hover {
+  color: black;
 }
 
 /* QUAKE INFO */
