@@ -36,16 +36,16 @@ const HistoricalMap = ({historicalQuakes}) => {
     
     return(
     <>
-        <h2>This is the historical map:</h2>
         
-    <div id="map-container">
+    <div id="map-container" className="map-container">
+        <h2>This is the historical map:</h2>
         <MapContainer 
             scrollWheelZoom={false}
               className="map"
               center={[20.5844,
                        26.2456]}
               zoom={2}
-              style={{ height: 450, width: 1200 }}
+              style={{ height: 450, width: 650 }}
                >
         <LayersControl position="topright">
       <LayersControl.BaseLayer checked name="OpenStreetMap.Mapnik">
@@ -79,9 +79,9 @@ const HistoricalMap = ({historicalQuakes}) => {
            <GeoJSON style= {myStyle} data = {plate.geometry}  />
         ))}
         </MapContainer> 
-    </div>
     <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
     <p>Showing {historicalQuakes.length} of the biggest Earthquakes of the last century. </p>
+    </div>
     </>
     )
 }

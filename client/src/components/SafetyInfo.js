@@ -2,7 +2,7 @@
 const SafetyInfo = ({quakeInfo}) => {
 
   return (
-    <>
+    <div className="safety-info">
     <h1>For your safety</h1>
     {quakeInfo.map((quakeInfo, index) => (
     <p>{quakeInfo.safetyInfo}<br/><br/>
@@ -17,7 +17,7 @@ const SafetyInfo = ({quakeInfo}) => {
 <p>“Find a clear spot and drop to the ground. Stay there until the shaking stops.“, “Try to get as far away from buildings, power lines, trees, and streetlights as possible.“, “If you’re in a vehicle, pull over to a clear location and stop. Avoid bridges, overpasses and power lines if possible.“, “Stay inside with your seatbelt fastened until the shaking stops.“, “After the shaking has stopped, drive on carefully, avoiding bridges and ramps that may have been damaged.“, “If a power line falls on your vehicle, do not get out. Wait for assistance.“, “If you are in a mountainous area or near unstable slopes or cliffs, be alert for falling rocks and other debris as well as landslides.“</p>
     <p></p>
     <p></p>
-    </>
+    </div>
   )
 }
 

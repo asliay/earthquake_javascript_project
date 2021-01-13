@@ -1,9 +1,10 @@
 
 const EarthquakeInfoBox = ({quakeInfo}) => {
-
+    
 
     return(
-        <>
+        // ADDED className:
+        <div className = "quake-info"> 
         <h1>What is an earthquake?</h1>
             {quakeInfo.map((quakeInfo, index) => (
             <p>{quakeInfo.generalInfo}<br/><br/>
@@ -19,7 +20,7 @@ const EarthquakeInfoBox = ({quakeInfo}) => {
             <p>There are about 500,000 earthquakes a year around the world, as detected by sensitive instruments. About 100,000 of those can be felt, and 100 or so cause damage each year. Each year the southern California area alone experiences about 10,000 earthquakes, most of them not felt by people.</p>
             <p>The magnitude of an earthquake is a measured value of the earthquake size. The magnitude is the same no matter where you are, or how strong or weak the shaking was in various locations. The intensity of an earthquake is a measure of the shaking created by the earthquake, and this value does vary with location.</p>
 
-        </>
+            </div>
     )
 }
 

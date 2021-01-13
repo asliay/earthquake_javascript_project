@@ -3,8 +3,8 @@ import HistoricalMap from "./HistoricalMap";
 const History = ({quakeInfo, historicalQuakes}) => {
     
     return (
-        <>
-        <h1>Appease the giant catfish!*</h1>
+        <div className="history-info">
+        {/* <h1>Appease the giant catfish!*</h1> */}
         {quakeInfo.map((quakeInfo, index) => (
             <p>{quakeInfo.historical.funFacts.numOfQuakesFact}<br/><br/>
              {quakeInfo.historical.funFacts.richterScaleFact}<br/><br/>
@@ -22,7 +22,7 @@ const History = ({quakeInfo, historicalQuakes}) => {
         
         <HistoricalMap historicalQuakes={historicalQuakes} />
         </div>
-        </>
+        </div>
     )
 }
 

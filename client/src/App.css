@@ -2,5 +2,45 @@ body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   background-color: cadetblue;
   color: white;
-  margin: 30px;
+  margin: 50px;
+}
+
+/* QUAKE INFO */
+.quake-info {
+  color: white;
+}
+
+.quake-info h1 {
+  color: black;
+}
+
+/* SAFETY INFO */
+.safety-info {
+  color: white;
+}
+
+.safety-info h1 {
+  color: rgb(6, 28, 75);
+}
+
+.safety-info h2 {
+  color: rgb(6, 28, 75);
+}
+
+/* HISTORY INFO */
+.history-info {
+  padding: 50px;
+  margin: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* Center of page (VERT): */
+  align-items: center; 
+  /* color: black; */
+  background-color: rgb(70, 142, 175);
+}
+
+.map-container {
+  margin-left: 100px;
+  /* padding-left: 50px; */
 }
