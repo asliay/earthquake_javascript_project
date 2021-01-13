@@ -5,8 +5,10 @@ db.historicalEarthquakes.insertMany([
   {
     title: "1960 Valdivia Earthquake",
     location: "Bio-Bio, Chile",
+    casualties: "1,000 - 6,000",
     time: -303281326000,
     mag: 9.5,
+    type: "Megathrust",
     coordinates: [
       -38.143,
       -73.407,
@@ -22,7 +24,11 @@ db.historicalEarthquakes.insertMany([
       51.251,
       178.715,
       30.3
-    ]
+    ],
+    tsunami: {
+      occurred: true,
+      height: "10.7m"
+    }
   },
   {
     title: "1922 Vallenar Earthquake",
@@ -60,13 +66,17 @@ db.historicalEarthquakes.insertMany([
   {
     title: "1964 Alaska Earthquake",
     location: "Southern Alaska",
+    casualties: "131",
     time: -181859024000,
     mag: 9.2,
     coordinates: [
       60.908,
       -147.339,
       25
-    ]
+    ],
+    tsunami: {
+      height: "67m"
+    }
   },
   {
     title: "2010 Chile Earthquake",

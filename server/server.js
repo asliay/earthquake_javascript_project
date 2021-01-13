@@ -16,12 +16,9 @@ MongoClient.connect('mongodb://localhost:27017')
 .then((client) => {
   const db = client.db('earthquakes');
   const historicalCollection = db.collection('historicalEarthquakes');
-  const infoCollection = db.collection('earthquakeInfo');
   const historicalRouter = createRouter(historicalCollection);
-  const earthquakeInfoRouter = createRouter(infoCollection);
 
   app.use('/api/earthquakes/historical', historicalRouter);
-  app.use('/api/earthquakes/info', earthquakeInfoRouter);
 
 })
   .catch(console.error);

@@ -1,5 +1,5 @@
 
-const EarthquakeInfoBox = ({quakeInfo}) => {
+const EarthquakeInfoBox = () => {
     
 
     return(
