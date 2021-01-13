@@ -36,14 +36,11 @@ function App() {
     <Route exact path = "/" render = {
       () => <EarthquakeInfoBox realtimeQuakes = {realtimeQuakes} /> }
       />
-
-
     <Route path = "/safety" component={SafetyInfo}/>
     <Route path = "/history" render = {
       () => <History historicalQuakes = {historicalQuakes} /> }
       />
     </Router>
-    {/* <ChartTest realtimeQuakes={realtimeQuakes} /> */}
     </>
   );
 }

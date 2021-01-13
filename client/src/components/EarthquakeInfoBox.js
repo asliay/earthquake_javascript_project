@@ -1,9 +1,11 @@
 import EarthquakeMap from "./EarthquakeMap";
+import Chart from "./Chart"
 
 const EarthquakeInfoBox = ({realtimeQuakes}) => {
     
 
     return(
+    <>
         <div className="quake-info-container">
         <div className = "quake-info"> 
         <p className="header2">What is an earthquake?</p>
@@ -26,7 +28,10 @@ const EarthquakeInfoBox = ({realtimeQuakes}) => {
         </div>
             <EarthquakeMap realtimeQuakes={realtimeQuakes} />
         </div>
-        
+        <div>
+             <Chart realtimeQuakes={realtimeQuakes} />
+        </div>
+    </>
     )
 }
 
