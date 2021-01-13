@@ -18,6 +18,7 @@ db.historicalEarthquakes.insertMany([
   {
     title: "1965 Rat Islands Earthquake",
     location: "Rat Islands, Aleutian Islands, Alaska",
+    casualties: "No Casualties",
     time: -154810718000,
     mag: 8.7,
     coordinates: [
@@ -33,6 +34,8 @@ db.historicalEarthquakes.insertMany([
   {
     title: "1922 Vallenar Earthquake",
     location: "Atacama Region, Chile",
+    casualties: "Several hundred",
+    damageCost: "$76-380 million (adj. for inflation)",
     time: -1487618829000,
     mag: 8.5,
     coordinates: [
@@ -44,6 +47,8 @@ db.historicalEarthquakes.insertMany([
   {
     title: "2004 Indian Ocean Earthquake and Tsunami",
     location: "Off the West Coast of Northern Sumatra",
+    casualties: "227,898",
+    damageCost: "Estimated $13 billion (adj. for inflation)",
     time: 1104022733000,
     mag: 9.2,
     coordinates: [
@@ -55,6 +60,8 @@ db.historicalEarthquakes.insertMany([
   {
     title: "2011 Tōhoku Earthquake and Tsunami",
     location: "Near the East Coast of Honshu, Japan",
+    casualties: "Over 20,000",
+    damageCost: "$409 billion (adj. for inflation)",
     time: 1299822384000,
     mag: 9.1,
     coordinates: [
@@ -67,6 +74,7 @@ db.historicalEarthquakes.insertMany([
     title: "1964 Alaska Earthquake",
     location: "Southern Alaska",
     casualties: "131",
+    damageCost: "$2.5 billion (adj. for inflation)",
     time: -181859024000,
     mag: 9.2,
     coordinates: [
@@ -81,6 +89,8 @@ db.historicalEarthquakes.insertMany([
   {
     title: "2010 Chile Earthquake",
     location: "Offshore Bio-Bio, Chile",
+    casualties: "550",
+    damageCost: "$17.5-35 billion (adj. for inflation)",
     time: 1267252463000,
     mag: 8.8,
     coordinates: [
@@ -158,6 +168,8 @@ db.historicalEarthquakes.insertMany([
   {
     title: "1952 Severo-Kurilsk Earthquake",
     location: "Off the East Coast of the Kamchatka Peninsula, Russia",
+    casualties: "2,336",
+    damageCost: "",
     time: -541407690000,
     mag: 9.0,
     coordinates: [

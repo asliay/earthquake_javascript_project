@@ -22,11 +22,8 @@ const History = ({historicalQuakes}) => {
         {top10ByMag.map(quake => {
             return(
             <li>
-                {quake.title}
-                <ul>
-                    <li>Date: {new Date(quake.time).toDateString()}</li>
-                    <li>Magnitude: {quake.mag}</li>
-                </ul>
+                {quake.title} - {quake.location} ({new Date(quake.time).toLocaleDateString()})
+                <p>Magnitude: {quake.mag} | Casualties: {quake.casualties}</p>
             </li>
             )
         })}
