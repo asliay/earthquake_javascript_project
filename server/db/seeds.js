@@ -6,6 +6,7 @@ db.historicalEarthquakes.insertMany([
     title: "1960 Valdivia Earthquake",
     location: "Bio-Bio, Chile",
     casualties: "1,000 - 6,000",
+    damageCost: "$4.8 billion (adj. for inflation)",
     time: -303281326000,
     mag: 9.5,
     type: "Megathrust",
@@ -19,6 +20,7 @@ db.historicalEarthquakes.insertMany([
     title: "1965 Rat Islands Earthquake",
     location: "Rat Islands, Aleutian Islands, Alaska",
     casualties: "No Casualties",
+    damageCost: "$82.6k (adj. for inflation)",
     time: -154810718000,
     mag: 8.7,
     coordinates: [
@@ -102,6 +104,8 @@ db.historicalEarthquakes.insertMany([
   {
     title: "1950 Assam–Tibet Earthquake",
     location: "Eastern Xizang-India border region",
+    casualties: "4,800",
+    damageCost: "$270 million (adj. for inflation)",
     time: -611574626000,
     mag: 8.6,
     coordinates: [
@@ -113,6 +117,8 @@ db.historicalEarthquakes.insertMany([
   {
     title:"1957 Andreanof Islands Earthquake",
     location: "Andreanof Islands, Aleutian Islands, Alaska",
+    casualties: "No Casualties",
+    damageCost: "$46.3 million (adj. for inflation)",
     time: -404386647000,
     mag: 8.6,
     coordinates: [
@@ -124,6 +130,8 @@ db.historicalEarthquakes.insertMany([
   {
     title:"2005 Nias–Simeulue Earthquake",
     location: "Northern Sumatra, Indonesia",
+    casualties: "915-2000",
+    damageCost: "No Estimate",
     time: 1112026176000,
     mag: 8.6,
     coordinates: [
@@ -169,7 +177,7 @@ db.historicalEarthquakes.insertMany([
     title: "1952 Severo-Kurilsk Earthquake",
     location: "Off the East Coast of the Kamchatka Peninsula, Russia",
     casualties: "2,336",
-    damageCost: "",
+    damageCost: "$17 million",
     time: -541407690000,
     mag: 9.0,
     coordinates: [
