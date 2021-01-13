@@ -1,5 +1,5 @@
 
-const SafetyInfo = ({quakeInfo}) => {
+const SafetyInfo = () => {
 
   return (
     <div className="safety-info">
