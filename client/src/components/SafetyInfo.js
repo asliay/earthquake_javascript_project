@@ -3,9 +3,8 @@ const SafetyInfo = () => {
 
   return (
     <div className="safety-info">
-      <p className="header2">For your safety</p>
-      <p className="header2">BEFORE</p>
-      <p className="header3">Prepare in Advance</p>
+      <p className="header2">Earthquake Safety - Before, During and After</p>
+      <p className="header2">BEFORE (Prepare in Advance)</p>
       <p>Be sure you’re Red Cross Ready. That means...</p>
       <ul>
         <li>Assembling an <a href="https://www.redcross.org/get-help/how-to-prepare-for-emergencies/survival-kit-supplies.html" target="_blank" rel="noreferrer" data-aa-link-button="emergency-preparedness-kit">emergency preparedness kit</a>.</li>
@@ -16,9 +15,8 @@ const SafetyInfo = () => {
       </ul>
 
 
-      <p className="header2">DURING</p>
+      <p className="header2">DURING (DROP, COVER and HOLD ON!)</p>
       <p className="header3">Indoors:</p>
-      <p><strong>DROP, COVER and HOLD ON!</strong></p>
       <ul>
         <li>Move as little as possible - most injuries during earthquakes occur because of people moving around, falling and suffering sprains, fractures and head injuries.</li>
         <li>Try to protect your head and torso.</li>
@@ -42,9 +40,8 @@ const SafetyInfo = () => {
       </ul>
 
 
-      <p className="header2">AFTER</p>
-      <p className="header3">Staying Safe After an Earthquake</p>
-      <p><strong>If you do nothing else:</strong></p>
+      <p className="header2">AFTER (Staying Safe After an Earthquake)</p>
+      <p className="header3">If you do nothing else:</p>
       <ol>
         <li>If away from home, return only when authorities say it is safe to do so.</li>
         <li>Check yourself for injuries and get first aid, if necessary, before helping injured or trapped persons.</li>
