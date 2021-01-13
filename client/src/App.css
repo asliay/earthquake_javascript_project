@@ -2,7 +2,7 @@ body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   background-color: cadetblue;
   color: white;
-  margin: 50px;
+  margin: 0px 50px;
 }
 
 /* HEADER IMAGE  */
@@ -18,8 +18,10 @@ margin-right: auto;
   /* color: rgb(177, 227, 250); */
   color: black;
   font-weight: bold;
-  font-size: 50px;  
+  font-size: 40px;  
   text-align: center;
+  margin-bottom: 0px;
+  margin-top: 20px;
 }
 
 .header2 {
@@ -38,12 +40,14 @@ margin-right: auto;
 #nav-bar {
   margin-left: 25%;
   margin-right: 25%;
+  margin-top: 15px;
+  margin-bottom: 10px;
   padding: 15px;
   display: flex;
   justify-content: space-around;
   background-color: rgb(70, 142, 175);  
   text-decoration: none;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
   list-style-type: none;
 }
@@ -65,7 +69,7 @@ margin-right: auto;
 
 .quake-info-container {
   padding: 50px;
-  margin: 40px; 
+  margin: 0px 40px; 
   background-color: rgb(70, 142, 175);
   display: flex;
   flex-direction: row;
