@@ -6,6 +6,8 @@ import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 // bulk import from new file index.js that exports components
 import {NavBar, EarthquakeInfoBox, SafetyInfo, History, EarthquakeMap, ChartTest} from './components/index'
 
+import Image1 from './assets/wobblybobbly.jpg';
+
 
 // import useSwr from "swr";
 
@@ -53,8 +55,10 @@ function App() {
 
   return (
     <>
-    <h1>QUICK, IT'S A QUAKE</h1>
+    {/* <h1>QUICK, IT'S A QUAKE</h1> */}
     <Router>
+    <img src={Image1} alt="whyyyy" class="header-image" width="400px"/>
+    <h2>QUICK, IT'S A QUAKE!</h2>
     <NavBar/>
     <Route exact path = "/" component={EarthquakeInfoBox}/>
     <Route path = "/safety" component={SafetyInfo}/>
@@ -64,7 +68,6 @@ function App() {
     </Router>
     <EarthquakeMap realtimeQuakes={realtimeQuakes} />
     <ChartTest realtimeQuakes={realtimeQuakes} />
-    
     </>
   );
 }

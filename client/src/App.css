@@ -5,6 +5,27 @@ body {
   margin: 50px;
 }
 
+/* HEADER IMAGE */
+.header-image {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+/* HEADINGS */
+
+.header2 {
+  color: rgb(177, 227, 250);
+  font-weight: bold;
+  font-size: 35px;  
+}
+
+.header3 {
+  color: rgb(177, 227, 250);
+  font-weight: bold;
+  font-size: 25px;  
+}
+
 /* NAVIGATION */
 #nav-bar {
   margin-left: 25%;
@@ -49,18 +70,6 @@ body {
 .quake-info p {
   text-align: justify;
   padding-right: 40px;
-}
-
-.header2 {
-  color: rgb(177, 227, 250);
-  font-weight: bold;
-  font-size: 35px;  
-}
-
-.header3 {
-  color: rgb(177, 227, 250);
-  font-weight: bold;
-  font-size: 25px;  
 }
 
 /* SAFETY INFO */
