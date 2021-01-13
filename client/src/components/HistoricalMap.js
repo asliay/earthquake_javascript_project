@@ -37,7 +37,7 @@ const HistoricalMap = ({historicalQuakes}) => {
     return(
     <>
         
-    <div id="map-container" className="map-container">
+    <div id="map-container" className="historical-map-container">
         <h2>This is the historical map:</h2>
         <MapContainer 
             scrollWheelZoom={false}

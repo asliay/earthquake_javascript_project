@@ -31,16 +31,16 @@ const EarthquakeMap = ({realtimeQuakes}) => {
     
     return(
     <>
-        <h2>This is the map showing all earthquakes, BOOYAH!</h2>
        
-    <div id="map-container">
+    <div id="map-container" className="main-map-container">
+        <h2>This is the map showing all earthquakes, BOOYAH!</h2>
         <MapContainer 
             scrollWheelZoom={false}
               className="map"
               center={[20.5844,
                        26.2456]}
               zoom={2}
-              style={{ height: 450, width: 1200 }}
+              style={{ height: 450, width: 800 }}
                >
          <LayersControl position="topright">
       <LayersControl.BaseLayer checked name="OpenStreetMap.Mapnik">
@@ -75,9 +75,10 @@ const EarthquakeMap = ({realtimeQuakes}) => {
         ))}
 
         </MapContainer> 
-    </div>
-    <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
     <p>In the last 7 days, there have been {realtimeQuakes.length} earthquakes over Magnitude 2.5.</p>
+    <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+    </div>
+    </div>
     </>
     )
 }
