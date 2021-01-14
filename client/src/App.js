@@ -57,7 +57,7 @@ function App() {
     <>
     {/* <h1>QUICK, IT'S A QUAKE</h1> */}
     <Router>
-    <img src={Image1} alt="whyyyy" class="header-image" width="400px"/>
+    <img src={Image1} alt="seismograph-image" class="header-image" width="400px"/>
     <p className="header1">QUICK, IT'S A QUAKE!</p>
     <NavBar/>
     <Route exact path = "/" render = {
