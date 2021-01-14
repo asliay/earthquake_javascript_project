@@ -10,6 +10,8 @@ if (!selectedQuake) return null
     <p>Location:{selectedQuake.location}</p><br/>
     <p>Magnitude: {selectedQuake.mag}</p><br/>
     <p>Date: {new Date(selectedQuake.time).toLocaleDateString()}</p>
+    <p>Casualties: {selectedQuake.casualties}</p>
+    <p>Damage Cost: {selectedQuake.damageCost}</p>
     <p>{selectedQuake.desc.paragraph1}</p>
     <p>{selectedQuake.desc.paragraph2}</p>
     </>

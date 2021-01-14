@@ -26,6 +26,10 @@ db.historicalEarthquakes.insertMany([
     location: "Rat Islands, Aleutian Islands, Alaska",
     casualties: "No Casualties",
     damageCost: "$82.6k (adj. for inflation)",
+    desc: {
+      paragraph1: "The Rat Islands are a group of volcanic islands in the Aleutian Islands, in southwestern Alaska. They were given their name because rats were accidentally introducted after a Japanese shipwreck around 1780 (as of 2009, they are believed to be rat-free). These islands are on the boundary of the Pacific and North American tectonic plates, and as such are very earthquake-prone.",
+      parargraph2: ""
+    },
     time: -154810718000,
     mag: 8.7,
     coordinates: [
