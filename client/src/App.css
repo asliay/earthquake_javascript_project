@@ -26,7 +26,6 @@ margin-right: auto;
 
 .header1 {
   color: black;
-  /* background-color: rgb(248, 206, 68); */
   background-color: rgb(66, 207, 137);
   width: auto;
   font-weight: bold;
@@ -90,7 +89,8 @@ margin-right: auto;
 }
 
 #nav-bar a:hover {
-  color: white;
+  color: rgb(177, 227, 250);
+
 }
 
 /* QUAKE INFO */
