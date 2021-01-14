@@ -5,7 +5,13 @@ if (!selectedQuake) return null
 
   return (
     <>
-    {selectedQuake.title}
+    <p className='header3'>{selectedQuake.title}</p><br/>
+
+    <p>Location:{selectedQuake.location}</p><br/>
+    <p>Magnitude: {selectedQuake.mag}</p><br/>
+    <p>Date: {new Date(selectedQuake.time).toLocaleDateString()}</p>
+    <p>{selectedQuake.desc.paragraph1}</p>
+    <p>{selectedQuake.desc.paragraph2}</p>
     </>
   )
 }
