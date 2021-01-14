@@ -34,7 +34,8 @@ const EarthquakeMap = ({realtimeQuakes}) => {
     <>
        
     <div id="map-container" className="main-map-container">
-        <p className="header2">This is the map showing all earthquakes, BOOYAH!</p>
+        <p className="header3">In the last 7 days, there have been {realtimeQuakes.length} earthquakes over Magnitude 2.5:</p>
+        <p>Click the markers for more information!</p>
         <MapContainer 
             scrollWheelZoom={false}
               className="map"
@@ -51,7 +52,7 @@ const EarthquakeMap = ({realtimeQuakes}) => {
       <LayersControl.BaseLayer name="Grey">
         <TileLayer url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png" 
       attribution="&copy; <a href=&quot;http://www.openstreetmap.org/copyright&quot;>OpenStreetMap</a> contributors, &copy; <a href=&quot;http://cartodb.com/attributions&quot;>CartoDB</a>" /></LayersControl.BaseLayer> 
-      <ZoomControl position="bottomright" zoomInText="🔎" zoomOutText="🗺" />
+      <ZoomControl position="bottomright"  />
 
         {realtimeQuakes.map(quake => ( 
                 <Marker 
@@ -65,9 +66,7 @@ const EarthquakeMap = ({realtimeQuakes}) => {
                 {capitalizeFirstLetter(quake.properties.place)}<br/>
                 {new Date(quake.properties.time).toLocaleString()} (UTC)
                 <hr/>
-                Earthquake Magnitude: {quake.properties.mag}
-                
-                
+                Earthquake Magnitude: {quake.properties.mag}   
             </Popup>
             </Marker>
            ))} 
@@ -77,7 +76,7 @@ const EarthquakeMap = ({realtimeQuakes}) => {
            ))}
 
         </MapContainer> 
-    <p>In the last 7 days, there have been {realtimeQuakes.length} earthquakes over Magnitude 2.5.</p>
+    
     <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
     </div>
     </div>

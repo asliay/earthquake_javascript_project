@@ -1,13 +1,9 @@
-import { MapContainer, TileLayer, Marker, Popup, LayersControl, GeoJSON } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup, LayersControl, GeoJSON, ZoomControl } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 import iconShadow from 'leaflet/dist/images/marker-shadow.png';
 import {platesLayer} from '../assets/PB2002_boundaries';
 import marker from '../assets/marker.png'
-
-  
-
-// L.Marker.prototype.options.icon = DefaultIcon;
 
 
 const HistoricalMap = ({historicalQuakes, quakeSelected}) => {
@@ -15,8 +11,8 @@ const HistoricalMap = ({historicalQuakes, quakeSelected}) => {
     function capitalizeFirstLetter(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
     };
-
-    let DefaultIcon = new L.Icon({
+    //custom marker icon settings
+    let customIcon = new L.Icon({
         iconUrl: marker,
         iconSize: [40,40],
         iconAnchor: [20, 40],
@@ -24,7 +20,7 @@ const HistoricalMap = ({historicalQuakes, quakeSelected}) => {
         shadowAnchor: [20,40],
         popupAnchor: [0, -40]
     });
-    
+    // styling for plates map layer
     const myStyle = [{
         "color": "#ff7800",
         "weight": 5,
@@ -35,7 +31,7 @@ const HistoricalMap = ({historicalQuakes, quakeSelected}) => {
     <>
         
     <div id="map-container" className="historical-map-container">
-        <p className="header3">{historicalQuakes.length} of the biggest Earthquakes of the last century:</p>
+        <p className="header3">{historicalQuakes.length} of the biggest Earthquakes throughout history:</p>
         <MapContainer 
             scrollWheelZoom={false}
               className="map"
@@ -43,6 +39,7 @@ const HistoricalMap = ({historicalQuakes, quakeSelected}) => {
                        26.2456]}
               zoom={2}
               style={{ height: 450, width: '100%' }}
+              zoomControl={false}
                >
         <LayersControl position="topright">
       <LayersControl.BaseLayer checked name="OpenStreetMap.Mapnik">
@@ -52,11 +49,13 @@ const HistoricalMap = ({historicalQuakes, quakeSelected}) => {
       <LayersControl.BaseLayer checked name="Grey">
         <TileLayer url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png" 
       attribution="&copy; <a href=&quot;http://www.openstreetmap.org/copyright&quot;>OpenStreetMap</a> contributors, &copy; <a href=&quot;http://cartodb.com/attributions&quot;>CartoDB</a>" /></LayersControl.BaseLayer> 
+            <ZoomControl position="bottomright"  />
+
 
         {historicalQuakes.map(quake => ( 
             <Marker 
                 key={quake._id}
-                icon={DefaultIcon}
+                icon={customIcon}
                 eventHandlers={{
                     click: () => {
                       quakeSelected(quake)
@@ -67,7 +66,6 @@ const HistoricalMap = ({historicalQuakes, quakeSelected}) => {
                     quake.coordinates[1]
                     ]}>
             <Popup>
-            {/* The {quake.title} occurred on {new Date(quake.time).toLocaleString()} (UTC), and had a magnitude of {quake.mag}. */}
                 {quake.title}<br/>
                 {new Date(quake.time).toLocaleString()} (UTC)
                 <hr/>
