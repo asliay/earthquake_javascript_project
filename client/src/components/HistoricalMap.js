@@ -10,7 +10,7 @@ import marker from '../assets/marker.png'
 // L.Marker.prototype.options.icon = DefaultIcon;
 
 
-const HistoricalMap = ({historicalQuakes}) => {
+const HistoricalMap = ({historicalQuakes, quakeSelected}) => {
 // function to capitalise first letter, used for earthquake location popup
     function capitalizeFirstLetter(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
@@ -57,6 +57,11 @@ const HistoricalMap = ({historicalQuakes}) => {
             <Marker 
                 key={quake._id}
                 icon={DefaultIcon}
+                eventHandlers={{
+                    click: () => {
+                      quakeSelected(quake)
+                    },
+                  }}
                 position={[
                     quake.coordinates[0], 
                     quake.coordinates[1]
@@ -72,8 +77,8 @@ const HistoricalMap = ({historicalQuakes}) => {
             </Marker>
            ))} 
         </LayersControl>
-        {platesLayer.features.map(plate => (
-           <GeoJSON style= {myStyle} data = {plate.geometry}  />
+        {platesLayer.features.map((plate, index) => (
+           <GeoJSON style= {myStyle} data = {plate.geometry} key={index}  />
         ))}
         </MapContainer> 
     <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>

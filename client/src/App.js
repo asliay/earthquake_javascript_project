@@ -4,7 +4,7 @@ import {getWeekData} from "./services/MapService";
 import {getHistoricalQuakes} from "./services/HistoricalService";
 import {BrowserRouter as Router, Route} from "react-router-dom";
 // bulk import from new file index.js that exports components
-import {NavBar, EarthquakeInfoBox, SafetyInfo, History, EarthquakeMap} from './components/exports'
+import {NavBar, EarthquakeInfoBox, SafetyInfo, History} from './components/exports'
 import Image1 from './assets/wobblybobbly.jpg';
 
 
@@ -30,7 +30,7 @@ function App() {
     <>
    
     <Router>
-    <img src={Image1} alt="seismograph-image" class="header-image" width="400px"/>
+    <img src={Image1} alt="seismograph" className="header-image" width="400px"/>
     <p className="header1">QUICK, IT'S A QUAKE!</p>
     <NavBar/>
     <Route exact path = "/" render = {
