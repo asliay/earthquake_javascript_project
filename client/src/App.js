@@ -5,7 +5,7 @@ import {getHistoricalQuakes} from "./services/HistoricalService";
 import {BrowserRouter as Router, Route} from "react-router-dom";
 // bulk import from new file index.js that exports components
 import {NavBar, EarthquakeInfoBox, SafetyInfo, History} from './components/exports'
-import Image1 from './assets/wobblybobbly.jpg';
+import Image1 from './assets/wobblybobbly-no-bg.png';
 
 
 function App() {
