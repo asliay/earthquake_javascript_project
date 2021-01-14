@@ -21,6 +21,7 @@ const History = ({historicalQuakes}) => {
         {/* <h1>Appease the giant catfish!*</h1> */}
         <ol>
         <p className="header2">10 Largest Earthquakes of the Last Century:</p>
+        
         {top10ByMag.map(quake => {
             return(
             <>
