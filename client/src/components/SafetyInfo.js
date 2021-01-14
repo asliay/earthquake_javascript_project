@@ -2,9 +2,10 @@ const SafetyInfo = () => {
 
   return (
     <div className="safety-info">
-      <h1>Earthquake Safety - Before, During and After</h1>
-      <h2>BEFORE:</h2>
-      <h4>(Prepare in Advance)</h4>
+      <h1>Earthquake Safety</h1>
+      <h1>Before, During and After</h1>
+      <h2>BEFORE</h2>
+      <h4>Prepare in Advance!</h4>
       <p>Be sure you’re Red Cross Ready. That means...</p>
       <ul>
         <li>Assembling an <a href="https://www.redcross.org/get-help/how-to-prepare-for-emergencies/survival-kit-supplies.html" target="_blank" rel="noreferrer" data-aa-link-button="emergency-preparedness-kit">emergency preparedness kit</a>.</li>
@@ -14,8 +15,8 @@ const SafetyInfo = () => {
         <li>Download the Emergency App for <a href="https://itunes.apple.com/us/app/emergency-by-american-red/id954783878?mt=8" target="_blank" rel="noreferrer" data-aa-link-button="iPhone->>">iPhone</a> or for <a href="https://play.google.com/store/apps/details?id=com.cube.arc.hzd" target="_blank" rel="noreferrer" data-aa-link-button="Android->>">Android</a>.</li>
       </ul>
 
-      <h2>DURING:</h2>
-      <h4> (DROP, COVER and HOLD ON!)</h4>
+      <h2>DURING</h2>
+      <h4>DROP, COVER and HOLD ON!</h4>
       <h3>Indoors:</h3>
       <ul>
         <li>Move as little as possible - most injuries during earthquakes occur because of people moving around, falling and suffering sprains, fractures and head injuries.</li>
@@ -39,8 +40,8 @@ const SafetyInfo = () => {
         <li>If you are in a mountainous area or near unstable slopes or cliffs, be alert for falling rocks and other debris as well as <a href="https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/landslide.html" target="_blank" rel="noreferrer" data-aa-link-button="landslides">landslides</a>.</li>
       </ul>
 
-      <h2>AFTER:</h2>
-      <h4>(Staying Safe After an Earthquake)</h4>
+      <h2>AFTER</h2>
+      <h4>Staying Safe After an Earthquake</h4>
       <h3>If you do nothing else:</h3>
       <ol>
         <li>If away from home, return only when authorities say it is safe to do so.</li>
