@@ -1,3 +1,4 @@
+import { useRef, useEffect } from 'react';
 import { MapContainer, TileLayer, Marker, Popup, LayersControl, GeoJSON } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
@@ -30,12 +31,20 @@ const EarthquakeMap = ({realtimeQuakes}) => {
     L.Marker.prototype.options.icon = DefaultIcon;
     console.log(realtimeQuakes);  
 
+
+    const mapRef = useRef();
+    useEffect(() => {
+    console.log(mapRef)
+
+    }, [mapRef])
+
     return(
     <>
         <h2>This is the map showing all earthquakes, BOOYAH!</h2>
        
     <div id="map-container">
         <MapContainer 
+        ref={mapRef}
             scrollWheelZoom={false}
               className="map"
               center={[20.5844,
@@ -53,7 +62,7 @@ const EarthquakeMap = ({realtimeQuakes}) => {
       attribution="&copy; <a href=&quot;http://www.openstreetmap.org/copyright&quot;>OpenStreetMap</a> contributors, &copy; <a href=&quot;http://cartodb.com/attributions&quot;>CartoDB</a>" /></LayersControl.BaseLayer> 
 
             <LayersControl.Overlay name="Marker with popup">
-                <Markers    />
+                <Marker    />
             </LayersControl.Overlay>
 
            </LayersControl>
