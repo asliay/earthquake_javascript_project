@@ -23,11 +23,19 @@ margin-right: auto;
 .header1 {
   /* color: rgb(177, 227, 250); */
   color: black;
+  background-color: rgb(66, 207, 137);
+  width: auto;
   font-weight: bold;
   font-size: 40px;  
   text-align: center;
   margin-bottom: 0px;
   margin-top: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 10px 20px;
+  border-color: black;
+  border-style: dashed;
+  border-width: 2px;
 }
 
 .header2 {
