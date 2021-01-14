@@ -758,8 +758,120 @@ db.historicalEarthquakes.insertMany([
       -86.223,
       10
     ]
+  },
+  {
+    title: "1556 Shaanxi earthquake",
+    location: "Shaanxi, China",
+    casualties:	"830,000",
+    desc: {
+        paragraph1: "Almost impossible to measure the damage cost in modern terms, property damage would have been incalculable—an entire region of inner China had been destroyed and an estimated 60% of the region's population died."
+    },  
+    time: -13062697200000, 
+    mag: 8,
+    coordinates: [
+      34.30,
+      109.18,
+      0
+    ]
+  },
+  {
+    title: "1976 Tangshan earthquake",
+    location: "Hebei, China",
+    casualties:	"242,000",
+    desc: {
+        paragraph1: "Also known as the Great Tangshan earthquake. In minutes, eighty-five percent of the buildings in Tangshan collapsed or were unusable, all services failed, and most of the highway and railway bridges collapsed or were seriously damaged.",
+        paragraph2: "At least 242,000 people died (some have said three times that), making this the third (or possibly second) deadliest earthquake in recorded history."
+    },  
+    time: 207344575000,
+    mag: 7.6,
+    coordinates: [
+      39.63,
+      118.44,
+      12.2
+    ]
+  },
+  {
+    title: "1920 Haiyuan earthquake",
+    location: "Ningxia–Gansu, China",
+    casualties:	"273,400",
+    desc: {
+        paragraph1: "About 230 km (140 mi) of surface faulting was seen from Lijunbu through Ganyanchi to Jingtai. There were more than 50,000 landslides in the epicentral area and ground cracking was widespread.",
+        paragraph2: "Some rivers were dammed, others changed course. This earthquake was followed by a series of aftershocks for three years."
+    },  
+    time: -1547639645000,
+    mag: 7.8,
+    coordinates: [
+      36.50,
+      105.70,
+      0
+    ]
+  },
+  {
+    title: "526 Antioch earthquake",
+    location: "Antioch, Byzantine Empire (modern-day Turkey)",
+    casualties:	"250,000",
+    desc: {
+        paragraph1: "The earthquake caused severe damage to many of the buildings in Antioch, including Constantine's great octagonal church Domus Aurea built on an island in the Orontes River. ",
+        paragraph2: "Only houses built close to the mountain are said to have survived. Most of the damage however, was a result of the fires that went on for many days in the immediate aftermath of the earthquake, made worse by the wind.",
+        paragraph3: "This earthquake was followed by a series of aftershocks for three years."
+    },  
+    time: -45556084800000,
+    mag: 7,
+    coordinates: [
+      36.23,
+      36.12,
+      0
+    ]
+  },  
+  {
+    title: "1138 Aleppo earthquake",
+    location: "Aleppo, Syria",
+    casualties:	"230,000",
+    desc: {
+        paragraph1: "In the mid-twelfth century, northern Syria was a war-ravaged land. The worst hit area was Harem, where Crusaders had built a large citadel. Sources indicate that the castle was destroyed and the church fell in on itself.",
+        paragraph2: "The fort of Atharib, then occupied by Muslims, was destroyed. The citadel also collapsed, killing 600 of the castle guard, though the governor and some servants survived, and fled to Mosul.",
+        paragraph3: "The residents of Aleppo, a large city of several tens of thousands during this period, had been warned by the foreshocks and fled to the countryside before the main earthquake."
+    },  
+    time: -26230910400000,
+    mag: 7.1,
+    coordinates: [
+      36.13,
+      37.10,
+      0
+    ]
+  },  
+  {
+    title: "1303 Hongdong earthquake",
+    location: "	Shanxi, China",
+    casualties:	"200,000",
+    desc: {
+        paragraph1: "Because of the time period in which it struck, very little is known about the nature of the earthquake, however devastation was widespread throughout the area struck by the earthquake.",
+        paragraph2: "In the nearby towns of Zhaocheng and Hongdong, every major temple and school building collapsed and over half the towns' populations perished. Every building in Huo county, Shanxi was destroyed."
+    },  
+    time: -21030753600000,
+    mag: 8.0,
+    coordinates: [
+      36.30,
+      111.70,
+      0
+    ]
+  },  
+  {
+    title: "856 Damghan earthquake",
+    location: "Damghan, Iran",
+    casualties:	"200,000",
+    desc: {
+        paragraph1: "The area of significant damage extended along the Alborz for about 350 kilometres (220 mi).Šahr-e Qumis was so badly damaged that it appears to have been abandoned following the earthquake. ",
+        paragraph2: "The effects of the earthquake were still visible in the area between Bastam and Damghan 46 years later."
+    },  
+    time: -35123630400000,
+    mag: 7.9,
+    coordinates: [
+      36.20,
+      54.30,
+      0
+    ]
   }
-
 ])
 
 
