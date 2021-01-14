@@ -63,7 +63,13 @@ const HistoricalMap = ({historicalQuakes}) => {
                 position={[
                     quake.coordinates[0], 
                     quake.coordinates[1]
-                    ]}>
+                    ]}
+                    eventHandlers={{
+                        click: (e) => {
+                          console.log('marker clicked', e)
+                        },
+                      }}
+                    >
             <Popup>
             {/* The {quake.title} occurred on {new Date(quake.time).toLocaleString()} (UTC), and had a magnitude of {quake.mag}. */}
                 {quake.title}<br/>
