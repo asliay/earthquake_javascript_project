@@ -1,4 +1,4 @@
-import { MapContainer, TileLayer, Marker, Popup, LayersControl, GeoJSON } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup, LayersControl, GeoJSON, ZoomControl } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 import iconShadow from 'leaflet/dist/images/marker-shadow.png';
@@ -43,6 +43,7 @@ const HistoricalMap = ({historicalQuakes, quakeSelected}) => {
                        26.2456]}
               zoom={2}
               style={{ height: 450, width: '100%' }}
+              zoomControl={false}
                >
         <LayersControl position="topright">
       <LayersControl.BaseLayer checked name="OpenStreetMap.Mapnik">
@@ -52,6 +53,8 @@ const HistoricalMap = ({historicalQuakes, quakeSelected}) => {
       <LayersControl.BaseLayer checked name="Grey">
         <TileLayer url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png" 
       attribution="&copy; <a href=&quot;http://www.openstreetmap.org/copyright&quot;>OpenStreetMap</a> contributors, &copy; <a href=&quot;http://cartodb.com/attributions&quot;>CartoDB</a>" /></LayersControl.BaseLayer> 
+            <ZoomControl position="bottomright"  />
+
 
         {historicalQuakes.map(quake => ( 
             <Marker 
