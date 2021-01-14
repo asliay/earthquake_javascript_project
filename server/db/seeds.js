@@ -264,7 +264,10 @@ db.historicalEarthquakes.insertMany([
     location: "Eastern Sichuan, China",
     casualties: "87,587 killed, 374,643 injured, 18,392 missing",
     damageCost: "$181 billion (adj. for inflation)",
-    desc: {},
+    desc: {
+      paragraph1: "Also known as the Great Sichuan earthquake, its epicenter was located 80km WNW of Chengdu, the provincial capital, with a focal depth of 19km. The earthquake ruptured the fault for over 240km, and was felt in nearby countries and as far away as both Beijin and Shanhai - 1,500 and 1,700km away respectively, where office buildings swayed with the tremor.",
+      paragraph2: "Strong aftershocks, some exceeding magnitude 6, continued to hit the area up to several months after the main shock, causing further casualties and damage. The largest number of geohazards were recorded, including about 200,000 landslides. The geohazards are thought to be responsible for a third of the high death toll. Around 4.8 million people were left homeless, though the number could be as high as 11 million."
+    },
     time: 1210573681000,
     mag: 8.0,
     coordinates: [
@@ -276,7 +279,11 @@ db.historicalEarthquakes.insertMany([
   {
     title: "2015 April Nepal Earthquake",
     location: "38km E of Khudi, Nepal",
-    desc: {},
+    casualties: "8,964 killed, 21,952 injured, 3.5 million homeless",
+    damageCost: "$10 billion",
+    desc: {
+      paragraph1: "This was the worst natural disaster to strike Nepal since the 1934 Nepal-Bihar earthquake. This earthquake triggered an avalanche on Mount Everest, killing 22 and making this the deadliest day on the mountain in history. A major aftershock occurred on 12th May with a magnitude of 7.3. ",
+    },
     time: 1429942285000,
     mag: 7.8,
     coordinates: [
