@@ -25,8 +25,8 @@ margin-right: auto;
 /* HEADINGS */
 
 .header1 {
-  /* color: rgb(177, 227, 250); */
   color: black;
+  /* background-color: rgb(248, 206, 68); */
   background-color: rgb(66, 207, 137);
   width: auto;
   font-weight: bold;
@@ -76,6 +76,7 @@ margin-right: auto;
   border-color: black;
   border-style: solid;
   border-width: 1px;
+  border-radius: 25px;
 }
 
 #nav-bar a {
@@ -106,6 +107,8 @@ margin-right: auto;
   border-color: black;
   border-style: solid;
   border-width: 1px;
+  border-radius: 20px;
+
 }
 
 .quake-info {
@@ -141,6 +144,8 @@ margin-right: auto;
   border-color: black;
   border-style: solid;
   border-width: 1px;
+  border-radius: 20px;
+
 }
 
 .safety-info {
@@ -203,7 +208,7 @@ h3 {
 
 h4 {
   color: rgb(6, 45, 63);
-  background-color: rgb(248, 206, 68);
+  background-color: rgb(66, 207, 137);
   font-weight: bold;
   font-size: 25px;
   margin-left: auto;
@@ -214,6 +219,7 @@ h4 {
   border-color: black;
   border-style: dotted;
   border-width: 3px;
+  border-radius: 15px;
 }
 
 /* HISTORY INFO */
@@ -230,6 +236,7 @@ h4 {
   border-color: black;
   border-style: solid;
   border-width: 1px;
+  border-radius: 20px;
 }
 
 .history-info {
@@ -257,6 +264,7 @@ h4 {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 20px;
   display: column;
   flex-direction: row;
   justify-content: space-evenly;
@@ -265,7 +273,8 @@ h4 {
   background-color: rgb(70, 142, 175);
   border-color: black;
   border-style: solid;
-  border-width: 0px 1px 1px 1px;
+  border-width: 1px 1px 1px 1px;
+  border-radius: 15px;
 }
 
 .footer {
