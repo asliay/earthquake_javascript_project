@@ -61,7 +61,7 @@ const RealtimeChart = ({realtimeQuakes}) => {
 
   return(
     <div className="chart-box">
-    <p className="header2">Magnitudes of all earthquakes over M2.5 in the last 7 days:</p>
+    <h4>Magnitudes of all earthquakes over M2.5 in the last 7 days</h4>
     <HighchartsReact 
       highcharts={Highcharts}
       options={options}/>

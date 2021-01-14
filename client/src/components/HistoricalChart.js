@@ -76,7 +76,7 @@ const HistoricalChart = ({historicalQuakes}) => {
   }
   return (
     <div className="chart-box">
-    <p className="header2">Magnitudes of Historical Earthquakes:</p>
+    <h4>Magnitudes of Historical Earthquakes</h4>
     <HighchartsReact 
       highcharts={Highcharts}
       options={options}/>
