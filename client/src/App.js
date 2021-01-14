@@ -30,11 +30,7 @@ function App() {
     <>
    
     <Router>
-<<<<<<< HEAD
     <img src={Image1} alt="seismograph-image" class="header-image" width="400px"/>
-=======
-    <img src={Image1} alt="whyyyy" className="header-image" width="400px"/>
->>>>>>> develop
     <p className="header1">QUICK, IT'S A QUAKE!</p>
     <NavBar/>
     <Route exact path = "/" render = {
