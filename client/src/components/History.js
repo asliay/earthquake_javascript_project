@@ -11,7 +11,7 @@ const History = ({historicalQuakes}) => {
         <>   
         <div className="history-info-container">
             <div className="history-info">
-                <p className="header2">Historical Quakes</p>
+                <h4>Historical Quakes</h4>
                 <p>Click a marker on the map to learn more!</p>
             <QuakeDetails selectedQuake={selectedQuake} />
             </div>
