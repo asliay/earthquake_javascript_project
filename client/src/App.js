@@ -41,7 +41,9 @@ function App() {
       () => <History historicalQuakes = {historicalQuakes} /> }
       />
     </Router>
-    <p className="footer">Earthquake data sourced from the <a href="https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php">USGS API</a>.</p>
+    <p className="footer">Earthquake data sourced from the <a href="https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php">USGS API</a>.<br></br>
+    Safety information sourced from <a href="https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/earthquake.html">The Red Cross</a>.
+    </p>
     </>
   
   );

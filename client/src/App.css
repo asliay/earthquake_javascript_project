@@ -103,12 +103,29 @@ margin-right: auto;
 }
 
 /* SAFETY INFO */
-.safety-info {
+.safety-info-container {
   color: white;
-  padding: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
   width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: justify;
+  align-items: flex-start; 
+  background-color: rgb(70, 142, 175);
+}
+
+.safety-info {
+  color: white;
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -142,12 +159,16 @@ h2 {
 }
 
 h3 {
-  color: rgb(177, 227, 250);
+  color: rgb(6, 45, 63);
   font-weight: bold;
-  font-size: 35px;
+  font-size: 25px;
   margin-top: 25px;
   margin-top: 15px;
   margin-bottom: 5px;
+  padding: 10px 20px;
+  background-color: rgb(177, 227, 250);
+  border-color: black;
+  border-style: dotted;
 }
 
 h4 {
@@ -161,7 +182,8 @@ h4 {
   margin-top: 25px;
   padding: 10px 20px;
   border-color: black;
-  border-style: dotted;
+  border-style: dashed;
+  border-width: 2px;
 }
 
 /* HISTORY INFO */

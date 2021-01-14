@@ -1,12 +1,13 @@
 const SafetyInfo = () => {
 
   return (
-    <div className="safety-info">
+    <div className="safety-info-container">
+      <div className="safety-info">
       <h1>Earthquake Safety</h1>
       <h1>Before, During and After</h1>
       <h2>BEFORE</h2>
       <h4>Prepare in Advance!</h4>
-      <p>Be sure you’re Red Cross Ready. That means...</p>
+      <p>Be sure you’re <a href="https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/earthquake.html">Red Cross Ready</a>. That means...</p>
       <ul>
         <li>Assembling an <a href="https://www.redcross.org/get-help/how-to-prepare-for-emergencies/survival-kit-supplies.html" target="_blank" rel="noreferrer" data-aa-link-button="emergency-preparedness-kit">emergency preparedness kit</a>.</li>
         <li>Creating a <a href="https://www.redcross.org/get-help/how-to-prepare-for-emergencies/make-a-plan.html" target="_blank" rel="noreferrer" data-aa-link-button="household-evacuation-plan">household evacuation plan</a> that includes your pets.</li>
@@ -17,7 +18,7 @@ const SafetyInfo = () => {
 
       <h2>DURING</h2>
       <h4>DROP, COVER and HOLD ON!</h4>
-      <h3>Indoors:</h3>
+      <h3>Indoors</h3>
       <ul>
         <li>Move as little as possible - most injuries during earthquakes occur because of people moving around, falling and suffering sprains, fractures and head injuries.</li>
         <li>Try to protect your head and torso.</li>
@@ -29,7 +30,7 @@ const SafetyInfo = () => {
         <li>If you smell gas, get out of the house and move as far away as possible.</li>
         <li>Before you leave any building check to make sure that there is no debris from the building that could fall on you.</li>
       </ul>
-      <h3>Outdoors:</h3>
+      <h3>Outdoors</h3>
       <ul>
         <li>Find a clear spot and drop to the ground. Stay there until the shaking stops.</li>
         <li>Try to get as far away from buildings, power lines, trees, and streetlights as possible.</li>
@@ -42,7 +43,7 @@ const SafetyInfo = () => {
 
       <h2>AFTER</h2>
       <h4>Staying Safe After an Earthquake</h4>
-      <h3>If you do nothing else:</h3>
+      <h3>If you do nothing else...</h3>
       <ol>
         <li>If away from home, return only when authorities say it is safe to do so.</li>
         <li>Check yourself for injuries and get first aid, if necessary, before helping injured or trapped persons.</li>
@@ -85,9 +86,11 @@ const SafetyInfo = () => {
             <li>Strengthen exterior features, such as porches, decks, sliding glass doors, canopies, carports and garage doors</li>
           </ul> </li>
       </ul>
+      <br>
+      </br>
 
    
-
+    </div>
     </div>
   )
 }
