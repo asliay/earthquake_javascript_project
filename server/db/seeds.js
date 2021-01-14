@@ -28,7 +28,7 @@ db.historicalEarthquakes.insertMany([
     damageCost: "$82.6k (adj. for inflation)",
     desc: {
       paragraph1: "The Rat Islands are a group of volcanic islands in the Aleutian Islands, in southwestern Alaska. They were given their name because rats were accidentally introducted after a Japanese shipwreck around 1780 (as of 2009, they are believed to be rat-free). These islands are on the boundary of the Pacific and North American tectonic plates, and as such are very earthquake-prone.",
-      parargraph2: ""
+      paragraph2: "This earthquake triggered a tsunami of over 10m on Shemya Island, causing very little damage."
     },
     time: -154810718000,
     mag: 8.7,
@@ -47,7 +47,10 @@ db.historicalEarthquakes.insertMany([
     location: "Atacama Region, Chile",
     casualties: "Several hundred",
     damageCost: "$76-380 million (adj. for inflation)",
-    desc: {},
+    desc: {
+      paragraph1: "This earthquake took place along the boundary between the Nazca and South American tectonic plates, near the border of Argentina. It triggered a destructive tsunami that caused significant damage to the coast of Chile, and was observed as far away as Australia.",
+      paragraphe2: "Chile has been at a convergent plate boundary that generates megathrust earthquakes since the Paleozoic Era. As such, the Chilean coast has suffered many megathrust earthquakes along this plate boundary, including the strongest earthquake ever measured, in 1960."
+    },
     time: -1487618829000,
     mag: 8.5,
     coordinates: [
@@ -61,7 +64,10 @@ db.historicalEarthquakes.insertMany([
     location: "Off the West Coast of Northern Sumatra",
     casualties: "227,898",
     damageCost: "Estimated $13 billion (adj. for inflation)",
-    desc: {},
+    desc: {
+      paragraph1: "Also known as the Boxing Day Tsunami and the Sumatra-Adaman earthquake, this was an undersea megathrust earthquake with an epicentre off the west coast of norther Sumatra, Indonesia. A series of massive tsunami waves grew up to 30 metres high once heading inland, created by underwater seismic activity. The earthquake was caused by a rupture along the fault between the Burma and Indian Plates.",
+      paragraph2: "This earthquake was the 3rd larget ever recorded and had the longest duration of faulting ever observed (between 8 and 10 minutes), and caused the planet to vibrate as much as 10mm. The huge destruction and high death toll prompted a worldwide humanitarian response, with donations totalling more than $14 billion. "
+    },
     time: 1104022733000,
     mag: 9.2,
     coordinates: [
@@ -73,9 +79,13 @@ db.historicalEarthquakes.insertMany([
   {
     title: "2011 Tōhoku Earthquake and Tsunami",
     location: "Near the East Coast of Honshu, Japan",
-    casualties: "Over 20,000",
+    casualties: "15,899 deaths, 6,157 injured, 2,529 missing",
     damageCost: "$409 billion (adj. for inflation)",
-    desc: {},
+    desc: {
+      paragraph1: "Also known in Japan as the Great East Japan Earthquake,this was the most powerful earthquake ever recorded in Japan and the 4th most powerful earthquake in the world since modern record-keeping began in 1900. It triggered powerfu tsunami waves that may have reached up to heights of 40.5 metres in Miyako, and which, in the Sendai area, travelled at 700km/h and up to 10km inland. Residents of Sendai had only 10 minutes warning. The earthquake moved the main island of Japan 2.4 metres east, and shifted the Earth on its axis by between 10 and 25cm.",
+      paragraph2: "A report by the National Police Agency of Japan listed 121, 778 buildings as 'total collapsed', 280,926 buildings 'half collapse', and another 699,180 buildings 'partially damaged'. The resulting tsunami caused nuclear accidents, primarily the level 7 meltdowns at 3 reactors of the Fukushima Nuclear Power Plant."
+
+    },
     time: 1299822384000,
     mag: 9.1,
     coordinates: [
@@ -89,7 +99,9 @@ db.historicalEarthquakes.insertMany([
     location: "Southern Alaska",
     casualties: "131",
     damageCost: "$2.5 billion (adj. for inflation)",
-    desc: {},
+    desc: {
+      paragraph1: "Also known as the Great Alaskan earthquake and the Good Friday earthquake, this earthquake lasted 4 minutes and 38 seconds, and remains the most powerful earthquake recorded in North American history. Six hundred miles of fault ruptured at once and moved up to 18 metres, releasing about 500 years of stress buildup. A 82 metre high tsunami destroyed the village of Chenega, and post-quake tsunamis severely affected several Alaskan communities, as well as people and property in British Columbia, Washington, Oregon and California. Hawaii and Japan were also affected by tsunami damage."
+    },
     time: -181859024000,
     mag: 9.2,
     coordinates: [
@@ -106,7 +118,10 @@ db.historicalEarthquakes.insertMany([
     location: "Offshore Bio-Bio, Chile",
     casualties: "550",
     damageCost: "$17.5-35 billion (adj. for inflation)",
-    desc: {},
+    desc: {
+      paragraph1: "This was the strongest earthquake affecting Chile since the magnitude 9.5 1960 Valdivia earthquake. The instense shaking of this lasted for about 3 minutes, and was felt stronly in six Chilean regions which together make up about 80% of the country's population. It triggered a tsunami which devastated several coastal towns in south-central Chile, and Tsunami warnings were issues in 53 countries. The wave caused an estimated $66.7 million damage to the Japanese fisheries business.",
+      paragraph2: "Chile has been at a convergent plate boundary that generates megathrust earthquakes since the Paleozoic Era. As such, the Chilean coast has suffered many megathrust earthquakes along this plate boundary, including the strongest earthquake ever measured, in 1960."
+    },
     time: 1267252463000,
     mag: 8.8,
     coordinates: [
@@ -120,7 +135,9 @@ db.historicalEarthquakes.insertMany([
     location: "Eastern Xizang-India border region",
     casualties: "4,800",
     damageCost: "$270 million (adj. for inflation)",
-    desc: {},
+    desc: {
+      paragraph1: "This earthquake occurred in the rugged mountainous areas between the Himalayas and the Hengduan Mountains, and had devastating effects in both India and Tibet. It was the sixth largst earthquake of the 20th century, and is the largest known earthquake to have not been cause by an oceanic subduction. Instead, this quake was caused by two continental plates colliding.",
+    },
     time: -611574626000,
     mag: 8.6,
     coordinates: [
@@ -134,7 +151,11 @@ db.historicalEarthquakes.insertMany([
     location: "Andreanof Islands, Aleutian Islands, Alaska",
     casualties: "No Casualties",
     damageCost: "$46.3 million (adj. for inflation)",
-    desc: {},
+    desc: {
+      paragraph1: "This occurred along the  Aleutian Trench, the convergent plate boundary that separates the Pacific Plate and the North American Plates near Alaska. A basin wide tsunami followed, with effects felt in Alaska and Hawaii.",
+      paragraph2: "The earthquake caused severe damage to roads and buildings on Adak Island, but no lives were lost. In Hawaii, damages was much more extensive. On the island of Kauai, the wave height reached 16 metres. The effects were considered about twice as strong as that of the 1946 Aleutian Islands earthquake and tsnami."
+
+    },
     time: -404386647000,
     mag: 8.6,
     coordinates: [
@@ -148,7 +169,10 @@ db.historicalEarthquakes.insertMany([
     location: "Northern Sumatra, Indonesia",
     casualties: "915-2000",
     damageCost: "No Estimate",
-    desc: {},
+    desc: {
+      paragraph1: "This earthquake lasted for about 2 minutes, and there were 8 major aftershocks in the following 24 hours. On the Indonesian island of Nias, hundreds of buildings were destroyed and accounted for the majority of the death toll. The earthquake was felt strongly across the island of Sumatra and caused widespread power outages.",
+      paragraph2: "This event caused panic in the region, having already been devasted by the Boxing Day earthquake and tsunami in 2004, but this earthquake generated a relatively small tsunami that caused limited damage. The effects were felt as far away as Bangkok, Thailand, over 1,000km away."
+    },
     time: 1112026176000,
     mag: 8.6,
     coordinates: [
@@ -160,7 +184,9 @@ db.historicalEarthquakes.insertMany([
   {
     title:"2012 Indian Ocean Earthquakes",
     location: "Off the West Coast of Northern Sumatra",
-    desc: {},
+    desc: {
+      paragraph1: ""
+    },
     time: 1334133516000,
     mag: 8.6,
     coordinates: [
@@ -172,7 +198,9 @@ db.historicalEarthquakes.insertMany([
   {
     title:"1963 Kuril Islands Earthquake",
     location: "Kuril Islands",
-    desc: {},
+    desc: {
+      paragraph1: "The Kuril Islands are a volcanic archipelago near Russia and Japan. This earthquake was followed by a 7.8 magnitude event 7 days later, and both triggered tsunamis that were observed in Canada, Japan, Mexico, Hawaii, Alaska, California, and many islands across the northern Pacific Ocean. No damage, deaths or injuries are recorded for these two events or their associated tsunamis."
+    },
     time: -196281721000,
     mag: 8.5,
     coordinates: [
@@ -184,7 +212,12 @@ db.historicalEarthquakes.insertMany([
   {
     title: "1994 Northridge Earthquake",
     location: "1km NNW of Reseda, CA",
-    desc: {},
+    casualties: "57 killed, over 8,700 injured",
+    damageCost: "$22 - 77 billion (adj. for inflation)",
+    desc: {
+      paragraph1: "This was a blind thrust earthquake that occurred in the San Fernando Valley region of Los Angeles County. The quake had a duration of 10-20 seconds, and strong ground motion was felt as far as 350km away from the epicenter in Nevada. Damage occurred as far as 137km away, with the most damage in the west San Fernando Valley.",
+      paragraph2: "An unusual effect of the Northridge earthbreak was an outbreak of 'Valley fever' in Ventura County. This respiratory disease is caused by inhaling airborne spores of the fungus. It is believed that spores were carried in large clouds of dust created by seismically triggered landslides."
+    },
     time: 758809855000,
     mag: 6.7,
     coordinates: [
@@ -197,8 +230,12 @@ db.historicalEarthquakes.insertMany([
     title: "1952 Severo-Kurilsk Earthquake",
     location: "Off the East Coast of the Kamchatka Peninsula, Russia",
     casualties: "2,336",
-    damageCost: "$17 million",
-    desc: {},
+    damageCost: "$17 million (adj. for inflation)",
+    desc: {
+      paragraph1: "This earthquake triggered a tsunami that hit Severo-Kurlisk in the Kuril Islands and led to the destruction of many settlements in the area. It was the 6th most powerful earthquake on record and still the most powerful earthquake in Russian history.",
+      paragraph2: "The tsunami was generated 130km offshore, impacting Severo-Kurilsk with three waves about 15-18 metres high. Most citizens of the town fled to the surrounding hills and escaped the first wave, however most returned to town and were sadly killed by the second wave. Nearly half of the population were killed, and the settlement was then rebuilt in a different location. Earthquakes continue to happen in the area, including a magnitude 7.5 event which occurred in March 2020.",
+
+    },
     time: -541407690000,
     mag: 9.1,
     coordinates: [
@@ -210,7 +247,10 @@ db.historicalEarthquakes.insertMany([
   {
     title: "1994 Bolivia Earthquake",
     location: "La Paz, Bolivia",
-    desc: {},
+    casualties: "No Casualties",
+    desc: {
+      paragraph1: "The epicenter of this earthquake was located in a sparesly populated region in the Amazon jungle, around 200 miles from la Paz. It is the second largest earthquake ever recorded with a focal depth greater than 300km. It shook the ground from Argentina to Canada and its oscillations were the first to be captured on a modern seismic network. Light damage to buildings was felt in Sao Paulo and Toronto.",
+    },
     time: 771121997000,
     mag: 8.2,
     coordinates: [
@@ -222,6 +262,8 @@ db.historicalEarthquakes.insertMany([
   {
     title: "2008 Sichuan Earthquake",
     location: "Eastern Sichuan, China",
+    casualties: "87,587 killed, 374,643 injured, 18,392 missing",
+    damageCost: "$181 billion (adj. for inflation)",
     desc: {},
     time: 1210573681000,
     mag: 8.0,

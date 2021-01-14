@@ -29,6 +29,7 @@ const conditionalTextRender = (key) => {
     <p>Damage Cost: {conditionalFactsRender(selectedQuake.damageCost)}</p>
     <p>{conditionalTextRender(selectedQuake.desc.paragraph1)}</p>
     <p>{conditionalTextRender(selectedQuake.desc.paragraph2)}</p>
+    <p>{conditionalTextRender(selectedQuake.desc.paragraph3)}</p>
     </>
   )
 }
