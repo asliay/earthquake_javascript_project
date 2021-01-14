@@ -198,7 +198,9 @@ db.historicalEarthquakes.insertMany([
   {
     title:"1963 Kuril Islands Earthquake",
     location: "Kuril Islands",
-    desc: {},
+    desc: {
+      paragraph1: "The Kuril Islands are a volcanic archipelago near Russia and Japan. This earthquake was followed by a 7.8 magnitude event 7 days later, and both triggered tsunamis that were observed in Canada, Japan, Mexico, Hawaii, Alaska, California, and many islands across the northern Pacific Ocean. No damage, deaths or injuries are recorded for these two events or their associated tsunamis."
+    },
     time: -196281721000,
     mag: 8.5,
     coordinates: [
@@ -210,7 +212,12 @@ db.historicalEarthquakes.insertMany([
   {
     title: "1994 Northridge Earthquake",
     location: "1km NNW of Reseda, CA",
-    desc: {},
+    casualties: "57 killed, over 8,700 injured",
+    damageCost: "$22 - 77 billion (adj. for inflation)",
+    desc: {
+      paragraph1: "This was a blind thrust earthquake that occurred in the San Fernando Valley region of Los Angeles County. The quake had a duration of 10-20 seconds, and strong ground motion was felt as far as 350km away from the epicenter in Nevada. Damage occurred as far as 137km away, with the most damage in the west San Fernando Valley.",
+      paragraph2: "An unusual effect of the Northridge earthbreak was an outbreak of 'Valley fever' in Ventura County. This respiratory disease is caused by inhaling airborne spores of the fungus. It is believed that spores were carried in large clouds of dust created by seismically triggered landslides."
+    },
     time: 758809855000,
     mag: 6.7,
     coordinates: [
@@ -223,8 +230,12 @@ db.historicalEarthquakes.insertMany([
     title: "1952 Severo-Kurilsk Earthquake",
     location: "Off the East Coast of the Kamchatka Peninsula, Russia",
     casualties: "2,336",
-    damageCost: "$17 million",
-    desc: {},
+    damageCost: "$17 million (adj. for inflation)",
+    desc: {
+      paragraph1: "This earthquake triggered a tsunami that hit Severo-Kurlisk in the Kuril Islands and led to the destruction of many settlements in the area. It was the 6th most powerful earthquake on record and still the most powerful earthquake in Russian history.",
+      paragraph2: "The tsunami was generated 130km offshore, impacting Severo-Kurilsk with three waves about 15-18 metres high. Most citizens of the town fled to the surrounding hills and escaped the first wave, however most returned to town and were sadly killed by the second wave. Nearly half of the population were killed, and the settlement was then rebuilt in a different location. Earthquakes continue to happen in the area, including a magnitude 7.5 event which occurred in March 2020.",
+
+    },
     time: -541407690000,
     mag: 9.1,
     coordinates: [
@@ -236,7 +247,10 @@ db.historicalEarthquakes.insertMany([
   {
     title: "1994 Bolivia Earthquake",
     location: "La Paz, Bolivia",
-    desc: {},
+    casualties: "No Casualties",
+    desc: {
+      paragraph1: "The epicenter of this earthquake was located in a sparesly populated region in the Amazon jungle, around 200 miles from la Paz. It is the second largest earthquake ever recorded with a focal depth greater than 300km. It shook the ground from Argentina to Canada and its oscillations were the first to be captured on a modern seismic network. Light damage to buildings was felt in Sao Paulo and Toronto.",
+    },
     time: 771121997000,
     mag: 8.2,
     coordinates: [
@@ -248,6 +262,8 @@ db.historicalEarthquakes.insertMany([
   {
     title: "2008 Sichuan Earthquake",
     location: "Eastern Sichuan, China",
+    casualties: "87,587 killed, 374,643 injured, 18,392 missing",
+    damageCost: "$181 billion (adj. for inflation)",
     desc: {},
     time: 1210573681000,
     mag: 8.0,
