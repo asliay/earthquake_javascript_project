@@ -1,9 +1,6 @@
 import { MapContainer, TileLayer, Marker, Popup, LayersControl, GeoJSON } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
-
 import L from 'leaflet';
-// import {Icon} from 'leaflet';
-// import icon from 'leaflet/dist/images/marker-icon.png';
 import iconShadow from 'leaflet/dist/images/marker-shadow.png';
 import {platesLayer} from '../assets/PB2002_boundaries';
 import marker from '../assets/marker.png'
@@ -45,7 +42,7 @@ const HistoricalMap = ({historicalQuakes}) => {
               center={[20.5844,
                        26.2456]}
               zoom={2}
-              style={{ height: 450, width: 450 }}
+              style={{ height: 450, width: '100%' }}
                >
         <LayersControl position="topright">
       <LayersControl.BaseLayer checked name="OpenStreetMap.Mapnik">

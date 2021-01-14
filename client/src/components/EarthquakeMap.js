@@ -1,4 +1,4 @@
-import { MapContainer, TileLayer, Marker, Popup, LayersControl, GeoJSON } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup, LayersControl, GeoJSON, ZoomControl } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 import iconShadow from 'leaflet/dist/images/marker-shadow.png';
@@ -8,18 +8,19 @@ import marker from '../assets/marker.png'
 
 
 const EarthquakeMap = ({realtimeQuakes}) => {
-// function to capitalise first letter, used for earthquake location popup  
+
+  // function to capitalise first letter, used for earthquake location popup  
     function capitalizeFirstLetter(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
       }
-
+  // styling for plates map layer
     const myStyle = [{
         "color": "#ff7800",
         "weight": 5,
         "opacity": 0.65
     }]
-    
-    let DefaultIcon = new L.Icon({
+    //custom marker icon settings
+    let customIcon = new L.Icon({
         iconUrl: marker,
         iconSize: [40,40],
         iconAnchor: [20, 40],
@@ -27,7 +28,7 @@ const EarthquakeMap = ({realtimeQuakes}) => {
         shadowAnchor: [20,40],
         popupAnchor: [0, -40]
     });
-    L.Marker.prototype.options.icon = DefaultIcon;
+    
     
     return(
     <>
@@ -40,8 +41,8 @@ const EarthquakeMap = ({realtimeQuakes}) => {
               center={[20.5844,
                        26.2456]}
               zoom={2}
-              style={{ height: 450, width: 450 }}
-               >
+              style={{ height: 450, width: '100%' }}
+              zoomControl={false} >
          <LayersControl position="topright">
       <LayersControl.BaseLayer checked name="OpenStreetMap.Mapnik">
         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -50,11 +51,12 @@ const EarthquakeMap = ({realtimeQuakes}) => {
       <LayersControl.BaseLayer name="Grey">
         <TileLayer url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png" 
       attribution="&copy; <a href=&quot;http://www.openstreetmap.org/copyright&quot;>OpenStreetMap</a> contributors, &copy; <a href=&quot;http://cartodb.com/attributions&quot;>CartoDB</a>" /></LayersControl.BaseLayer> 
+      <ZoomControl position="bottomright" zoomInText="🔎" zoomOutText="🗺" />
 
         {realtimeQuakes.map(quake => ( 
                 <Marker 
                 key={quake.id}
-                icon={DefaultIcon}
+                icon={customIcon}
                 position={[
                     quake.geometry.coordinates[1], 
                     quake.geometry.coordinates[0]
