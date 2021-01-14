@@ -22,9 +22,9 @@ const conditionalTextRender = (key) => {
     <>
     <p className='header3'>{selectedQuake.title}</p>
 
-    <p>Location:{selectedQuake.location}</p>
-    <p>Magnitude: {selectedQuake.mag}</p>
-    <p>Date: {new Date(selectedQuake.time).toLocaleDateString()}</p>
+    <p>Location: {selectedQuake.location}</p>
+    <p>Magnitude: {selectedQuake.mag.toFixed(1)}</p>
+    <p>Date/ Time (UTC): {new Date(selectedQuake.time).toLocaleString()}</p>
     <p>Casualties: {conditionalFactsRender(selectedQuake.casualties)}</p>
     <p>Damage Cost: {conditionalFactsRender(selectedQuake.damageCost)}</p>
     <p>{conditionalTextRender(selectedQuake.desc.paragraph1)}</p>
