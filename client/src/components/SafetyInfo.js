@@ -2,8 +2,9 @@ const SafetyInfo = () => {
 
   return (
     <div className="safety-info">
-      <p className="header2">Earthquake Safety - Before, During and After</p>
-      <p className="header2">BEFORE (Prepare in Advance)</p>
+      <h1>Earthquake Safety - Before, During and After</h1>
+      <h2>BEFORE:</h2>
+      <h4>(Prepare in Advance)</h4>
       <p>Be sure you’re Red Cross Ready. That means...</p>
       <ul>
         <li>Assembling an <a href="https://www.redcross.org/get-help/how-to-prepare-for-emergencies/survival-kit-supplies.html" target="_blank" rel="noreferrer" data-aa-link-button="emergency-preparedness-kit">emergency preparedness kit</a>.</li>
@@ -13,8 +14,9 @@ const SafetyInfo = () => {
         <li>Download the Emergency App for <a href="https://itunes.apple.com/us/app/emergency-by-american-red/id954783878?mt=8" target="_blank" rel="noreferrer" data-aa-link-button="iPhone->>">iPhone</a> or for <a href="https://play.google.com/store/apps/details?id=com.cube.arc.hzd" target="_blank" rel="noreferrer" data-aa-link-button="Android->>">Android</a>.</li>
       </ul>
 
-      <p className="header2">DURING (DROP, COVER and HOLD ON!)</p>
-      <p className="header3">Indoors:</p>
+      <h2>DURING:</h2>
+      <h4> (DROP, COVER and HOLD ON!)</h4>
+      <h3>Indoors:</h3>
       <ul>
         <li>Move as little as possible - most injuries during earthquakes occur because of people moving around, falling and suffering sprains, fractures and head injuries.</li>
         <li>Try to protect your head and torso.</li>
@@ -26,7 +28,7 @@ const SafetyInfo = () => {
         <li>If you smell gas, get out of the house and move as far away as possible.</li>
         <li>Before you leave any building check to make sure that there is no debris from the building that could fall on you.</li>
       </ul>
-      <p className="header3">Outdoors:</p>
+      <h3>Outdoors:</h3>
       <ul>
         <li>Find a clear spot and drop to the ground. Stay there until the shaking stops.</li>
         <li>Try to get as far away from buildings, power lines, trees, and streetlights as possible.</li>
@@ -37,8 +39,9 @@ const SafetyInfo = () => {
         <li>If you are in a mountainous area or near unstable slopes or cliffs, be alert for falling rocks and other debris as well as <a href="https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/landslide.html" target="_blank" rel="noreferrer" data-aa-link-button="landslides">landslides</a>.</li>
       </ul>
 
-      <p className="header2">AFTER (Staying Safe After an Earthquake)</p>
-      <p className="header3">If you do nothing else:</p>
+      <h2>AFTER:</h2>
+      <h4>(Staying Safe After an Earthquake)</h4>
+      <h3>If you do nothing else:</h3>
       <ol>
         <li>If away from home, return only when authorities say it is safe to do so.</li>
         <li>Check yourself for injuries and get first aid, if necessary, before helping injured or trapped persons.</li>
@@ -47,7 +50,7 @@ const SafetyInfo = () => {
         <li>Look for and extinguish small fires. Fire is the most common hazard after an earthquake.</li>
       </ol>
 
-      <p className="header3">Caring for yourself and loved ones</p>
+      <h3>Caring for yourself and loved ones</h3>
       <ul>
         <li>If you are at home, look quickly for damage in and around your home and get everyone out if your home is unsafe.</li>
         <li>Listen to a portable, battery&shy;operated or hand&shy;crank radio for updated emergency information and instructions.</li>
@@ -57,7 +60,7 @@ const SafetyInfo = () => {
         <li>Be careful when driving after an earthquake and anticipate traffic light outages.</li>
       </ul>
 
-      <p className="header3">Returning home safely</p>
+      <h3>Returning home safely</h3>
       <ul>
         <li>Stay out of damaged buildings.</li>
         <li>Use extreme caution and examine walls, floors, doors, staircases and windows to check for damage.</li>
@@ -68,7 +71,7 @@ const SafetyInfo = () => {
       </ul>
       <p>Take pictures of home damage, both of the buildings and its contents, <a href="https://www.redcross.org/get-help/disaster-relief-and-recovery-services/recovering-financially.html" target="_blank" rel="noreferrer" data-aa-link-button="-for-insurance-purposes">for insurance purposes</a>.</p>
 
-      <p className="header3">Cleaning and repairing your home</p>
+      <h3>Cleaning and repairing your home</h3>
       <ul>
         <li>Wear protective clothing, including long pants, a long-sleeved shirt and sturdy shoes, and be cautious.</li>
         <li>Clean up spilled medications, bleach, gasoline or other flammable liquids immediately.</li>
