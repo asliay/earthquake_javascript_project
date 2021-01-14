@@ -28,7 +28,7 @@ db.historicalEarthquakes.insertMany([
     damageCost: "$82.6k (adj. for inflation)",
     desc: {
       paragraph1: "The Rat Islands are a group of volcanic islands in the Aleutian Islands, in southwestern Alaska. They were given their name because rats were accidentally introducted after a Japanese shipwreck around 1780 (as of 2009, they are believed to be rat-free). These islands are on the boundary of the Pacific and North American tectonic plates, and as such are very earthquake-prone.",
-      parargraph2: ""
+      parargraph2: "This earthquake triggered a tsunami of over 10m on Shemya Island, causing very little damage."
     },
     time: -154810718000,
     mag: 8.7,
@@ -47,7 +47,10 @@ db.historicalEarthquakes.insertMany([
     location: "Atacama Region, Chile",
     casualties: "Several hundred",
     damageCost: "$76-380 million (adj. for inflation)",
-    desc: {},
+    desc: {
+      paragraph1: "This earthquake took place along the boundary between the Nazca and South American tectonic plates, near the border of Argentina. It triggered a destructive tsunami that caused significant damage to the coast of Chile, and was observed as far away as Australia.",
+      paragraphe2: "Chile has been at a convergent plate boundary that generates megathrust earthquakes since the Paleozoic Era. As such, the Chilean coast has suffered many megathrust earthquakes along this plate boundary, including the strongest earthquake ever measured, in 1960."
+    },
     time: -1487618829000,
     mag: 8.5,
     coordinates: [
@@ -61,7 +64,10 @@ db.historicalEarthquakes.insertMany([
     location: "Off the West Coast of Northern Sumatra",
     casualties: "227,898",
     damageCost: "Estimated $13 billion (adj. for inflation)",
-    desc: {},
+    desc: {
+      paragraph1: "Also known as the Boxing Day Tsunami and the Sumatra-Adaman earthquake, this was an undersea megathrust earthquake with an epicentre off the west coast of norther Sumatra, Indonesia. A series of massive tsunami waves grew up to 30 metres high once heading inland, created by underwater seismic activity. The earthquake was caused by a rupture along the fault between the Burma and Indian Plates.",
+      paragraph2: "This earthquake was the 3rd larget ever recorded and had the longest duration of faulting ever observed (between 8 and 10 minutes), and caused the planet to vibrate as much as 10mm. The huge destruction and high death toll prompted a worldwide humanitarian response, with donations totalling more than $14 billion. "
+    },
     time: 1104022733000,
     mag: 9.2,
     coordinates: [
@@ -73,9 +79,13 @@ db.historicalEarthquakes.insertMany([
   {
     title: "2011 Tōhoku Earthquake and Tsunami",
     location: "Near the East Coast of Honshu, Japan",
-    casualties: "Over 20,000",
+    casualties: "15,899 deaths, 6,157 injured, 2,529 missing",
     damageCost: "$409 billion (adj. for inflation)",
-    desc: {},
+    desc: {
+      paragraph1: "Also known in Japan as the Great East Japan Earthquake,this was the most powerful earthquake ever recorded in Japan and the 4th most powerful earthquake in the world since modern record-keeping began in 1900. It triggered powerfu tsunami waves that may have reached up to heights of 40.5 metres in Miyako, and which, in the Sendai area, travelled at 700km/h and up to 10km inland. Residents of Sendai had only 10 minutes warning. The earthquake moved the main island of Japan 2.4 metres east, and shifted the Earth on its axis by between 10 and 25cm.",
+      paragraph2: "A report by the National Police Agency of Japan listed 121, 778 buildings as 'total collapsed', 280,926 buildings 'half collapse', and another 699,180 buildings 'partially damaged'. The resulting tsunami caused nuclear accidents, primarily the level 7 meltdowns at 3 reactors of the Fukushima Nuclear Power Plant."
+
+    },
     time: 1299822384000,
     mag: 9.1,
     coordinates: [
@@ -89,7 +99,9 @@ db.historicalEarthquakes.insertMany([
     location: "Southern Alaska",
     casualties: "131",
     damageCost: "$2.5 billion (adj. for inflation)",
-    desc: {},
+    desc: {
+      paragraph1: "Also known as the Great Alaskan earthquake and the Good Friday earthquake, this earthquake lasted 4 minutes and 38 seconds, and remains the most powerful earthquake recorded in North American history. Six hundred miles of fault ruptured at once and moved up to 18 metres, releasing about 500 years of stress buildup. A 82 metre high tsunami destroyed the village of Chenega, and post-quake tsunamis severely affected several Alaskan communities, as well as people and property in British Columbia, Washington, Oregon and California. Hawaii and Japan were also affected by tsunami damage."
+    },
     time: -181859024000,
     mag: 9.2,
     coordinates: [
@@ -106,7 +118,10 @@ db.historicalEarthquakes.insertMany([
     location: "Offshore Bio-Bio, Chile",
     casualties: "550",
     damageCost: "$17.5-35 billion (adj. for inflation)",
-    desc: {},
+    desc: {
+      paragraph1: "This was the strongest earthquake affecting Chile since the magnitude 9.5 1960 Valdivia earthquake. The instense shaking of this lasted for about 3 minutes, and was felt stronly in six Chilean regions which together make up about 80% of the country's population. It triggered a tsunami which devastated several coastal towns in south-central Chile, and Tsunami warnings were issues in 53 countries. The wave caused an estimated $66.7 million damage to the Japanese fisheries business.",
+      paragraph2: "Chile has been at a convergent plate boundary that generates megathrust earthquakes since the Paleozoic Era. As such, the Chilean coast has suffered many megathrust earthquakes along this plate boundary, including the strongest earthquake ever measured, in 1960."
+    },
     time: 1267252463000,
     mag: 8.8,
     coordinates: [
