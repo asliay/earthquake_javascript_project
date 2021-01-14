@@ -42,7 +42,7 @@ const EarthquakeMap = ({realtimeQuakes}) => {
                        26.2456]}
               zoom={2}
               style={{ height: 450, width: '100%' }}
-               >
+              zoomControl={false} >
          <LayersControl position="topright">
       <LayersControl.BaseLayer checked name="OpenStreetMap.Mapnik">
         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -51,7 +51,7 @@ const EarthquakeMap = ({realtimeQuakes}) => {
       <LayersControl.BaseLayer name="Grey">
         <TileLayer url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png" 
       attribution="&copy; <a href=&quot;http://www.openstreetmap.org/copyright&quot;>OpenStreetMap</a> contributors, &copy; <a href=&quot;http://cartodb.com/attributions&quot;>CartoDB</a>" /></LayersControl.BaseLayer> 
-      <ZoomControl />
+      <ZoomControl position="bottomright" zoomInText="🔎" zoomOutText="🗺" />
 
         {realtimeQuakes.map(quake => ( 
                 <Marker 
