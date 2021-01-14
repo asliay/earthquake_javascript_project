@@ -68,6 +68,10 @@ margin-right: auto;
   font-size: 25px;
   font-weight: bold;
   list-style-type: none;
+  /* padding: 10px 20px;
+  border-color: black;
+  border-style: dashed;
+  border-width: 2px; */
 }
 
 #nav-bar a {
