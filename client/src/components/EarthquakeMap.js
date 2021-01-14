@@ -52,7 +52,7 @@ const EarthquakeMap = ({realtimeQuakes}) => {
       <LayersControl.BaseLayer name="Grey">
         <TileLayer url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png" 
       attribution="&copy; <a href=&quot;http://www.openstreetmap.org/copyright&quot;>OpenStreetMap</a> contributors, &copy; <a href=&quot;http://cartodb.com/attributions&quot;>CartoDB</a>" /></LayersControl.BaseLayer> 
-      <ZoomControl position="bottomright" zoomInText="🔎" zoomOutText="🗺" />
+      <ZoomControl position="bottomright"  />
 
         {realtimeQuakes.map(quake => ( 
                 <Marker 
