@@ -154,17 +154,22 @@ margin-right: auto;
 }
 
 h1 {
-  color: rgb(177, 227, 250);
+  color: rgb(1, 23, 32);
   font-weight: bold;
   font-size: 45px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0px;
   margin-top: 0px;
+  padding: 15px 20px;
+  background-color: rgb(177, 227, 250);
+  border-color: black;
+  border-style: dashed;
+  border-width: 2px;
 }
 
 h2 {
-  color: rgb(6, 45, 63);
+  color: rgb(1, 23, 32);
   font-weight: bold;
   font-size: 40px;
   margin-left: auto;
@@ -174,11 +179,12 @@ h2 {
   padding: 10px 20px;
   background-color: rgb(177, 227, 250);
   border-color: black;
-  border-style: dotted;
+  border-style: dashed;
+  border-width: 2px;
 }
 
 h3 {
-  color: rgb(6, 45, 63);
+  color: rgb(1, 23, 32);
   font-weight: bold;
   font-size: 25px;
   margin-top: 25px;
@@ -187,7 +193,8 @@ h3 {
   padding: 10px 20px;
   background-color: rgb(177, 227, 250);
   border-color: black;
-  border-style: dotted;
+  border-style: dashed;
+  border-width: 2px;
 }
 
 h4 {
@@ -201,8 +208,8 @@ h4 {
   margin-top: 25px;
   padding: 10px 20px;
   border-color: black;
-  border-style: dashed;
-  border-width: 2px;
+  border-style: dotted;
+  border-width: 3px;
 }
 
 /* HISTORY INFO */

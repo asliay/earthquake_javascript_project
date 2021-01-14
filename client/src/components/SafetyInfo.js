@@ -3,8 +3,9 @@ const SafetyInfo = () => {
   return (
     <div className="safety-info-container">
       <div className="safety-info">
-      <h1>Earthquake Safety</h1>
-      <h4>Before, During and After</h4>
+      <h1>Earthquake Safety</h1><br></br>
+      <p>Read the information below for advice on what to do before, during and after an earthquake.</p>
+      {/* <h4>Before, During and After</h4> */}
       <h2>BEFORE</h2>
       <h4>Prepare in Advance!</h4>
       <p>Be sure you’re <a href="https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/earthquake.html">Red Cross Ready</a>. That means...</p>
