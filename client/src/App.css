@@ -164,3 +164,7 @@ margin-right: auto;
   align-items: flex-start; 
   background-color: rgb(70, 142, 175);
 }
+
+.footer {
+  text-align: center;
+}
