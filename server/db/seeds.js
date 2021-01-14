@@ -295,6 +295,8 @@ db.historicalEarthquakes.insertMany([
   {
     title: "1999 İzmit Earthquake",
     location: "Western Turkey",
+    casualties: "17,127 killed, around 50,000 injured",
+    damageCost: "$10 billion",
     desc: {},
     time: 934848099000,
     mag: 7.6,
@@ -307,6 +309,8 @@ db.historicalEarthquakes.insertMany([
   {
     title: "2010 Haiti Earthquake",
     location: "Haiti region",
+    casualties: "Around 160,000 killed",
+    damageCost: "$8 billion",
     desc: {},
     time: 1263333190000,
     mag: 7.0,
@@ -319,6 +323,8 @@ db.historicalEarthquakes.insertMany([
   {
     title: "2001 Gujarat Earthquake",
     location: "Gujarat, India",
+    casualties: "13,805 - 20,023 killed, around 166,800 injured",
+    damageCost: "$11 billion",
     desc: {},
     time: 980479000000,
     mag: 7.7,
@@ -329,8 +335,9 @@ db.historicalEarthquakes.insertMany([
     ]
   },
   {
-    title: "2007 Sumatra Earthquake (A)",
+    title: "2007 Sumatra Earthquakes",
     location: "Southern Sumatra, Indonesia",
+    casualties: "23 killed",
     desc: {},
     time: 1189595426000,
     mag: 8.4,
@@ -341,20 +348,10 @@ db.historicalEarthquakes.insertMany([
     ]
   },
   {
-    title: "2007 Sumatra Earthquake (B)",
-    location: "Southern Sumatra, Indonesia",
-    desc: {},
-    time: 1189640943000,
-    mag: 7.9,
-    coordinates: [
-      -2.625,
-      100.841,
-      35
-    ]
-  },
-  {
     title: "2005 Kashmir Earthquake",
     location: "Pakistan",
+    casualties: "Around 86,000 killed, 70,000 injured, 2.8 million displaced",
+    damageCost: "$7 billion",
     desc: {},
     time: 1128743440000,
     mag: 7.6,
@@ -365,33 +362,12 @@ db.historicalEarthquakes.insertMany([
     ]
   },
   {
-    title: "2002 Hindu Kush Earthquake (A)",
-    location: "Hindu Kush region, Afghanistan",
-    desc: {},
-    time: 1015157299000,
-    mag: 7.4,
-    coordinates: [
-      36.502,
-      70.482,
-      225.6
-    ]
-  },
-  {
-    title: "2002 Hindu Kush Earthquake (B)",
-    location: "Hindu Kush region, Afghanistan",
-    desc: {},
-    time: 1017068193000,
-    mag: 6.1,
-    coordinates: [
-      36.062,
-      69.315,
-      8
-    ]
-  },
-  {
     title: "1938 Banda Sea Earthquake",
     location: "Banda Sea",
-    desc: {},
+    casualties: "No Casualties",
+    desc: {
+      paragraph1: "This event generated destructive tsunamis of up to 1.5 metres in the Banda Sea region, but no human lives were lost."
+    },
     time: -1007096137000,
     mag: 8.5,
     coordinates: [
@@ -403,6 +379,8 @@ db.historicalEarthquakes.insertMany([
   {
     title: "2003 Bam Earthquake",
     location: "Southeastern Iran",
+    casualties: "26,271 killed, around 30,000 injured",
+    damageCost: "$1.9 billion",
     desc: {},
     time: 1072403812000,
     mag: 6.6,
@@ -415,6 +393,8 @@ db.historicalEarthquakes.insertMany([
   {
     title: "2006 Yogyakarta Earthquake",
     location: "Java, Indonesia",
+    casualties: "5,778 killed, 38,568 - 137,883 injured",
+    damageCost: "$3.1 billion",
     desc: {},
     time: 1148684038000,
     mag: 6.3,
@@ -427,6 +407,8 @@ db.historicalEarthquakes.insertMany([
   {
     title: "2010 Yushu Earthquake",
     location: "Southern Qinghai, China",
+    casualties: "2,698 killed, 12,135 injured",
+    damageCost: "",
     desc: {},
     time: 1271202578000,
     mag: 6.9,
@@ -439,6 +421,8 @@ db.historicalEarthquakes.insertMany([
   {
     title: "2003 Boumerdès Earthquake",
     location: "Boumerdès, Algeria",
+    casualties: "Approximately 2,266 killed and 10,261 injured",
+    damageCost: "$7 billion",
     desc: {},
     time: 1053542660000,
     mag: 6.8,
@@ -451,6 +435,7 @@ db.historicalEarthquakes.insertMany([
   {
     title: "2009 Sumatra Earthquakes",
     location: "Southern Sumatra, Indonesia",
+    casualties: "1,115 killed, 2,180 injured",
     desc: {},
     time: 1254305770000,
     mag: 7.6,
@@ -463,6 +448,8 @@ db.historicalEarthquakes.insertMany([
   {
     title: "2011 Christchurch Earthquake",
     location: "South Island of New Zealand",
+    casualties: "185 killed, 1,500 - 2,000 injured",
+    damageCost: "$20 billion",
     desc: {},
     time: 1298332302000,
     mag: 6.1,
@@ -475,6 +462,7 @@ db.historicalEarthquakes.insertMany([
   {
     title: "2004 Chūetsu Earthquake",
     location: "Niigata Prefecture, Japan",
+    casualties: "68 killed, 4,805 injured",
     desc: {},
     time: 1098521760000,
     mag: 6.6,
