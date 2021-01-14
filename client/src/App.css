@@ -6,6 +6,10 @@ body {
   text-align: justify;
 }
 
+body a {
+  color: rgb(147, 240, 247);
+}
+
 /* HEADER IMAGE  */
 .header-image {
 display: block;
