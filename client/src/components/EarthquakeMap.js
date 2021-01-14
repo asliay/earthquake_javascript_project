@@ -41,7 +41,7 @@ const EarthquakeMap = ({realtimeQuakes}) => {
               center={[20.5844,
                        26.2456]}
               zoom={2}
-              style={{ height: 450, width: 600 }}
+              style={{ height: 450, width: '100%' }}
                >
          <LayersControl position="topright">
       <LayersControl.BaseLayer checked name="OpenStreetMap.Mapnik">
