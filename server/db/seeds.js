@@ -28,7 +28,7 @@ db.historicalEarthquakes.insertMany([
     damageCost: "$82.6k (adj. for inflation)",
     desc: {
       paragraph1: "The Rat Islands are a group of volcanic islands in the Aleutian Islands, in southwestern Alaska. They were given their name because rats were accidentally introducted after a Japanese shipwreck around 1780 (as of 2009, they are believed to be rat-free). These islands are on the boundary of the Pacific and North American tectonic plates, and as such are very earthquake-prone.",
-      parargraph2: "This earthquake triggered a tsunami of over 10m on Shemya Island, causing very little damage."
+      paragraph2: "This earthquake triggered a tsunami of over 10m on Shemya Island, causing very little damage."
     },
     time: -154810718000,
     mag: 8.7,
@@ -135,7 +135,9 @@ db.historicalEarthquakes.insertMany([
     location: "Eastern Xizang-India border region",
     casualties: "4,800",
     damageCost: "$270 million (adj. for inflation)",
-    desc: {},
+    desc: {
+      paragraph1: "This earthquake occurred in the rugged mountainous areas between the Himalayas and the Hengduan Mountains, and had devastating effects in both India and Tibet. It was the sixth largst earthquake of the 20th century, and is the largest known earthquake to have not been cause by an oceanic subduction. Instead, this quake was caused by two continental plates colliding.",
+    },
     time: -611574626000,
     mag: 8.6,
     coordinates: [
@@ -149,7 +151,11 @@ db.historicalEarthquakes.insertMany([
     location: "Andreanof Islands, Aleutian Islands, Alaska",
     casualties: "No Casualties",
     damageCost: "$46.3 million (adj. for inflation)",
-    desc: {},
+    desc: {
+      paragraph1: "This occurred along the  Aleutian Trench, the convergent plate boundary that separates the Pacific Plate and the North American Plates near Alaska. A basin wide tsunami followed, with effects felt in Alaska and Hawaii.",
+      paragraph2: "The earthquake caused severe damage to roads and buildings on Adak Island, but no lives were lost. In Hawaii, damages was much more extensive. On the island of Kauai, the wave height reached 16 metres. The effects were considered about twice as strong as that of the 1946 Aleutian Islands earthquake and tsnami."
+
+    },
     time: -404386647000,
     mag: 8.6,
     coordinates: [
@@ -163,7 +169,10 @@ db.historicalEarthquakes.insertMany([
     location: "Northern Sumatra, Indonesia",
     casualties: "915-2000",
     damageCost: "No Estimate",
-    desc: {},
+    desc: {
+      paragraph1: "This earthquake lasted for about 2 minutes, and there were 8 major aftershocks in the following 24 hours. On the Indonesian island of Nias, hundreds of buildings were destroyed and accounted for the majority of the death toll. The earthquake was felt strongly across the island of Sumatra and caused widespread power outages.",
+      paragraph2: "This event caused panic in the region, having already been devasted by the Boxing Day earthquake and tsunami in 2004, but this earthquake generated a relatively small tsunami that caused limited damage. The effects were felt as far away as Bangkok, Thailand, over 1,000km away."
+    },
     time: 1112026176000,
     mag: 8.6,
     coordinates: [
@@ -175,7 +184,9 @@ db.historicalEarthquakes.insertMany([
   {
     title:"2012 Indian Ocean Earthquakes",
     location: "Off the West Coast of Northern Sumatra",
-    desc: {},
+    desc: {
+      paragraph1: ""
+    },
     time: 1334133516000,
     mag: 8.6,
     coordinates: [
