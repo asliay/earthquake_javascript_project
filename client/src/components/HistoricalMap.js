@@ -35,7 +35,7 @@ const HistoricalMap = ({historicalQuakes, quakeSelected}) => {
     <>
         
     <div id="map-container" className="historical-map-container">
-        <h2>{historicalQuakes.length} of the biggest Earthquakes of the last century:</h2>
+        <p className="header2">{historicalQuakes.length} of the biggest Earthquakes of the last century:</p>
         <MapContainer 
             scrollWheelZoom={false}
               className="map"
