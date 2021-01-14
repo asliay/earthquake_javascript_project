@@ -7,6 +7,11 @@ db.historicalEarthquakes.insertMany([
     location: "Bio-Bio, Chile",
     casualties: "1,000 - 6,000",
     damageCost: "$4.8 billion (adj. for inflation)",
+    desc: {
+      paragraph1: "Also known as the Great Chilean Earthquake, this was the most powerful earthquake every recorded. It began at 3pm local time, and last for approximately 10 minutes. The resulting tsunamis affected Southern Chile, Hawaii, Japan, the Phillipines, eastern New Zealand, southeast Australia, and the Aleutian Islands.",
+      paragraph2: "The localised tsunamis caused by tremors battered the Chilean coast, with waves up to 25 metres. The main tsunami traveled across the Pacific and devastated Hilo, Hawaii, where waves as high as 10.7 metres were recorded over 10,000km from the epicenter.",
+      paragraph3: ""
+    },  
     time: -303281326000,
     mag: 9.5,
     type: "Megathrust",
