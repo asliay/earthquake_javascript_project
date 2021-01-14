@@ -1,10 +1,9 @@
 
 const QuakeDetails = ({selectedQuake}) => {
-  
+// stops an error when page first loads and no quake is selected 
 if (!selectedQuake) return null
+
 // conditional rendering for in case certain values aren't present for some quakes in the seeds file
-
-
 const conditionalFactsRender = (key) => {
   if (key){
     return key
@@ -12,12 +11,12 @@ const conditionalFactsRender = (key) => {
     return "Unknown"
   }
 }
+
 const conditionalTextRender = (key) => {
   if (key){
     return key
   }
 }
-
 
   return (
     <>
