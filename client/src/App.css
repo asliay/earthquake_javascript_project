@@ -120,7 +120,7 @@ margin-right: auto;
 h1 {
   color: rgb(177, 227, 250);
   font-weight: bold;
-  font-size: 50px;
+  font-size: 45px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0px;
@@ -128,14 +128,15 @@ h1 {
 }
 
 h2 {
-  color: rgb(177, 227, 250);
+  color: rgb(6, 45, 63);
   font-weight: bold;
   font-size: 40px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 25px;
   margin-bottom: 0px;
-  text-decoration: underline;
+  padding: 10px 20px;
+  background-color: rgb(177, 227, 250);
 }
 
 h3 {
