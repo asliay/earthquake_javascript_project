@@ -47,6 +47,7 @@ db.historicalEarthquakes.insertMany([
     location: "Atacama Region, Chile",
     casualties: "Several hundred",
     damageCost: "$76-380 million (adj. for inflation)",
+    desc: {},
     time: -1487618829000,
     mag: 8.5,
     coordinates: [
@@ -60,6 +61,7 @@ db.historicalEarthquakes.insertMany([
     location: "Off the West Coast of Northern Sumatra",
     casualties: "227,898",
     damageCost: "Estimated $13 billion (adj. for inflation)",
+    desc: {},
     time: 1104022733000,
     mag: 9.2,
     coordinates: [
@@ -73,6 +75,7 @@ db.historicalEarthquakes.insertMany([
     location: "Near the East Coast of Honshu, Japan",
     casualties: "Over 20,000",
     damageCost: "$409 billion (adj. for inflation)",
+    desc: {},
     time: 1299822384000,
     mag: 9.1,
     coordinates: [
@@ -86,6 +89,7 @@ db.historicalEarthquakes.insertMany([
     location: "Southern Alaska",
     casualties: "131",
     damageCost: "$2.5 billion (adj. for inflation)",
+    desc: {},
     time: -181859024000,
     mag: 9.2,
     coordinates: [
@@ -102,6 +106,7 @@ db.historicalEarthquakes.insertMany([
     location: "Offshore Bio-Bio, Chile",
     casualties: "550",
     damageCost: "$17.5-35 billion (adj. for inflation)",
+    desc: {},
     time: 1267252463000,
     mag: 8.8,
     coordinates: [
@@ -115,6 +120,7 @@ db.historicalEarthquakes.insertMany([
     location: "Eastern Xizang-India border region",
     casualties: "4,800",
     damageCost: "$270 million (adj. for inflation)",
+    desc: {},
     time: -611574626000,
     mag: 8.6,
     coordinates: [
@@ -128,6 +134,7 @@ db.historicalEarthquakes.insertMany([
     location: "Andreanof Islands, Aleutian Islands, Alaska",
     casualties: "No Casualties",
     damageCost: "$46.3 million (adj. for inflation)",
+    desc: {},
     time: -404386647000,
     mag: 8.6,
     coordinates: [
@@ -141,6 +148,7 @@ db.historicalEarthquakes.insertMany([
     location: "Northern Sumatra, Indonesia",
     casualties: "915-2000",
     damageCost: "No Estimate",
+    desc: {},
     time: 1112026176000,
     mag: 8.6,
     coordinates: [
@@ -152,6 +160,7 @@ db.historicalEarthquakes.insertMany([
   {
     title:"2012 Indian Ocean Earthquakes",
     location: "Off the West Coast of Northern Sumatra",
+    desc: {},
     time: 1334133516000,
     mag: 8.6,
     coordinates: [
@@ -163,6 +172,7 @@ db.historicalEarthquakes.insertMany([
   {
     title:"1963 Kuril Islands Earthquake",
     location: "Kuril Islands",
+    desc: {},
     time: -196281721000,
     mag: 8.5,
     coordinates: [
@@ -174,6 +184,7 @@ db.historicalEarthquakes.insertMany([
   {
     title: "1994 Northridge Earthquake",
     location: "1km NNW of Reseda, CA",
+    desc: {},
     time: 758809855000,
     mag: 6.7,
     coordinates: [
@@ -187,6 +198,7 @@ db.historicalEarthquakes.insertMany([
     location: "Off the East Coast of the Kamchatka Peninsula, Russia",
     casualties: "2,336",
     damageCost: "$17 million",
+    desc: {},
     time: -541407690000,
     mag: 9.1,
     coordinates: [
@@ -198,6 +210,7 @@ db.historicalEarthquakes.insertMany([
   {
     title: "1994 Bolivia Earthquake",
     location: "La Paz, Bolivia",
+    desc: {},
     time: 771121997000,
     mag: 8.2,
     coordinates: [
@@ -209,6 +222,7 @@ db.historicalEarthquakes.insertMany([
   {
     title: "2008 Sichuan Earthquake",
     location: "Eastern Sichuan, China",
+    desc: {},
     time: 1210573681000,
     mag: 8.0,
     coordinates: [
@@ -220,6 +234,7 @@ db.historicalEarthquakes.insertMany([
   {
     title: "2015 April Nepal Earthquake",
     location: "38km E of Khudi, Nepal",
+    desc: {},
     time: 1429942285000,
     mag: 7.8,
     coordinates: [
@@ -231,6 +246,7 @@ db.historicalEarthquakes.insertMany([
   {
     title: "1999 İzmit Earthquake",
     location: "Western Turkey",
+    desc: {},
     time: 934848099000,
     mag: 7.6,
     coordinates: [
@@ -242,6 +258,7 @@ db.historicalEarthquakes.insertMany([
   {
     title: "2010 Haiti Earthquake",
     location: "Haiti region",
+    desc: {},
     time: 1263333190000,
     mag: 7.0,
     coordinates: [
@@ -253,6 +270,7 @@ db.historicalEarthquakes.insertMany([
   {
     title: "2001 Gujarat Earthquake",
     location: "Gujarat, India",
+    desc: {},
     time: 980479000000,
     mag: 7.7,
     coordinates: [
@@ -264,6 +282,7 @@ db.historicalEarthquakes.insertMany([
   {
     title: "2007 Sumatra Earthquake (A)",
     location: "Southern Sumatra, Indonesia",
+    desc: {},
     time: 1189595426000,
     mag: 8.4,
     coordinates: [
@@ -275,6 +294,7 @@ db.historicalEarthquakes.insertMany([
   {
     title: "2007 Sumatra Earthquake (B)",
     location: "Southern Sumatra, Indonesia",
+    desc: {},
     time: 1189640943000,
     mag: 7.9,
     coordinates: [
@@ -286,6 +306,7 @@ db.historicalEarthquakes.insertMany([
   {
     title: "2005 Kashmir Earthquake",
     location: "Pakistan",
+    desc: {},
     time: 1128743440000,
     mag: 7.6,
     coordinates: [
@@ -297,6 +318,7 @@ db.historicalEarthquakes.insertMany([
   {
     title: "2002 Hindu Kush Earthquake (A)",
     location: "Hindu Kush region, Afghanistan",
+    desc: {},
     time: 1015157299000,
     mag: 7.4,
     coordinates: [
@@ -308,6 +330,7 @@ db.historicalEarthquakes.insertMany([
   {
     title: "2002 Hindu Kush Earthquake (B)",
     location: "Hindu Kush region, Afghanistan",
+    desc: {},
     time: 1017068193000,
     mag: 6.1,
     coordinates: [
@@ -319,6 +342,7 @@ db.historicalEarthquakes.insertMany([
   {
     title: "1938 Banda Sea Earthquake",
     location: "Banda Sea",
+    desc: {},
     time: -1007096137000,
     mag: 8.5,
     coordinates: [
@@ -330,6 +354,7 @@ db.historicalEarthquakes.insertMany([
   {
     title: "2003 Bam Earthquake",
     location: "Southeastern Iran",
+    desc: {},
     time: 1072403812000,
     mag: 6.6,
     coordinates: [
@@ -341,6 +366,7 @@ db.historicalEarthquakes.insertMany([
   {
     title: "2006 Yogyakarta Earthquake",
     location: "Java, Indonesia",
+    desc: {},
     time: 1148684038000,
     mag: 6.3,
     coordinates: [
@@ -352,6 +378,7 @@ db.historicalEarthquakes.insertMany([
   {
     title: "2010 Yushu Earthquake",
     location: "Southern Qinghai, China",
+    desc: {},
     time: 1271202578000,
     mag: 6.9,
     coordinates: [
@@ -363,6 +390,7 @@ db.historicalEarthquakes.insertMany([
   {
     title: "2003 Boumerdès Earthquake",
     location: "Boumerdès, Algeria",
+    desc: {},
     time: 1053542660000,
     mag: 6.8,
     coordinates: [
@@ -374,6 +402,7 @@ db.historicalEarthquakes.insertMany([
   {
     title: "2009 Sumatra Earthquakes",
     location: "Southern Sumatra, Indonesia",
+    desc: {},
     time: 1254305770000,
     mag: 7.6,
     coordinates: [
@@ -385,6 +414,7 @@ db.historicalEarthquakes.insertMany([
   {
     title: "2011 Christchurch Earthquake",
     location: "South Island of New Zealand",
+    desc: {},
     time: 1298332302000,
     mag: 6.1,
     coordinates: [
@@ -396,6 +426,7 @@ db.historicalEarthquakes.insertMany([
   {
     title: "2004 Chūetsu Earthquake",
     location: "Niigata Prefecture, Japan",
+    desc: {},
     time: 1098521760000,
     mag: 6.6,
     coordinates: [
@@ -407,6 +438,7 @@ db.historicalEarthquakes.insertMany([
   {
     title: "2009 L'Aquila Earthquake",
     location: "Central Italy",
+    desc: {},
     time: 1238981562000,
     mag: 6.3,
     coordinates: [
@@ -418,6 +450,7 @@ db.historicalEarthquakes.insertMany([
   {
     title: "2020 Zagreb Earthquake",
     location: "2km WSW of Kasina, Croatia",
+    desc: {},
     time: 1584854643000,
     mag: 5.3,
     coordinates: [
@@ -429,6 +462,7 @@ db.historicalEarthquakes.insertMany([
   {
     title: "2007 Peru Earthquake",
     location: "Near the coast of Central Peru",
+    desc: {},
     time: 1187221257000,
     mag: 8.0,
     coordinates: [
@@ -440,6 +474,7 @@ db.historicalEarthquakes.insertMany([
   {
     title: "2019 Albania Earthquake",
     location: "15km WSW of Mamurras, Albania",
+    desc: {},
     time: 1574736852000,
     mag: 6.4,
     coordinates: [
@@ -451,6 +486,7 @@ db.historicalEarthquakes.insertMany([
   {
     title: "2016 Ecuador Earthquake",
     location: "27km SSE of Muisne, Ecuador",
+    desc: {},
     time: 1460851116000,
     mag: 7.8,
     coordinates: [
@@ -462,6 +498,7 @@ db.historicalEarthquakes.insertMany([
   {
     title: "2013 Balochistan Earthquakes",
     location: "61km NNE of Awaran, Pakistan",
+    desc: {},
     time: 1380022187000,
     mag: 7.7,
     coordinates: [
@@ -473,6 +510,7 @@ db.historicalEarthquakes.insertMany([
   {
     title: "2020 Aegean Sea Earthquake",
     location: "14km NNE of Néon Karlovásion, Greece",
+    desc: {},
     time: 1604058686000,
     mag: 7.0,
     coordinates: [
@@ -484,6 +522,7 @@ db.historicalEarthquakes.insertMany([
   {
     title: "2014 Ludian Earthquake",
     location: "11km W of Wenping, China",
+    desc: {},
     time: 1407054613000,
     mag: 6.2,
     coordinates: [
@@ -495,6 +534,7 @@ db.historicalEarthquakes.insertMany([
   {
     title: "2001 southern Peru Earthquake",
     location: "Near the coast of Southern Peru",
+    desc: {},
     time: 993328394000,
     mag: 8.4,
     coordinates: [
@@ -506,6 +546,7 @@ db.historicalEarthquakes.insertMany([
   {
     title: "2006 Kuril Islands Earthquake",
     location: "Kuril Islands",
+    desc: {},
     time: 1163589253000,
     mag: 8.3,
     coordinates: [
@@ -517,6 +558,7 @@ db.historicalEarthquakes.insertMany([
   {
     title: "2003 Hokkaidō Earthquake",
     location: "Hokkaido, Japan",
+    desc: {},
     time: 1064519406000,
     mag: 8.3,
     coordinates: [
@@ -528,6 +570,7 @@ db.historicalEarthquakes.insertMany([
   {
     title: "2017 Chiapas Earthquake",
     location: "101km SSW of Tres Picos, Mexico",
+    desc: {},
     time: 1504846159000,
     mag: 8.2,
     coordinates: [
@@ -539,6 +582,7 @@ db.historicalEarthquakes.insertMany([
   {
     title: "2014 Iquique Earthquake",
     location: "94km NW of Iquique, Chile",
+    desc: {},
     time: 1396396007000,
     mag: 8.2,
     coordinates: [
@@ -550,6 +594,7 @@ db.historicalEarthquakes.insertMany([
   {
     title: "2009 Samoa Earthquake and Tsunami",
     location: "Samoa Islands Region",
+    desc: {},
     time: 1254246490000,
     mag: 8.1,
     coordinates: [
@@ -561,6 +606,7 @@ db.historicalEarthquakes.insertMany([
   {
     title: "2002 Denali Earthquake",
     location: "Central Alaska",
+    desc: {},
     time: 1036361561000,
     mag: 7.9,
     coordinates: [
@@ -572,6 +618,7 @@ db.historicalEarthquakes.insertMany([
   {
     title: "1939 Chillán Earthquake",
     location: "Bio-Bio, Chile",
+    desc: {},
     time: -976220866000,
     mag: 7.8,
     coordinates: [
@@ -583,6 +630,7 @@ db.historicalEarthquakes.insertMany([
   {
     title: "1985 Mexico City Earthquake",
     location: "Michoacan, Mexico",
+    desc: {},
     time: 495983870000,
     mag: 8.0,
     coordinates: [
@@ -594,6 +642,7 @@ db.historicalEarthquakes.insertMany([
   {
     title: "1931 Fuyun Earthquake",
     location: "Northern Xinjiang, China",
+    desc: {},
     time: -1211596875000,
     mag: 7.9,
     coordinates: [
@@ -605,6 +654,7 @@ db.historicalEarthquakes.insertMany([
   {
     title: "1970 Ancash Earthquake",
     location: "Ancash region, Peru",
+    desc: {},
     time: 13033419000,
     mag: 7.9,
     coordinates: [
@@ -616,7 +666,7 @@ db.historicalEarthquakes.insertMany([
   {
     title: "1944 San Juan Earthquake",
     location: "San Juan, Argentina",
-    location: "",
+    desc: {},
     time: -819245428000,
     mag: 7.0,
     coordinates: [
@@ -628,6 +678,7 @@ db.historicalEarthquakes.insertMany([
   {
     title: "1939 Erzincan Earthquake",
     location: "Eastern Turkey",
+    desc: {},
     time: -947203357000,
     mag: 7.8,
     coordinates: [
@@ -639,6 +690,7 @@ db.historicalEarthquakes.insertMany([
   {
     title: "1976 Guatemala Earthquake",
     location: "Guatemala",
+    desc: {},
     time: 192272506000,
     mag: 7.5,
     coordinates: [
@@ -650,6 +702,7 @@ db.historicalEarthquakes.insertMany([
   {
     title: "1990 Manjil–Rudbar Earthquake",
     location: "Northern Iran",
+    desc: {},
     time: 645915614000,
     mag: 7.4,
     coordinates: [
@@ -661,6 +714,7 @@ db.historicalEarthquakes.insertMany([
   {
     title: "1978 Tabas Earthquake",
     location: "Central Iran",
+    desc: {},
     time: 274808155000,
     mag: 7.4,
     coordinates: [
@@ -672,6 +726,7 @@ db.historicalEarthquakes.insertMany([
   {
     title: "1970 Tonghai Earthquake",
     location: "Western Sichuan, China",
+    desc: {},
     time: 322554000,
     mag: 7.1,
     coordinates: [
@@ -683,6 +738,7 @@ db.historicalEarthquakes.insertMany([
   {
     title: "1960 Agadir Earthquake",
     location: "Morocco",
+    desc: {},
     time: -310436382000,
     mag: 5.8,
     coordinates: [
@@ -694,6 +750,7 @@ db.historicalEarthquakes.insertMany([
   {
     title: "1972 Nicaragua Earthquake",
     location: "Nicaragua",
+    desc: {},
     time: 93940184000,
     mag: 6.3,
     coordinates: [
